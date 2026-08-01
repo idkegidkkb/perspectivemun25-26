@@ -147,7 +147,7 @@ const AboutUsPage = () => {
                                 transition={{ duration: 0.8, delay: 0.2 }}
                                 className="glass-panel p-8 rounded-xl border border-primary/20 bg-card relative overflow-hidden flex flex-col justify-between"
                             >
-                                <div className="absolute top-0 right-0 w-24 h-24 bg-blue-500/5 blur-[40px] rounded-full pointer-events-none" />
+                                <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 blur-[40px] rounded-full pointer-events-none" />
                                 <div>
                                     <h3 className="font-display font-bold text-2xl text-primary tracking-wide mb-2 uppercase">
                                         Letter from the Co-Director General
@@ -209,7 +209,7 @@ const AboutUsPage = () => {
                                         className={`relative px-4 py-2 rounded-full font-body text-xs font-bold uppercase tracking-widest transition-all duration-300 ${
                                             activeEb === index
                                                 ? "text-primary"
-                                                : "text-muted-foreground hover:text-foreground bg-white/5"
+                                                : "text-muted-foreground hover:text-foreground bg-black/5"
                                         }`}
                                     >
                                         {activeEb === index && (
@@ -239,7 +239,7 @@ const AboutUsPage = () => {
                                         </h3>
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                             {executiveBoards[activeEb].members.map((member, mIndex) => (
-                                                <div key={mIndex} className="flex flex-col md:flex-row md:items-center justify-between bg-black/25 p-4 rounded-xl border border-white/5 gap-2">
+                                                <div key={mIndex} className="flex flex-col md:flex-row md:items-center justify-between bg-primary/[0.04] p-4 rounded-xl border border-primary/10 gap-2">
                                                     <span className="font-body text-xs font-bold text-primary/80 uppercase tracking-[0.2em]">{member.role}</span>
                                                     <span className="font-body text-sm text-foreground font-medium">{member.name}</span>
                                                 </div>

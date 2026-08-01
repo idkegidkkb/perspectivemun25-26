@@ -7,7 +7,7 @@ const AboutSection = () => {
       <div className="section-divider" />
       <section id="about" className="py-24 lg:py-32 px-6 sm:px-12 md:px-20 max-w-7xl mx-auto relative overflow-hidden">
         {/* Abstract design elements */}
-        <div className="absolute -left-32 top-1/4 w-96 h-96 rounded-full bg-blue-900/10 blur-[80px] pointer-events-none" />
+        <div className="absolute -left-32 top-1/4 w-96 h-96 rounded-full bg-red-900/5 blur-[80px] pointer-events-none" />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start mb-20">
           {/* Left Column - Text */}

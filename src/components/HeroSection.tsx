@@ -10,15 +10,15 @@ const HeroSection = () => {
       ref={containerRef}
       className="min-h-screen flex flex-col justify-center px-6 sm:px-12 md:px-20 pt-28 pb-16 relative overflow-hidden bg-background dots-bg"
     >
-      {/* Right Side Glowing Graphic (Floating blue-indigo circular vector shapes) */}
+      {/* Right Side Glowing Graphic (Floating warm red-amber circular vector shapes) */}
       <div className="absolute right-0 top-0 bottom-0 w-full md:w-1/2 pointer-events-none z-0 overflow-hidden hidden md:block">
         {/* Giant Circle 1 */}
-        <div className="absolute -right-20 top-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-primary/20 bg-gradient-to-br from-blue-900/20 to-indigo-950/40 backdrop-blur-[2px]" />
+        <div className="absolute -right-20 top-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-primary/20 bg-gradient-to-br from-red-900/5 to-amber-900/5 backdrop-blur-[2px]" />
         {/* Giant Circle 2 (Overlapping) */}
-        <div className="absolute -right-60 top-1/2 -translate-y-1/2 w-[750px] h-[750px] rounded-full border-2 border-primary/10 bg-gradient-to-br from-indigo-950/30 to-blue-950/20" />
+        <div className="absolute -right-60 top-1/2 -translate-y-1/2 w-[750px] h-[750px] rounded-full border-2 border-primary/10 bg-gradient-to-br from-amber-900/5 to-red-950/5" />
         {/* Glowing Gradient Overlay */}
-        <div className="absolute -right-40 top-1/4 w-[500px] h-[500px] rounded-full bg-blue-600/10 blur-[120px]" />
-        <div className="absolute right-20 bottom-1/4 w-[400px] h-[400px] rounded-full bg-indigo-500/5 blur-[100px]" />
+        <div className="absolute -right-40 top-1/4 w-[500px] h-[500px] rounded-full bg-red-500/5 blur-[120px]" />
+        <div className="absolute right-20 bottom-1/4 w-[400px] h-[400px] rounded-full bg-amber-500/5 blur-[100px]" />
       </div>
 
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center relative z-10">
@@ -139,9 +139,9 @@ const HeroSection = () => {
 
         {/* Right Side Mobile Circle Illustration (shown only on mobile) */}
         <div className="md:hidden flex justify-center w-full mt-6 relative py-12">
-          <div className="w-56 h-56 rounded-full border border-primary/20 bg-gradient-to-br from-blue-900/10 to-indigo-950/20 relative flex items-center justify-center">
-            <div className="w-48 h-48 rounded-full border-2 border-primary/10 bg-gradient-to-br from-indigo-950/10 to-blue-950/10" />
-            <div className="absolute inset-0 bg-blue-600/5 blur-[50px]" />
+          <div className="w-56 h-56 rounded-full border border-primary/20 bg-gradient-to-br from-red-900/5 to-amber-900/5 relative flex items-center justify-center">
+            <div className="w-48 h-48 rounded-full border-2 border-primary/10 bg-gradient-to-br from-amber-900/5 to-red-950/5" />
+            <div className="absolute inset-0 bg-red-500/5 blur-[50px]" />
           </div>
         </div>
       </div>
