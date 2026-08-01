@@ -26,18 +26,6 @@ const ocTeam = [
     name: "Ethan Kokate",
     dept: "Executive Secretariat",
     bio: "Manages organizing committees, logistics pipelines, and oversees communication pipelines."
-  },
-  {
-    role: "Under-Secretary-General",
-    name: "Arjun",
-    dept: "Delegate Relations & Registrations",
-    bio: "Manages matrix allocations, delegate portfolios, registrations assistance, and referral setups."
-  },
-  {
-    role: "Under-Secretary-General",
-    name: "Nayan",
-    dept: "Logistics & Operations",
-    bio: "Coordinates event locations, schedules, stationery, printing requirements, and room coordinates."
   }
 ];
 
