@@ -7,56 +7,57 @@ const executiveBoards = [
         committee: "United Nations Security Council",
         abbr: "UNSC",
         members: [
-            { role: "Chairperson", name: "TBA" },
-            { role: "Vice Chairperson", name: "TBA" }
+            { role: "Chairperson", name: "Parth Verturkar" },
+            { role: "Vice Chairperson", name: "Kshitij Jadhav" }
         ]
     },
     {
         committee: "United Nations General Assembly",
         abbr: "UNGA",
         members: [
-            { role: "President", name: "TBA" },
-            { role: "Vice President", name: "TBA" }
+            { role: "Chairperson", name: "Yog Ashok Rai" },
+            { role: "Vice Chairperson", name: "Saanvi Saluja" }
         ]
     },
     {
         committee: "Economic and Social Council",
         abbr: "ECOSOC",
         members: [
-            { role: "President", name: "TBA" },
-            { role: "Vice President", name: "TBA" }
+            { role: "Chairperson", name: "Aditya Dutta" },
+            { role: "Vice Chairperson", name: "Aarav Sharma" }
         ]
     },
     {
         committee: "United Nations Human Rights Council",
         abbr: "UNHRC",
         members: [
-            { role: "Chairperson", name: "TBA" },
-            { role: "Vice Chairperson", name: "TBA" }
+            { role: "Chairperson", name: "Prakket Dholekar" },
+            { role: "Vice Chairperson", name: "Ahad Khan" },
+            { role: "Rapporteur", name: "Sukriti Sahay" }
         ]
     },
     {
         committee: "All India Political Parties Meet",
         abbr: "AIPPM",
         members: [
-            { role: "Moderator", name: "TBA" },
-            { role: "Deputy Moderator", name: "TBA" }
+            { role: "Co-Chairperson", name: "Anuj Shenoy" },
+            { role: "Co-Chairperson", name: "Tapasya Dumbre" }
         ]
     },
     {
         committee: "Fédération Internationale de l'Automobile",
         abbr: "FIA",
         members: [
-            { role: "President", name: "TBA" },
-            { role: "Commissioner", name: "TBA" }
+            { role: "Chairperson", name: "Mrugaja Prabhu" },
+            { role: "Vice Chairperson", name: "Valen Kumar" },
+            { role: "Co-Vice Chairperson", name: "Saatvik Joshi" }
         ]
     },
     {
         committee: "International Press",
         abbr: "IP",
         members: [
-            { role: "Editor-in-Chief", name: "TBA" },
-            { role: "Head of Photography", name: "TBA" }
+            { role: "Chairperson", name: "Ms. Shriya Rajan" }
         ]
     }
 ];

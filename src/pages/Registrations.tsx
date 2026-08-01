@@ -120,50 +120,79 @@ const RegistrationsPage = () => {
             >
               <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 blur-[40px] rounded-full pointer-events-none" />
               
-              <span className="font-body text-[9px] uppercase tracking-widest text-primary font-bold block mb-1">
-                DELEGATE FEE
+              <span className="font-body text-[9px] uppercase tracking-widest text-primary font-bold block mb-2">
+                SPECIAL EARLY BIRD ROUND
               </span>
-              <p className="font-display font-extrabold text-5xl text-primary text-glow mb-8 leading-none">
-                ₹2,500
-              </p>
-
-              {/* Fee Metadata Info */}
-              <div className="space-y-4 font-body text-xs mb-8">
-                <div className="flex justify-between border-b border-dashed border-white/10 pb-2">
-                  <span className="text-muted-foreground">Best Delegate Prize</span>
-                  <span className="font-semibold text-foreground">₹10,000</span>
+              
+              <div className="space-y-2 mb-6">
+                <div className="flex justify-between items-baseline">
+                  <span className="font-body text-xs font-semibold text-foreground">Individual Delegate</span>
+                  <span className="font-display font-extrabold text-3xl text-primary text-glow">₹2,000</span>
                 </div>
-                <div className="flex justify-between border-b border-dashed border-white/10 pb-2">
-                  <span className="text-muted-foreground">High Commendation Prize</span>
-                  <span className="font-semibold text-foreground">₹8,000</span>
-                </div>
-                <div className="flex justify-between border-b border-dashed border-white/10 pb-2">
-                  <span className="text-muted-foreground">Registrations close</span>
-                  <span className="font-semibold text-foreground text-primary">20th August</span>
+                <div className="flex justify-between items-baseline">
+                  <span className="font-body text-xs font-semibold text-foreground">Delegation (Min 8 Delegates)</span>
+                  <span className="font-display font-extrabold text-3xl text-primary text-glow">₹1,750</span>
                 </div>
               </div>
 
-              {/* Register Button */}
-              <button
-                onClick={() => {
-                  setActiveForm("delegate");
-                  setShowModal(true);
-                }}
-                className="w-full bg-primary border border-primary text-background font-body font-bold text-[10px] uppercase tracking-[0.25em] py-4 rounded hover:bg-transparent hover:text-primary transition-all duration-300 mb-6"
-              >
-                Register as a Delegate
-              </button>
-
-              {/* Institutional & Accommodation actions links */}
-              <div className="flex justify-between border-t border-white/5 pt-4 text-[10px] font-body font-bold uppercase tracking-wider text-muted-foreground mb-4">
-                <button onClick={() => { setActiveForm("delegation"); setShowModal(true); }} className="hover:text-primary transition-colors">Group delegation &rarr;</button>
-                <button onClick={() => { setActiveForm("accommodation"); setShowModal(true); }} className="hover:text-primary transition-colors">Accommodation &rarr;</button>
+              {/* Referrals Notice */}
+              <div className="bg-primary/5 border border-primary/20 p-3.5 rounded text-[10px] text-foreground/90 leading-relaxed font-body mb-6">
+                💡 <span className="font-bold text-primary">Referrals:</span> Make sure to use <span className="font-bold text-primary">Arjun</span> or <span className="font-bold text-primary">Nayan</span> in the referrals section of the form.
               </div>
 
-              {/* Questions/Contact Email */}
-              <p className="font-body text-[10px] text-muted-foreground leading-relaxed text-center">
-                Questions? Write to <a href="mailto:contact@wsmun26.org" className="text-foreground hover:text-primary transition-colors">contact@wsmun26.org</a>
-              </p>
+              {/* CTA Buttons */}
+              <div className="space-y-3 mb-6">
+                <a
+                  href="https://forms.gle/U3yoFhgPWzsRH8PN6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-primary border border-primary text-background font-body font-bold text-[10px] uppercase tracking-[0.25em] py-3.5 rounded hover:bg-transparent hover:text-primary transition-all duration-300 block text-center"
+                >
+                  Register as Individual
+                </a>
+                <a
+                  href="https://forms.gle/Qsbvag8NhLv41X9e7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full border border-primary/50 text-primary font-body font-bold text-[10px] uppercase tracking-[0.25em] py-3.5 rounded hover:bg-primary hover:text-background transition-all duration-300 block text-center"
+                >
+                  Register as Delegation
+                </a>
+              </div>
+
+              {/* Cash Prizes Section */}
+              <div className="space-y-3 font-body text-[11px] border-t border-primary/10 pt-4 mb-6">
+                <span className="font-body text-[9px] uppercase tracking-widest text-primary font-bold block mb-1">
+                  CASH PRIZES (OVER ₹75,000 TOTAL VALUE)
+                </span>
+                <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-foreground/90">
+                  <div className="flex justify-between border-b border-primary/5 pb-1"><span className="text-muted-foreground">Best Delegate:</span> <span className="font-semibold">₹10,000</span></div>
+                  <div className="flex justify-between border-b border-primary/5 pb-1"><span className="text-muted-foreground">Best Delegation:</span> <span className="font-semibold">₹20,000</span></div>
+                  <div className="flex justify-between border-b border-primary/5 pb-1"><span className="text-muted-foreground">High Comm.:</span> <span className="font-semibold">₹8,000</span></div>
+                  <div className="flex justify-between border-b border-primary/5 pb-1"><span className="text-muted-foreground">Best of Best:</span> <span className="font-semibold">₹10,000</span></div>
+                  <div className="flex justify-between border-b border-primary/5 pb-1"><span className="text-muted-foreground">Special Mention:</span> <span className="font-semibold">₹6,000</span></div>
+                  <div className="flex justify-between border-b border-primary/5 pb-1"><span className="text-muted-foreground">Best IP:</span> <span className="font-semibold">₹7,000</span></div>
+                </div>
+              </div>
+
+              {/* Contact / Accommodation queries */}
+              <div className="border-t border-primary/10 pt-4 font-body text-[10px] space-y-2 text-muted-foreground">
+                <span className="font-body text-[9px] uppercase tracking-widest text-primary font-bold block mb-1">
+                  SECRETARIAT CONTACTS & QUERIES
+                </span>
+                <div className="flex justify-between">
+                  <span>Ethan Kokate (Deputy SG):</span>
+                  <a href="tel:+919136123809" className="text-foreground hover:text-primary transition-colors font-semibold">+91 91361 23809</a>
+                </div>
+                <div className="flex justify-between">
+                  <span>Raunak Jha (SG):</span>
+                  <a href="tel:+918928324690" className="text-foreground hover:text-primary transition-colors font-semibold">+91 89283 24690</a>
+                </div>
+                <div className="flex justify-between">
+                  <span>Sachet Agarwal (Co-SG):</span>
+                  <a href="tel:+919987689845" className="text-foreground hover:text-primary transition-colors font-semibold">+91 99876 89845</a>
+                </div>
+              </div>
             </motion.div>
           </div>
 

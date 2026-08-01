@@ -99,7 +99,7 @@ const AwardsPage = () => {
             </h1>
             <div className="h-[2px] w-24 bg-primary rounded-full mb-8"></div>
             <p className="font-body text-sm sm:text-base text-foreground/80 leading-relaxed max-w-3xl">
-              WSMUN '26 values the rigorous academic preparation and diplomatic standard of delegates. We are pleased to announce a combined cash prize pool exceeding <span className="text-primary font-bold text-glow">₹70,000</span> alongside custom trophies and certificates.
+              WSMUN '26 values the rigorous academic preparation and diplomatic standard of delegates. We are pleased to announce a combined cash prize pool exceeding <span className="text-primary font-bold text-glow">₹75,000</span> alongside custom trophies and certificates.
             </p>
           </motion.div>
 

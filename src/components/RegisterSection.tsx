@@ -28,15 +28,17 @@ const RegisterSection = () => {
             discourse and lead the diplomatic stage.
           </motion.p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { title: "Delegate Registration", desc: "Individual delegates looking to represent a country in committee." },
-              { title: "Delegation Registration", desc: "Register your school or university delegation as a group." },
-              { title: "Accommodation Form", desc: "Outstation delegates can request accommodation assistance." },
+              { title: "Delegate Registration", desc: "Individual delegates looking to represent a country in committee.", link: "https://forms.gle/U3yoFhgPWzsRH8PN6", target: "_blank", rel: "noopener noreferrer" },
+              { title: "Delegation Registration", desc: "Register your school or university delegation as a group.", link: "https://forms.gle/Qsbvag8NhLv41X9e7", target: "_blank", rel: "noopener noreferrer" },
+              { title: "Accommodation & Queries", desc: "Outstation delegates can request accommodation assistance by contacting us.", link: "mailto:contact@wsmun26.org", target: "_self", rel: "" },
             ].map((item, i) => (
               <div key={item.title} className="glow-border rounded-xl">
                 <motion.a
-                  href="#"
+                  href={item.link}
+                  target={item.target}
+                  rel={item.rel}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}

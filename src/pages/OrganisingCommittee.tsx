@@ -4,40 +4,40 @@ import { Users2, Contact } from "lucide-react";
 
 const ocTeam = [
   {
+    role: "Secretary-General",
+    name: "Raunak Jha",
+    dept: "Executive Secretariat",
+    bio: "Head representative, directing summit activities, coordinating academic content, and overseeing external affairs."
+  },
+  {
+    role: "Co-Secretary General",
+    name: "Sachet Agarwal",
+    dept: "Executive Secretariat",
+    bio: "Coordinates delegation invites, manages financial operations, and assists in key secretariat decisions."
+  },
+  {
     role: "Co-Director General",
     name: "Advait Chitnis",
     dept: "Executive Secretariat",
     bio: "Supervises general operations, budget management, and academic structures of the conference."
   },
   {
-    role: "Secretary-General",
-    name: "TBA",
+    role: "Deputy Secretary General",
+    name: "Ethan Kokate",
     dept: "Executive Secretariat",
-    bio: "Head representative, coordinating with chairs and external institutions for international integrations."
+    bio: "Manages organizing committees, logistics pipelines, and oversees communication pipelines."
   },
   {
     role: "Under-Secretary-General",
-    name: "TBA",
+    name: "Arjun",
     dept: "Delegate Relations & Registrations",
-    bio: "Manages matrix allocations, delegate portfolios, registrations assistance, and communication pipelines."
+    bio: "Manages matrix allocations, delegate portfolios, registrations assistance, and referral setups."
   },
   {
     role: "Under-Secretary-General",
-    name: "TBA",
+    name: "Nayan",
     dept: "Logistics & Operations",
     bio: "Coordinates event locations, schedules, stationery, printing requirements, and room coordinates."
-  },
-  {
-    role: "Under-Secretary-General",
-    name: "TBA",
-    dept: "Public Relations & Marketing",
-    bio: "Administers social media updates, poster designs, sponsor relations, and media collaborations."
-  },
-  {
-    role: "Under-Secretary-General",
-    name: "TBA",
-    dept: "Finance & Hospitality",
-    bio: "Oversees registration fee collection, accommodation details, hospitality schedules, and meals coordination."
   }
 ];
 

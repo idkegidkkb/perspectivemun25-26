@@ -7,56 +7,57 @@ const ebData = [
     committee: "United Nations Security Council (UNSC)",
     abbr: "UNSC",
     members: [
-      { role: "Chairperson", name: "TBA", desc: "Expert on international security law and conflict mediation, with over 35 career MUN attendances." },
-      { role: "Vice Chairperson", name: "TBA", desc: "Specialist on aerial combat ethics and disarmament policies." }
+      { role: "Chairperson", name: "Parth Verturkar", desc: "Expert on international security law and conflict mediation, with over 35 career MUN attendances." },
+      { role: "Vice Chairperson", name: "Kshitij Jadhav", desc: "Specialist on aerial combat ethics and disarmament policies." }
     ]
   },
   {
     committee: "United Nations General Assembly (UNGA)",
     abbr: "UNGA",
     members: [
-      { role: "President", name: "TBA", desc: "Academic researcher specializing in budget allocations and institutional mandates." },
-      { role: "Vice President", name: "TBA", desc: "Experienced rules moderator with a focus on administrative efficiency." }
+      { role: "Chairperson", name: "Yog Ashok Rai", desc: "Academic researcher specializing in budget allocations and institutional mandates." },
+      { role: "Vice Chairperson", name: "Saanvi Saluja", desc: "Experienced rules moderator with a focus on administrative efficiency." }
     ]
   },
   {
     committee: "Economic and Social Council (ECOSOC)",
     abbr: "ECOSOC",
     members: [
-      { role: "President", name: "TBA", desc: "Financial consultant focusing on foreign investment disputes and bilateral treaty law." },
-      { role: "Vice President", name: "TBA", desc: "Policy analyst with expertise in sustainable development investment paradigms." }
+      { role: "Chairperson", name: "Aditya Dutta", desc: "Financial consultant focusing on foreign investment disputes and bilateral treaty law." },
+      { role: "Vice Chairperson", name: "Aarav Sharma", desc: "Policy analyst with expertise in sustainable development investment paradigms." }
     ]
   },
   {
     committee: "United Nations Human Rights Council (UNHRC)",
     abbr: "UNHRC",
     members: [
-      { role: "Chairperson", name: "TBA", desc: "Human rights advocate with legal credentials in socio-economic violations." },
-      { role: "Vice Chairperson", name: "TBA", desc: "Socio-political scholar investigating development-driven rights deprivation." }
+      { role: "Chairperson", name: "Prakket Dholekar", desc: "Human rights advocate with legal credentials in socio-economic violations." },
+      { role: "Vice Chairperson", name: "Ahad Khan", desc: "Socio-political scholar investigating development-driven rights deprivation." },
+      { role: "Rapporteur", name: "Sukriti Sahay", desc: "Skilled reporter and research head overseeing committee paperwork and draft resolutions." }
     ]
   },
   {
     committee: "All India Political Parties Meet (AIPPM)",
     abbr: "AIPPM",
     members: [
-      { role: "Moderator", name: "TBA", desc: "Veteran AIPPM moderator with sharp legal understanding of Indian constitutional laws." },
-      { role: "Deputy Moderator", name: "TBA", desc: "Political science analyst specializing in conversion laws and minority rights." }
+      { role: "Co-Chairperson", name: "Anuj Shenoy", desc: "Veteran AIPPM moderator with sharp legal understanding of Indian constitutional laws." },
+      { role: "Co-Chairperson", name: "Tapasya Dumbre", desc: "Political science analyst specializing in conversion laws and minority rights." }
     ]
   },
   {
     committee: "Fédération Internationale de l'Automobile (FIA)",
     abbr: "FIA",
     members: [
-      { role: "President", name: "TBA", desc: "Motorsport governance specialist and advisor on drivers' labor rights." },
-      { role: "Commissioner", name: "TBA", desc: "Legal counsel specializing in freedom of expression policies in sports governance." }
+      { role: "Chairperson", name: "Mrugaja Prabhu", desc: "Motorsport governance specialist and advisor on drivers' labor rights." },
+      { role: "Vice Chairperson", name: "Valen Kumar", desc: "Legal counsel specializing in freedom of expression policies in sports governance." },
+      { role: "Co-Vice Chairperson", name: "Saatvik Joshi", desc: "Experienced motorsport analyst and rules arbiter." }
     ]
   },
   {
     committee: "International Press (IP)",
     abbr: "IP",
     members: [
-      { role: "Editor-in-Chief", name: "TBA", desc: "Journalism graduate, veteran chief editor, with multiple Best Journalist awards." },
-      { role: "Head of Photography", name: "TBA", desc: "Professional photojournalist capturing corporate and media summits nationally." }
+      { role: "Chairperson", name: "Ms. Shriya Rajan", desc: "Journalism graduate, veteran chief editor, with multiple Best Journalist awards." }
     ]
   }
 ];
