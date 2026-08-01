@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 4%;
+    --foreground: 40 20% 98%;
+    --card: 222 30% 7%;
+    --card-foreground: 40 20% 98%;
+    --popover: 222 30% 7%;
+    --popover-foreground: 40 20% 98%;
+    --primary: 195 100% 50%;
+    --primary-foreground: 222 47% 4%;
+    --secondary: 222 20% 10%;
+    --secondary-foreground: 40 20% 98%;
+    --muted: 222 15% 15%;
+    --muted-foreground: 220 10% 65%;
+    --accent: 195 100% 50%;
+    --accent-foreground: 222 47% 4%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 222 20% 12%;
+    --input: 222 20% 12%;
+    --ring: 195 100% 50%;
+    --radius: 0.15rem;
+
+    --oblique-black: 222 47% 4%;
+    --veil-grey: 222 30% 7%;
+    --blueprint-cyan: 195 100% 50%;
+    --concrete-white: 40 20% 98%;
+
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-body: 'Montserrat', sans-serif;
+
+    --sidebar-background: 222 47% 4%;
+    --sidebar-foreground: 40 20% 98%;
+    --sidebar-primary: 195 100% 50%;
+    --sidebar-primary-foreground: 222 47% 4%;
+    --sidebar-accent: 222 30% 7%;
+    --sidebar-accent-foreground: 40 20% 98%;
+    --sidebar-border: 222 20% 12%;
+    --sidebar-ring: 195 100% 50%;
+  }
+
+  .dark {
+    --background: 222 47% 4%;
+    --foreground: 40 20% 98%;
+    --card: 222 30% 7%;
+    --card-foreground: 40 20% 98%;
+    --popover: 222 30% 7%;
+    --popover-foreground: 40 20% 98%;
+    --primary: 195 100% 50%;
+    --primary-foreground: 222 47% 4%;
+    --secondary: 222 20% 10%;
+    --secondary-foreground: 40 20% 98%;
+    --muted: 222 15% 15%;
+    --muted-foreground: 220 10% 65%;
+    --accent: 195 100% 50%;
+    --accent-foreground: 222 47% 4%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 222 20% 12%;
+    --input: 222 20% 12%;
+    --ring: 195 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer components {
+  .section-divider {
+    @apply w-full h-px bg-primary/20;
+  }
+
+  .dots-bg {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+    background-size: 24px 24px;
+    background-position: center;
+  }
+
+  .fluid-text {
+    background: linear-gradient(90deg,
+        hsl(195 100% 50%),
+        hsl(210 40% 98%),
+        hsl(195 100% 70%),
+        hsl(195 100% 50%),
+        hsl(210 40% 98%));
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fluid-flow 6s ease-in-out infinite;
+  }
+
+  @keyframes fluid-flow {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* Glassmorphism panels (Optimized for performance) */
+  .glass-panel {
+    @apply bg-card/65 backdrop-blur-md border border-white/5 shadow-xl;
+  }
+
+  /* Glowing borders */
+  .glow-border {
+    position: relative;
+  }
+
+  .glow-border::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    background: linear-gradient(45deg, hsl(var(--blueprint-cyan) / 0.4), transparent, hsl(var(--primary) / 0.4));
+    border-radius: inherit;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .glow-border:hover::before {
+    opacity: 1;
+  }
+
+  /* Text glow (Optimized for performance) */
+  .text-glow {
+    text-shadow: 0 0 12px hsl(var(--primary) / 0.3);
+  }
+
+  .animate-gradient {
+    animation: fluid-flow 6s ease-in-out infinite;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary) / 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary) / 0.4);
+}

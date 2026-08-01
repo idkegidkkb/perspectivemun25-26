@@ -1,0 +1,46 @@
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Toaster as Sonner } from "@/components/ui/sonner";
+import { Toaster } from "@/components/ui/toaster";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import Index from "./pages/Index.tsx";
+import CommitteesPage from "./pages/Committees.tsx";
+import FAQsPage from "./pages/FAQs.tsx";
+import AboutUsPage from "./pages/AboutUs.tsx";
+import TimelinePage from "./pages/Timeline.tsx";
+import RegistrationsPage from "./pages/Registrations.tsx";
+import AwardsPage from "./pages/Awards.tsx";
+import ResourcesPage from "./pages/Resources.tsx";
+import ExecutiveBoardPage from "./pages/ExecutiveBoard.tsx";
+import OrganisingCommitteePage from "./pages/OrganisingCommittee.tsx";
+import NotFound from "./pages/NotFound.tsx";
+import DelegateMascot from "./components/DelegateMascot.tsx";
+
+const queryClient = new QueryClient();
+
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/registrations" element={<RegistrationsPage />} />
+          <Route path="/committees" element={<CommitteesPage />} />
+          <Route path="/awards" element={<AwardsPage />} />
+          <Route path="/resources" element={<ResourcesPage />} />
+          <Route path="/executive-board" element={<ExecutiveBoardPage />} />
+          <Route path="/organising-committee" element={<OrganisingCommitteePage />} />
+          <Route path="/faqs" element={<FAQsPage />} />
+          <Route path="/about" element={<AboutUsPage />} />
+          <Route path="/timeline" element={<TimelinePage />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <DelegateMascot />
+      </BrowserRouter>
+    </TooltipProvider>
+  </QueryClientProvider>
+);
+
+export default App;
