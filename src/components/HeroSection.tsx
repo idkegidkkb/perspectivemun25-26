@@ -27,7 +27,7 @@ const HeroSection = () => {
         {/* Left image - Active delegates collaborating/debating */}
         <div className="absolute left-[4%] top-[25%] w-[250px] h-[330px] rounded-2xl border border-primary/20 opacity-20 overflow-hidden rotate-[-4deg] shadow-[0_0_50px_rgba(0,0,0,0.6)]">
           <img
-            src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80"
+            src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&q=80"
             alt="Delegates Talking and Debating"
             className="w-full h-full object-cover filter contrast-[110%] brightness-[80%] sepia-[10%] grayscale hover:grayscale-0 transition-all duration-700"
           />
@@ -37,7 +37,7 @@ const HeroSection = () => {
         {/* Right image - Delegates in session */}
         <div className="absolute right-[4%] top-[20%] w-[270px] h-[350px] rounded-2xl border border-primary/20 opacity-20 overflow-hidden rotate-[4deg] shadow-[0_0_50px_rgba(0,0,0,0.6)]">
           <img
-            src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?w=800&q=80"
+            src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=800&q=80"
             alt="UN Session Delegates"
             className="w-full h-full object-cover filter contrast-[110%] brightness-[80%] sepia-[10%] grayscale hover:grayscale-0 transition-all duration-700"
           />
