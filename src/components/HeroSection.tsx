@@ -45,7 +45,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="font-display font-extrabold text-[3.2rem] sm:text-[6.5rem] md:text-[8.5rem] lg:text-[10rem] fluid-text tracking-tight text-center"
+              className="font-display font-extrabold text-[5.5rem] sm:text-[7.5rem] md:text-[8.5rem] lg:text-[10rem] fluid-text tracking-tight text-center"
             >
               WSMUN
             </motion.h1>
@@ -53,7 +53,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="font-display font-extrabold text-[3.2rem] sm:text-[6.5rem] md:text-[8.5rem] lg:text-[10rem] fluid-text tracking-tight -mt-2 sm:-mt-8 md:-mt-10 text-center"
+              className="font-display font-extrabold text-[5.5rem] sm:text-[7.5rem] md:text-[8.5rem] lg:text-[10rem] fluid-text tracking-tight -mt-2 sm:-mt-8 md:-mt-10 text-center"
             >
               2026
             </motion.h1>
@@ -64,7 +64,7 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="font-body text-xs sm:text-sm md:text-base font-extrabold uppercase tracking-[0.35em] text-primary mb-6 text-center"
+            className="font-body text-[10px] sm:text-xs md:text-base font-extrabold uppercase tracking-[0.35em] text-primary mb-6 text-center"
           >
             WORLD SUMMIT MODEL UNITED NATIONS
           </motion.h2>
@@ -74,7 +74,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
-            className="font-body text-muted-foreground text-sm sm:text-base max-w-xl leading-relaxed mb-10 text-foreground/80 text-center mx-auto"
+            className="font-body text-muted-foreground text-xs sm:text-base max-w-xl leading-relaxed mb-10 text-foreground/80 text-center mx-auto"
           >
             Where diplomacy, debate and deliberation shape the leaders of tomorrow.
           </motion.p>
@@ -88,30 +88,30 @@ const HeroSection = () => {
           >
             {/* Dates */}
             <div className="py-3 sm:py-0 sm:px-4 text-center">
-              <p className="font-body text-[10px] uppercase tracking-widest text-primary font-bold mb-1">
+              <p className="font-body text-[9px] sm:text-[10px] uppercase tracking-widest text-primary font-bold mb-1">
                 DATES
               </p>
-              <p className="font-body text-sm sm:text-base font-bold text-foreground">
+              <p className="font-body text-xs sm:text-base font-bold text-foreground">
                 5 - 6 September
               </p>
             </div>
 
             {/* Venue */}
             <div className="py-3 sm:py-0 sm:px-4 text-center">
-              <p className="font-body text-[10px] uppercase tracking-widest text-primary font-bold mb-1">
+              <p className="font-body text-[9px] sm:text-[10px] uppercase tracking-widest text-primary font-bold mb-1">
                 VENUE
               </p>
-              <p className="font-body text-sm sm:text-base font-bold text-foreground">
+              <p className="font-body text-xs sm:text-base font-bold text-foreground">
                 Jai Hind College, Churchgate
               </p>
             </div>
 
             {/* Chambers */}
             <div className="py-3 sm:py-0 sm:px-4 text-center">
-              <p className="font-body text-[10px] uppercase tracking-widest text-primary font-bold mb-1">
+              <p className="font-body text-[9px] sm:text-[10px] uppercase tracking-widest text-primary font-bold mb-1">
                 COMMITTEES
               </p>
-              <p className="font-body text-sm sm:text-base font-bold text-foreground">
+              <p className="font-body text-xs sm:text-base font-bold text-foreground">
                 7 Chambers
               </p>
             </div>
