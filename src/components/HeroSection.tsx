@@ -15,11 +15,34 @@ const HeroSection = () => {
         <img
           src="https://images.unsplash.com/photo-1521791136368-1a8697555580?w=1600&q=80"
           alt="UN General Assembly Hall Backdrop"
-          className="w-full h-full object-cover opacity-[0.08] md:opacity-[0.14] filter sepia-[20%] contrast-[105%] brightness-[95%]"
+          className="w-full h-full object-cover opacity-[0.06] md:opacity-[0.11] filter sepia-[15%] contrast-[105%] brightness-[90%]"
         />
         {/* Vignette and blend gradients */}
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-background/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/30" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/40" />
+      </div>
+
+      {/* Floating UN/Diplomacy backdrop photos (shown on desktop, hidden on mobile for responsiveness) */}
+      <div className="absolute inset-0 z-0 pointer-events-none hidden lg:block overflow-hidden">
+        {/* Left image - UN flags */}
+        <div className="absolute left-[5%] top-[25%] w-[240px] h-[320px] rounded-2xl border border-primary/20 opacity-15 overflow-hidden rotate-[-4deg] shadow-[0_0_50px_rgba(0,0,0,0.5)]">
+          <img
+            src="https://images.unsplash.com/photo-1588681664899-f142ff2bac99?w=600&q=80"
+            alt="UN Flags"
+            className="w-full h-full object-cover filter grayscale contrast-125 brightness-95"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-85" />
+        </div>
+
+        {/* Right image - Summit Meeting */}
+        <div className="absolute right-[5%] top-[20%] w-[260px] h-[340px] rounded-2xl border border-primary/20 opacity-15 overflow-hidden rotate-[4deg] shadow-[0_0_50px_rgba(0,0,0,0.5)]">
+          <img
+            src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=600&q=80"
+            alt="Summit Collaboration"
+            className="w-full h-full object-cover filter grayscale contrast-125 brightness-95"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-85" />
+        </div>
       </div>
 
       <div className="max-w-7xl mx-auto w-full flex flex-col items-center justify-center relative z-10">
