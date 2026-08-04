@@ -7,43 +7,36 @@ const committees = [
     name: "United Nations Security Council",
     abbr: "UNSC",
     topic: "Deliberating upon the proliferation of unmanned aerial systems and loitering munitions and their implications for international peace and security.",
-    difficulty: "Advanced",
   },
   {
     name: "United Nations General Assembly",
     abbr: "UNGA",
     topic: "Balancing mandate and agenda prioritization against the logistical and budgetary constraints in the United Nations.",
-    difficulty: "Intermediate",
   },
   {
     name: "Economic and Social Council",
     abbr: "ECOSOC",
     topic: "Reforming Bilateral Investment Treaties (BITs) to promote sustainable development and equitable foreign investment.",
-    difficulty: "Intermediate",
   },
   {
     name: "United Nations Human Rights Council",
     abbr: "UNHRC",
     topic: "Deliberating upon the human rights violations caused by various economic systems.",
-    difficulty: "Beginner",
   },
   {
     name: "All India Political Parties Meet",
     abbr: "AIPPM",
     topic: "Discussion on the constitutional validity of anti conversion laws in India.",
-    difficulty: "Advanced",
   },
   {
     name: "Fédération Internationale de l'Automobile",
     abbr: "FIA",
     topic: "Balancing driver rights, ethical responsibilities, and freedom of expression within motorsport governance.",
-    difficulty: "Intermediate",
   },
   {
     name: "International Press",
     abbr: "IP",
     topic: "Roleplay and reporting as Journalists and Photographers covering the proceedings of all committees.",
-    difficulty: "All Levels",
   },
 ];
 
@@ -93,12 +86,7 @@ const CommitteesPage = () => {
     setRotationOffset((prev) => prev - direction * (360 / committees.length));
   };
 
-  const getDifficultyColor = (diff: string) => {
-    if (diff.includes("Beginner")) return "bg-green-500";
-    if (diff.includes("Advanced")) return "bg-destructive";
-    if (diff.includes("Intermediate")) return "bg-yellow-500";
-    return "bg-primary";
-  };
+
 
   const TypewriterText = ({ text, delay = 0 }: { text: string, delay?: number }) => {
     const words = text.split(" ");
@@ -203,12 +191,6 @@ const CommitteesPage = () => {
                         <span className={`font-display font-bold text-[8px] md:text-sm tracking-wider transition-all duration-300 ${activeIndex === i ? 'text-primary text-glow' : 'text-muted-foreground group-hover:text-primary group-hover:text-glow'}`}>
                           {c.abbr}
                         </span>
-                        {activeIndex === i && (
-                          <div className="absolute -bottom-1 flex h-1.5 w-1.5 md:-bottom-2 md:mt-1">
-                            <span className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 ${getDifficultyColor(c.difficulty)}`}></span>
-                            <span className={`relative inline-flex rounded-full h-1.5 w-1.5 ${getDifficultyColor(c.difficulty)}`}></span>
-                          </div>
-                        )}
                       </motion.button>
                     </div>
                   </motion.div>
@@ -231,15 +213,7 @@ const CommitteesPage = () => {
                     {committees[activeIndex].name}
                   </h2>
 
-                  <div className="flex items-center justify-center gap-1 md:gap-2 mb-2 md:mb-3">
-                    <div className="relative flex h-1.5 w-1.5">
-                      <span className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 ${getDifficultyColor(committees[activeIndex].difficulty)}`}></span>
-                      <span className={`relative inline-flex rounded-full h-1.5 w-1.5 ${getDifficultyColor(committees[activeIndex].difficulty)}`}></span>
-                    </div>
-                    <span className="font-body text-[8px] md:text-[11px] text-muted-foreground uppercase tracking-widest">
-                      {committees[activeIndex].difficulty}
-                    </span>
-                  </div>
+
 
                   <div className="h-px w-full max-w-[200px] mb-2 md:mb-3 bg-primary/20" />
 
