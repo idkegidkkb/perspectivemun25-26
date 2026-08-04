@@ -27,7 +27,7 @@ const HeroSection = () => {
         {/* Left image - Active delegates collaborating/debating */}
         <div className="absolute left-[4%] top-[25%] w-[250px] h-[330px] rounded-2xl border border-primary/20 opacity-20 overflow-hidden rotate-[-4deg] shadow-[0_0_50px_rgba(0,0,0,0.6)]">
           <img
-            src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&q=80"
+            src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80"
             alt="Delegates Talking and Debating"
             className="w-full h-full object-cover filter contrast-[110%] brightness-[80%] sepia-[10%] grayscale hover:grayscale-0 transition-all duration-700"
           />
