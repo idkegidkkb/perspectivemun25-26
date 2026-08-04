@@ -58,12 +58,12 @@ const CommitteesPage = () => {
       const w = window.innerWidth;
       const h = window.innerHeight;
 
-      // Calculate a safe padding for the center box (160px half-width) + node size (50px half-width) + gap (30px)
-      // Maximum radius allowed by screen height constraints = (h - 220) / 2
-      const maxRadiusByHeight = Math.max(145, (h - 220) / 2);
+      // Calculate a safe padding for the center box + node size + gap
+      // Maximum radius allowed by screen height constraints
+      const maxRadiusByHeight = Math.max(115, (h - 220) / 2);
 
       let newRadius;
-      if (w < 768) newRadius = Math.min((w - 120) / 2, 160); // Constrain radius based on narrow screen width too
+      if (w < 768) newRadius = Math.min((w - 90) / 2, 175); // Constrain radius on mobile
       else if (w < 1024) newRadius = 240;
       else newRadius = 320;
 
@@ -196,11 +196,11 @@ const CommitteesPage = () => {
                           const diff = i - activeIndex;
                           changeCommittee(diff);
                         }}
-                        className={`relative flex flex-col items-center justify-center w-[56px] h-[56px] md:w-[96px] md:h-[96px] rounded-full glass-panel cursor-pointer group transition-all duration-500 border-2 ${activeIndex === i ? 'border-primary shadow-[0_0_30px_hsl(var(--blueprint-cyan)/0.6)] scale-110 z-20' : 'border-white/10 hover:border-primary/50 opacity-60 hover:opacity-100 z-10'}`}
+                        className={`relative flex flex-col items-center justify-center w-[48px] h-[48px] md:w-[96px] md:h-[96px] rounded-full glass-panel cursor-pointer group transition-all duration-500 border-2 ${activeIndex === i ? 'border-primary shadow-[0_0_30px_hsl(var(--blueprint-cyan)/0.6)] scale-110 z-20' : 'border-white/10 hover:border-primary/50 opacity-60 hover:opacity-100 z-10'}`}
                         whileHover={{ scale: activeIndex === i ? 1.1 : 1.05 }}
                         whileTap={{ scale: 0.95 }}
                       >
-                        <span className={`font-display font-bold text-[9px] md:text-sm tracking-wider transition-all duration-300 ${activeIndex === i ? 'text-primary text-glow' : 'text-muted-foreground group-hover:text-primary group-hover:text-glow'}`}>
+                        <span className={`font-display font-bold text-[8px] md:text-sm tracking-wider transition-all duration-300 ${activeIndex === i ? 'text-primary text-glow' : 'text-muted-foreground group-hover:text-primary group-hover:text-glow'}`}>
                           {c.abbr}
                         </span>
                         {activeIndex === i && (
@@ -217,7 +217,7 @@ const CommitteesPage = () => {
             </motion.div>
 
             {/* Center Active Details - Scaled Down intentionally to guarantee a gap */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-30 w-[70%] max-w-[170px] md:w-[85%] md:max-w-[320px]">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-30 w-[62%] max-w-[145px] md:w-[85%] md:max-w-[320px]">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={activeIndex}
@@ -225,26 +225,26 @@ const CommitteesPage = () => {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.8 }}
                   transition={{ duration: 0.4 }}
-                  className="glass-panel p-3 md:p-6 rounded-2xl text-center border border-primary/30 shadow-2xl bg-background/90 backdrop-blur-md pointer-events-auto flex flex-col justify-center items-center aspect-[4/3] md:aspect-auto"
+                  className="glass-panel p-2.5 md:p-6 rounded-2xl text-center border border-primary/30 shadow-2xl bg-background/95 backdrop-blur-md pointer-events-auto flex flex-col justify-center items-center aspect-auto py-4 md:py-6"
                 >
-                  <h2 className="font-display font-bold text-base md:text-lg text-foreground mb-2 text-glow leading-snug">
+                  <h2 className="font-display font-bold text-[10px] sm:text-base md:text-lg text-foreground mb-1.5 md:mb-2 text-glow leading-snug">
                     {committees[activeIndex].name}
                   </h2>
 
-                  <div className="flex items-center justify-center gap-2 mb-3">
+                  <div className="flex items-center justify-center gap-1 md:gap-2 mb-2 md:mb-3">
                     <div className="relative flex h-1.5 w-1.5">
                       <span className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 ${getDifficultyColor(committees[activeIndex].difficulty)}`}></span>
                       <span className={`relative inline-flex rounded-full h-1.5 w-1.5 ${getDifficultyColor(committees[activeIndex].difficulty)}`}></span>
                     </div>
-                    <span className="font-body text-[10px] md:text-[11px] text-muted-foreground uppercase tracking-widest">
+                    <span className="font-body text-[8px] md:text-[11px] text-muted-foreground uppercase tracking-widest">
                       {committees[activeIndex].difficulty}
                     </span>
                   </div>
 
-                  <div className="h-px w-full max-w-[200px] mb-3 bg-primary/20" />
+                  <div className="h-px w-full max-w-[200px] mb-2 md:mb-3 bg-primary/20" />
 
-                  <p className="font-body text-[10px] uppercase tracking-widest text-primary mb-2">Agenda</p>
-                  <p className="font-body text-xs md:text-sm text-foreground/90 leading-relaxed min-h-[60px] md:min-h-[80px]">
+                  <p className="font-body text-[8px] md:text-[10px] uppercase tracking-widest text-primary mb-1 md:mb-2">Agenda</p>
+                  <p className="font-body text-[9px] sm:text-xs md:text-sm text-foreground/90 leading-relaxed min-h-[48px] md:min-h-[80px]">
                     <TypewriterText text={committees[activeIndex].topic} delay={0.2} />
                   </p>
                 </motion.div>

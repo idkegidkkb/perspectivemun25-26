@@ -16,10 +16,6 @@ const faqs = [
     a: "Registration details and fees will be announced shortly. Follow our social channels for the latest updates.",
   },
   {
-    q: "Is accommodation provided?",
-    a: "We offer accommodation assistance for outstation delegates. Please fill out the accommodation form during registration to avail this service.",
-  },
-  {
     q: "What should I prepare before the conference?",
     a: "Once registered, you will receive your country and committee allocation along with a background guide. We recommend researching your country's stance on the agenda topic.",
   },

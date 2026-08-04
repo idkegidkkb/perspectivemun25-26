@@ -141,33 +141,6 @@ const AwardsPage = () => {
               </motion.div>
             ))}
           </div>
-
-          {/* Assessment Criteria Policy */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.98 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="glass-panel p-8 sm:p-10 rounded-xl border border-primary/20 bg-card relative overflow-hidden"
-          >
-            <div className="flex gap-4 items-start">
-              <Info className="w-6 h-6 text-primary shrink-0 mt-1" />
-              <div className="space-y-4">
-                <h3 className="font-display font-bold text-2xl text-primary tracking-wide uppercase">
-                  Assessment & Evaluation Guidelines
-                </h3>
-                <p className="font-body text-xs sm:text-sm text-foreground/80 leading-relaxed">
-                  Delegates will be evaluated objectively by our Executive Board throughout the two days of committee sessions. Factors determining candidate ranking include:
-                </p>
-                <ul className="list-disc list-inside font-body text-xs sm:text-sm text-muted-foreground space-y-2 pl-2">
-                  <li><strong>Research Quality</strong> &mdash; Deep understanding of portfolio position paper guidelines.</li>
-                  <li><strong>Debate & Speaking</strong> &mdash; Structure of GSL speeches and clarity of floor questions.</li>
-                  <li><strong>Diplomacy & Negotiation</strong> &mdash; Lobbying during unmoderated caucus to draft resolutions.</li>
-                  <li><strong>Resolution Contribution</strong> &mdash; Original clauses proposed in working papers.</li>
-                </ul>
-              </div>
-            </div>
-          </motion.div>
         </div>
       </main>
     </>

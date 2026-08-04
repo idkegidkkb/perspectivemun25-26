@@ -14,7 +14,7 @@ const steps = [
 const RegistrationsPage = () => {
   const { toast } = useToast();
   const [showModal, setShowModal] = useState(false);
-  const [activeForm, setActiveForm] = useState<"delegate" | "delegation" | "accommodation">("delegate");
+  const [activeForm, setActiveForm] = useState<"delegate" | "delegation">("delegate");
   
   // Delegate Form State
   const [delegateName, setDelegateName] = useState("");
@@ -28,12 +28,6 @@ const RegistrationsPage = () => {
   const [advisorName, setAdvisorName] = useState("");
   const [advisorEmail, setAdvisorEmail] = useState("");
   const [delegationSize, setDelegationSize] = useState("");
-  
-  // Accommodation Form State
-  const [accName, setAccName] = useState("");
-  const [accEmail, setAccEmail] = useState("");
-  const [accDelegates, setAccDelegates] = useState("");
-  const [accDays, setAccDays] = useState("2");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -52,9 +46,6 @@ const RegistrationsPage = () => {
     setAdvisorName("");
     setAdvisorEmail("");
     setDelegationSize("");
-    setAccName("");
-    setAccEmail("");
-    setAccDelegates("");
   };
 
   return (
@@ -229,7 +220,7 @@ const RegistrationsPage = () => {
 
               {/* Tabs inside modal */}
               <div className="flex gap-4 border-b border-white/5 pb-2 mb-6">
-                {(["delegate", "delegation", "accommodation"] as const).map((form) => (
+                {(["delegate", "delegation"] as const).map((form) => (
                   <button
                     key={form}
                     onClick={() => setActiveForm(form)}
@@ -237,7 +228,7 @@ const RegistrationsPage = () => {
                       activeForm === form ? "border-primary text-primary" : "border-transparent text-muted-foreground hover:text-foreground"
                     }`}
                   >
-                    {form === "delegate" ? "Delegate" : form === "delegation" ? "Group Delegation" : "Accommodation"}
+                    {form === "delegate" ? "Delegate" : "Group Delegation"}
                   </button>
                 ))}
               </div>
@@ -363,61 +354,7 @@ const RegistrationsPage = () => {
                   </>
                 )}
 
-                {activeForm === "accommodation" && (
-                  <>
-                    <h3 className="font-display font-bold text-2xl text-primary uppercase tracking-wide">
-                      Accommodation Request
-                    </h3>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      <div className="flex flex-col">
-                        <label className="font-body text-[9px] uppercase tracking-widest text-primary font-bold mb-1.5">Contact Person Name</label>
-                        <input
-                          type="text"
-                          required
-                          value={accName}
-                          onChange={(e) => setAccName(e.target.value)}
-                          placeholder="Name"
-                          className="bg-background border border-white/10 px-4 py-2.5 rounded text-xs text-foreground focus:outline-none focus:border-primary transition-colors font-body"
-                        />
-                      </div>
-                      <div className="flex flex-col">
-                        <label className="font-body text-[9px] uppercase tracking-widest text-primary font-bold mb-1.5">Contact Email</label>
-                        <input
-                          type="email"
-                          required
-                          value={accEmail}
-                          onChange={(e) => setAccEmail(e.target.value)}
-                          placeholder="email@example.com"
-                          className="bg-background border border-white/10 px-4 py-2.5 rounded text-xs text-foreground focus:outline-none focus:border-primary transition-colors font-body"
-                        />
-                      </div>
-                      <div className="flex flex-col">
-                        <label className="font-body text-[9px] uppercase tracking-widest text-primary font-bold mb-1.5">Lodging Delegate Count</label>
-                        <input
-                          type="number"
-                          required
-                          value={accDelegates}
-                          onChange={(e) => setAccDelegates(e.target.value)}
-                          placeholder="e.g. 6"
-                          min="1"
-                          className="bg-background border border-white/10 px-4 py-2.5 rounded text-xs text-foreground focus:outline-none focus:border-primary transition-colors font-body"
-                        />
-                      </div>
-                      <div className="flex flex-col">
-                        <label className="font-body text-[9px] uppercase tracking-widest text-primary font-bold mb-1.5">Nights of Stay</label>
-                        <select
-                          value={accDays}
-                          onChange={(e) => setAccDays(e.target.value)}
-                          className="bg-background border border-white/10 px-4 py-2.5 rounded text-xs text-foreground focus:outline-none focus:border-primary transition-colors font-body cursor-pointer h-[38px]"
-                        >
-                          <option value="1">1 Night (5th Sept)</option>
-                          <option value="2">2 Nights (4th-5th Sept)</option>
-                          <option value="3">3 Nights (4th-6th Sept)</option>
-                        </select>
-                      </div>
-                    </div>
-                  </>
-                )}
+
 
                 <div className="flex gap-2.5 bg-primary/5 border border-primary/20 p-3.5 rounded text-[11px] text-primary/95 leading-relaxed font-body">
                   <ShieldAlert className="w-4 h-4 shrink-0 text-primary mt-0.5" />

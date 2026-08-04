@@ -6,7 +6,7 @@ const timelineEvents = [
     {
         title: "Venue Announcement",
         date: "July 2026",
-        description: "Jay Hind College, Churchgate is officially announced as the venue for WSMUN '26.",
+        description: "Jai Hind College, Churchgate is officially announced as the venue for WSMUN '26.",
         completed: true,
     },
     {

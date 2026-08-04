@@ -51,7 +51,7 @@ const ContactSection = () => {
             <p className="font-body text-xs uppercase tracking-widest text-muted-foreground mb-4 flex items-center gap-2">
               <MapPin className="w-4 h-4 text-primary" /> Venue
             </p>
-            <p className="font-body text-sm text-foreground">Jay Hind College, Churchgate</p>
+            <p className="font-body text-sm text-foreground">Jai Hind College, Churchgate</p>
           </motion.div>
         </div>
       </section>
