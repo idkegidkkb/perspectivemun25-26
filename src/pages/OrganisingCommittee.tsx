@@ -16,12 +16,6 @@ const ocTeam = [
     bio: "Coordinates delegation invites, manages financial operations, and assists in key secretariat decisions."
   },
   {
-    role: "Co-Director General",
-    name: "Advait Chitnis",
-    dept: "Executive Secretariat",
-    bio: "Supervises general operations, budget management, and academic structures of the conference."
-  },
-  {
     role: "Deputy Secretary General",
     name: "Ethan Kokate",
     dept: "Executive Secretariat",

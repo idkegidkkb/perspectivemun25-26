@@ -105,7 +105,7 @@ const AboutUsPage = () => {
                             Letters from the Secretariat
                         </h2>
 
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div className="max-w-3xl mx-auto w-full">
                             {/* Secretary-General Letter */}
                             <motion.div
                                 initial={{ opacity: 0, y: 30 }}
@@ -137,40 +137,6 @@ const AboutUsPage = () => {
                                 <div className="mt-8 border-t border-white/5 pt-6 flex flex-col">
                                     <span className="font-body text-sm font-bold text-primary">Secretary-General</span>
                                     <span className="font-body text-xs text-muted-foreground uppercase tracking-widest mt-1">WSMUN 2026 Secretariat</span>
-                                </div>
-                            </motion.div>
-
-                            {/* Co-Director General Letter */}
-                            <motion.div
-                                initial={{ opacity: 0, y: 30 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.8, delay: 0.2 }}
-                                className="glass-panel p-8 rounded-xl border border-primary/20 bg-card relative overflow-hidden flex flex-col justify-between"
-                            >
-                                <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 blur-[40px] rounded-full pointer-events-none" />
-                                <div>
-                                    <h3 className="font-display font-bold text-2xl text-primary tracking-wide mb-2 uppercase">
-                                        Letter from the Co-Director General
-                                    </h3>
-                                    <p className="font-body text-xs italic text-muted-foreground mb-6 border-b border-white/5 pb-4">
-                                        "Wisdom begins in wonder." &mdash; Socrates
-                                    </p>
-                                    <div className="font-body text-xs sm:text-sm text-foreground/80 leading-relaxed space-y-4">
-                                        <p className="font-bold text-foreground">
-                                            Dear Delegates,
-                                        </p>
-                                        <p>
-                                            Every conference is shaped not only by the debates held within committee rooms, but also by the curiosity, collaboration, and mutual respect that each participant brings to the table. As you step into committee, I encourage you to approach every discussion with confidence, humility, and an open mind.
-                                        </p>
-                                        <p>
-                                            Speak with conviction, listen with intent, and remember that meaningful diplomacy is founded as much upon understanding as it is upon persuasion. Whether you are attending your first conference or your fifteenth, WSMUN promises an intellectually demanding and memorable experience.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="mt-8 border-t border-white/5 pt-6 flex flex-col">
-                                    <span className="font-body text-sm font-bold text-primary">Advait Chitnis</span>
-                                    <span className="font-body text-xs text-muted-foreground uppercase tracking-widest mt-1">Co-Director General, WSMUN 2026</span>
                                 </div>
                             </motion.div>
                         </div>
