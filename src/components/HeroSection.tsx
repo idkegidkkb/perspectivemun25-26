@@ -13,13 +13,13 @@ const HeroSection = () => {
       {/* Background UN assembly photo with low opacity and blending overlays */}
       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600&q=80"
-          alt="UN General Assembly Session Backdrop"
-          className="w-full h-full object-cover opacity-[0.06] md:opacity-[0.11] filter sepia-[10%] contrast-[105%] brightness-[85%]"
+          src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Beijing_Model_United_Nations_2015_GA-DISEC.jpg"
+          alt="Model UN General Assembly Session Backdrop"
+          className="w-full h-full object-cover opacity-[0.05] md:opacity-[0.09] filter sepia-[15%] contrast-[105%] brightness-[75%]"
         />
         {/* Vignette and blend gradients */}
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/30" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/45" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50" />
       </div>
 
       {/* Floating UN/Diplomacy backdrop photos (shown on desktop, hidden on mobile for responsiveness) */}
@@ -27,9 +27,9 @@ const HeroSection = () => {
         {/* Left image - Active delegates collaborating/debating */}
         <div className="absolute left-[4%] top-[25%] w-[250px] h-[330px] rounded-2xl border border-primary/20 opacity-20 overflow-hidden rotate-[-4deg] shadow-[0_0_50px_rgba(0,0,0,0.6)]">
           <img
-            src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80"
+            src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Athens_model_united_nations_2010.jpg"
             alt="Delegates Talking and Debating"
-            className="w-full h-full object-cover filter contrast-[110%] brightness-95 grayscale hover:grayscale-0 transition-all duration-700"
+            className="w-full h-full object-cover filter contrast-[110%] brightness-[80%] sepia-[10%] grayscale hover:grayscale-0 transition-all duration-700"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-85" />
         </div>
@@ -37,9 +37,9 @@ const HeroSection = () => {
         {/* Right image - Delegates in session */}
         <div className="absolute right-[4%] top-[20%] w-[270px] h-[350px] rounded-2xl border border-primary/20 opacity-20 overflow-hidden rotate-[4deg] shadow-[0_0_50px_rgba(0,0,0,0.6)]">
           <img
-            src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?w=600&q=80"
+            src="https://upload.wikimedia.org/wikipedia/commons/e/e9/CarMUN_2016.jpg"
             alt="UN Session Delegates"
-            className="w-full h-full object-cover filter contrast-[110%] brightness-95 grayscale hover:grayscale-0 transition-all duration-700"
+            className="w-full h-full object-cover filter contrast-[110%] brightness-[80%] sepia-[10%] grayscale hover:grayscale-0 transition-all duration-700"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-85" />
         </div>
