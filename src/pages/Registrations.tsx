@@ -172,16 +172,16 @@ const RegistrationsPage = () => {
                   SECRETARIAT CONTACTS & QUERIES
                 </span>
                 <div className="flex justify-between">
-                  <span>Ethan Kokate (Deputy SG):</span>
-                  <a href="tel:+919136123809" className="text-foreground hover:text-primary transition-colors font-semibold">+91 91361 23809</a>
-                </div>
-                <div className="flex justify-between">
                   <span>Raunak Jha (SG):</span>
                   <a href="tel:+918928324690" className="text-foreground hover:text-primary transition-colors font-semibold">+91 89283 24690</a>
                 </div>
                 <div className="flex justify-between">
                   <span>Sachet Agarwal (Co-SG):</span>
                   <a href="tel:+919987689845" className="text-foreground hover:text-primary transition-colors font-semibold">+91 99876 89845</a>
+                </div>
+                <div className="flex justify-between">
+                  <span>Ethan Kokate (Deputy SG):</span>
+                  <a href="tel:+919136123809" className="text-foreground hover:text-primary transition-colors font-semibold">+91 91361 23809</a>
                 </div>
               </div>
             </motion.div>
