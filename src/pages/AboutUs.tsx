@@ -1,69 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
 import TopNav from "@/components/TopNav";
 
-const executiveBoards = [
-    {
-        committee: "United Nations Security Council",
-        abbr: "UNSC",
-        members: [
-            { role: "Chairperson", name: "Parth Verturkar" },
-            { role: "Vice Chairperson", name: "Kshitij Jadhav" }
-        ]
-    },
-    {
-        committee: "United Nations General Assembly",
-        abbr: "UNGA",
-        members: [
-            { role: "Chairperson", name: "Yog Ashok Rai" },
-            { role: "Vice Chairperson", name: "Saanvi Saluja" }
-        ]
-    },
-    {
-        committee: "Economic and Social Council",
-        abbr: "ECOSOC",
-        members: [
-            { role: "Chairperson", name: "Aditya Dutta" },
-            { role: "Vice Chairperson", name: "Aarav Sharma" }
-        ]
-    },
-    {
-        committee: "United Nations Human Rights Council",
-        abbr: "UNHRC",
-        members: [
-            { role: "Chairperson", name: "Prakket Dholekar" },
-            { role: "Vice Chairperson", name: "Ahad Khan" },
-            { role: "Rapporteur", name: "Sukriti Sahay" }
-        ]
-    },
-    {
-        committee: "All India Political Parties Meet",
-        abbr: "AIPPM",
-        members: [
-            { role: "Co-Chairperson", name: "Anuj Shenoy" },
-            { role: "Co-Chairperson", name: "Tapasya Dumbre" }
-        ]
-    },
-    {
-        committee: "Fédération Internationale de l'Automobile",
-        abbr: "FIA",
-        members: [
-            { role: "Chairperson", name: "Mrugaja Prabhu" },
-            { role: "Vice Chairperson", name: "Valen Kumar" },
-            { role: "Co-Vice Chairperson", name: "Saatvik Joshi" }
-        ]
-    },
-    {
-        committee: "International Press",
-        abbr: "IP",
-        members: [
-            { role: "Chairperson", name: "Ms. Shriya Rajan" }
-        ]
-    }
-];
-
 const AboutUsPage = () => {
-    const [activeEb, setActiveEb] = useState(0);
 
     return (
         <>
@@ -167,54 +105,10 @@ const AboutUsPage = () => {
                         </div>
 
                         {/* Executive Board Modular View */}
-                        <div className="relative z-10 mt-12">
-                            <div className="flex flex-wrap gap-2 justify-start mb-8">
-                                {executiveBoards.map((eb, index) => (
-                                    <button
-                                        key={eb.abbr}
-                                        onClick={() => setActiveEb(index)}
-                                        className={`relative px-4 py-2 rounded-full font-body text-xs font-bold uppercase tracking-widest transition-all duration-300 ${
-                                            activeEb === index
-                                                ? "text-primary"
-                                                : "text-muted-foreground hover:text-foreground bg-black/5"
-                                        }`}
-                                    >
-                                        {activeEb === index && (
-                                            <motion.div
-                                                layoutId="active-eb-tab"
-                                                className="absolute inset-0 border border-primary bg-primary/5 rounded-full"
-                                                transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                                            />
-                                        )}
-                                        <span className="relative z-10">{eb.abbr}</span>
-                                    </button>
-                                ))}
-                            </div>
-
-                            <div className="relative min-h-[200px]">
-                                <AnimatePresence mode="wait">
-                                    <motion.div
-                                        key={activeEb}
-                                        initial={{ opacity: 0, y: 10 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        exit={{ opacity: 0, y: -10 }}
-                                        transition={{ duration: 0.3 }}
-                                        className="p-6 md:p-8 rounded-2xl border border-primary/10 bg-background/40 focus:outline-none"
-                                    >
-                                        <h3 className="font-display font-bold text-xl md:text-2xl text-primary mb-6 text-glow">
-                                            {executiveBoards[activeEb].committee}
-                                        </h3>
-                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                            {executiveBoards[activeEb].members.map((member, mIndex) => (
-                                                <div key={mIndex} className="flex flex-col md:flex-row md:items-center justify-between bg-primary/[0.04] p-4 rounded-xl border border-primary/10 gap-2">
-                                                    <span className="font-body text-xs font-bold text-primary/80 uppercase tracking-[0.2em]">{member.role}</span>
-                                                    <span className="font-body text-sm text-foreground font-medium">{member.name}</span>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    </motion.div>
-                                </AnimatePresence>
-                            </div>
+                        <div className="relative z-10 mt-12 p-6 md:p-8 rounded-2xl border border-primary/10 bg-background/40">
+                            <p className="font-body text-sm sm:text-base text-center text-foreground/80">
+                                The executive board will be unveiled soon
+                            </p>
                         </div>
                     </motion.div>
                 </div>

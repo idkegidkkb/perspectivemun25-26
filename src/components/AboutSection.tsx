@@ -67,7 +67,7 @@ const AboutSection = () => {
         {/* Stats Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20 relative z-10">
           {[
-            { number: "07", label: "Chambers", icon: Landmark },
+          { number: "07", label: "Committees", icon: Landmark },
             { number: "150+", label: "Delegates Expected", icon: Users },
             { number: "02", label: "Days of Debate", icon: CalendarDays },
           ].map((stat, i) => (

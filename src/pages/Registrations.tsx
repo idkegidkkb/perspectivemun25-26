@@ -5,10 +5,10 @@ import { ShieldAlert, Send, X } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const steps = [
-  { num: "01", text: "Fill out the registration form with your details and three committee–portfolio preferences." },
-  { num: "02", text: "Complete the payment of the delegate fee as per the instructions on the form." },
-  { num: "03", text: "Receive your allotment and study guide over email within a few days of registering." },
-  { num: "04", text: "Report to the venue on Day 1 and enjoy your experience as a delegate at WSMUN '26." }
+  { num: "01", text: "Fill out the registration form with your details and three committee–portfolio preferences" },
+  { num: "02", text: "Complete the payment of the delegate fee as per the instructions on the form" },
+  { num: "03", text: "Receive your allotment and study guide over email within a few days of registering" },
+  { num: "04", text: "Report to the venue on Day 1 and enjoy your experience as a delegate at WSMUN '26" }
 ];
 
 const RegistrationsPage = () => {
@@ -128,7 +128,7 @@ const RegistrationsPage = () => {
 
               {/* Referrals Notice */}
               <div className="bg-primary/5 border border-primary/20 p-3.5 rounded text-[10px] text-foreground/90 leading-relaxed font-body mb-6">
-                💡 <span className="font-bold text-primary">Referrals:</span> Make sure to use <span className="font-bold text-primary">Arjun</span> or <span className="font-bold text-primary">Nayan</span> in the referrals section of the form.
+                💡 <span className="font-bold text-primary">Referrals:</span> Make sure to use <span className="font-bold text-primary">Arjun</span> or <span className="font-bold text-primary">Nayan</span> in the referrals section of the form
               </div>
 
               {/* CTA Buttons */}
@@ -154,7 +154,7 @@ const RegistrationsPage = () => {
               {/* Cash Prizes Section */}
               <div className="space-y-3 font-body text-[11px] border-t border-primary/10 pt-4 mb-6">
                 <span className="font-body text-[9px] uppercase tracking-widest text-primary font-bold block mb-1">
-                  CASH PRIZES (OVER ₹75,000 TOTAL VALUE)
+                  CASH PRIZES (OVER ₹190,000 TOTAL VALUE)
                 </span>
                 <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-foreground/90">
                   <div className="flex justify-between border-b border-primary/5 pb-1"><span className="text-muted-foreground">Best Delegate:</span> <span className="font-semibold">₹10,000</span></div>

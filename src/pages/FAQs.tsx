@@ -5,7 +5,7 @@ import TopNav from "@/components/TopNav";
 const faqs = [
   {
     q: "What is Model United Nations?",
-    a: "Model United Nations (MUN) is an educational simulation where students role-play as delegates of the United Nations, debating real-world issues and drafting resolutions.",
+    a: "Model United Nations (MUN) is an educational simulation where students role-play as delegates of the United Nations, debating real-world issues and drafting resolutions",
   },
   {
     q: "Who can participate in WSMUN '26?",
@@ -60,7 +60,7 @@ const FAQsPage = () => {
             FAQs
           </motion.h1>
           <p className="font-body text-sm text-muted-foreground mb-16">
-            Everything you need to know before the conference.
+            Everything you need to know before the conference
           </p>
 
           <div>

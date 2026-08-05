@@ -7,19 +7,19 @@ const ocTeam = [
     role: "Secretary-General",
     name: "Raunak Jha",
     dept: "Executive Secretariat",
-    bio: "Head representative, directing summit activities, coordinating academic content, and overseeing external affairs."
+    bio: "Head representative, directing summit activities, coordinating academic content, and overseeing external affairs"
   },
   {
     role: "Co-Secretary General",
     name: "Sachet Agarwal",
     dept: "Executive Secretariat",
-    bio: "Coordinates delegation invites, manages financial operations, and assists in key secretariat decisions."
+    bio: "Coordinates delegation invites, manages financial operations, and assists in key secretariat decisions"
   },
   {
     role: "Deputy Secretary General",
     name: "Ethan Kokate",
     dept: "Executive Secretariat",
-    bio: "Manages organizing committees, logistics pipelines, and oversees communication pipelines."
+    bio: "Manages organizing committees, logistics pipelines, and oversees communication pipelines"
   }
 ];
 
@@ -47,7 +47,7 @@ const OrganisingCommitteePage = () => {
             </h1>
             <div className="h-[2px] w-24 bg-primary rounded-full mb-8"></div>
             <p className="font-body text-sm sm:text-base text-foreground/80 leading-relaxed max-w-3xl">
-              The behind-the-scenes organizers managing operations, registrations, logistics, finance, and marketing for WSMUN '26.
+              The behind-the-scenes organizers managing operations, registrations, logistics, finance, and marketing for WSMUN '26
             </p>
           </motion.div>
 

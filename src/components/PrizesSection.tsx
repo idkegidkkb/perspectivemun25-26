@@ -5,7 +5,7 @@ const prizes = [
   {
     title: "Best Delegation",
     amount: "₹20,000",
-    description: "Awarded to the most outstanding overall institution delegation.",
+    description: "Awarded to the most outstanding overall institution delegation",
     icon: Users,
     glow: "shadow-[0_0_30px_rgba(212,175,55,0.15)]",
     border: "border-primary/10 hover:border-primary/70",
@@ -15,7 +15,7 @@ const prizes = [
   {
     title: "Best of the Best",
     amount: "₹10,000",
-    description: "Supreme individual recognition for the finest diplomatic showcase.",
+    description: "Supreme individual recognition for the finest diplomatic showcase",
     icon: Crown,
     glow: "shadow-[0_0_30px_rgba(212,175,55,0.15)]",
     border: "border-primary/10 hover:border-primary/70",
@@ -25,7 +25,7 @@ const prizes = [
   {
     title: "Best Delegate",
     amount: "₹10,000",
-    description: "Outstanding representation, negotiation, and leadership in committee.",
+    description: "Outstanding representation, negotiation, and leadership in committee",
     icon: Trophy,
     glow: "shadow-[0_0_30px_rgba(212,175,55,0.15)]",
     border: "border-primary/10 hover:border-primary/70",
@@ -35,7 +35,7 @@ const prizes = [
   {
     title: "High Commendation",
     amount: "₹8,000",
-    description: "Recognizing exceptional debate and active diplomacy throughout.",
+    description: "Recognizing exceptional debate and active diplomacy throughout",
     icon: Medal,
     glow: "shadow-[0_0_30px_rgba(212,175,55,0.15)]",
     border: "border-primary/10 hover:border-primary/70",
@@ -45,7 +45,7 @@ const prizes = [
   {
     title: "Best Journalist",
     amount: "₹7,000",
-    description: "Excellence in editorial reporting, speed, and analytical insight.",
+    description: "Excellence in editorial reporting, speed, and analytical insight",
     icon: Newspaper,
     glow: "shadow-[0_0_30px_rgba(212,175,55,0.15)]",
     border: "border-primary/10 hover:border-primary/70",
@@ -55,7 +55,7 @@ const prizes = [
   {
     title: "Best Photographer",
     amount: "₹7,000",
-    description: "Capturing the intensity, drama, and essence of the summit visually.",
+    description: "Capturing the intensity, drama, and essence of the summit visually",
     icon: Camera,
     glow: "shadow-[0_0_30px_rgba(212,175,55,0.15)]",
     border: "border-primary/10 hover:border-primary/70",
@@ -65,7 +65,7 @@ const prizes = [
   {
     title: "Special Mention",
     amount: "₹6,000",
-    description: "Commending notable effort, research quality, and performance.",
+    description: "Commending notable effort, research quality, and performance",
     icon: Star,
     glow: "shadow-[0_0_30px_rgba(212,175,55,0.15)]",
     border: "border-primary/10 hover:border-primary/70",
@@ -100,8 +100,8 @@ const PrizesSection = () => {
                 Cash Prizes & Awards
               </h2>
               <p className="font-body text-sm sm:text-base text-muted-foreground max-w-2xl leading-relaxed text-foreground/80">
-                With a total prize pool of over <span className="text-primary font-bold text-glow">₹70,000+</span>, 
-                WSMUN'26 recognizes and rewards outstanding diplomatic aptitude and press excellence.
+                With a total prize pool of over <span className="text-primary font-bold text-glow">₹190,000</span>, 
+                WSMUN'26 recognizes and rewards outstanding diplomatic aptitude and press excellence
               </p>
             </motion.div>
           </div>
@@ -118,7 +118,7 @@ const PrizesSection = () => {
                 className={`glass-panel p-6 md:p-8 rounded-xl border transition-all duration-300 relative group flex flex-col h-full ${prize.border} hover:${prize.glow}`}
               >
                 <div className="flex justify-between items-start mb-6">
-                  <div className="p-3 rounded-lg bg-white/5 border border-white/10 group-hover:bg-primary/10 group-hover:border-primary/20 transition-colors duration-300">
+                  <div className="p-3 rounded-lg bg-foreground/5 border border-foreground/10 group-hover:bg-primary/10 group-hover:border-primary/20 transition-colors duration-300">
                     <prize.icon className="w-6 h-6 text-primary" strokeWidth={1.5} />
                   </div>
                   <span className={`text-[9px] font-body font-bold uppercase tracking-wider px-2 py-0.5 rounded border ${prize.badgeColor}`}>
@@ -134,7 +134,7 @@ const PrizesSection = () => {
                   {prize.description}
                 </p>
 
-                <div className="mt-auto border-t border-white/5 pt-4 flex items-baseline gap-2">
+                <div className="mt-auto border-t border-foreground/5 pt-4 flex items-baseline gap-2">
                   <span className="font-body text-[10px] text-muted-foreground uppercase tracking-widest font-bold">Prize:</span>
                   <span className="font-display font-extrabold text-3xl text-primary text-glow group-hover:scale-105 transition-transform duration-300 origin-left">
                     {prize.amount}

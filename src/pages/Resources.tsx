@@ -101,7 +101,7 @@ const ResourcesPage = () => {
                   Rules of Procedure (ROP)
                 </h3>
                 <p className="font-body text-xs text-muted-foreground mt-1">
-                  General handbook on debate rules, speaking points, and resolution drafting.
+                  General handbook on debate rules, speaking points, and resolution drafting
                 </p>
               </div>
               <button
@@ -127,7 +127,7 @@ const ResourcesPage = () => {
                   Position Paper Guide
                 </h3>
                 <p className="font-body text-xs text-muted-foreground mt-1">
-                  Instructions on format, citation requirements, and layout guidelines.
+                  Instructions on format, citation requirements, and layout guidelines
                 </p>
               </div>
               <button

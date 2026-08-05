@@ -6,37 +6,37 @@ const timelineEvents = [
     {
         title: "Venue Announcement",
         date: "July 2026",
-        description: "Jai Hind College, Churchgate is officially announced as the venue for WSMUN '26.",
+        description: "Jai Hind College, Churchgate is officially announced as the venue for WSMUN '26",
         completed: true,
     },
     {
         title: "Registration Opens",
         date: "August 2026",
-        description: "Delegate, Delegation, and International Press applications are officially open.",
+        description: "Delegate, Delegation, and International Press applications are officially open",
         completed: true,
     },
     {
         title: "Executive Board Announcement",
         date: "Mid August 2026",
-        description: "Meet the experienced Chairs and Directors leading our committees.",
+        description: "Meet the experienced Chairs and Directors leading our committees",
         completed: false,
     },
     {
         title: "Background Guides Released",
         date: "Late August 2026",
-        description: "Study guides and study materials for each committee agenda will be released.",
+        description: "Study guides and study materials for each committee agenda will be released",
         completed: false,
     },
     {
         title: "Conference Day 1",
         date: "5th September 2026",
-        description: "Opening ceremony followed by high-level committee sessions at Churchgate.",
+        description: "Opening ceremony followed by high-level committee sessions at Churchgate",
         completed: false,
     },
     {
         title: "Conference Day 2",
         date: "6th September 2026",
-        description: "Intense debates, voting, and the final Awards & Closing Ceremony.",
+        description: "Intense debates, voting, and the final Awards & Closing Ceremony",
         completed: false,
     }
 ];

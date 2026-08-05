@@ -6,37 +6,37 @@ const committees = [
   {
     name: "United Nations Security Council",
     abbr: "UNSC",
-    topic: "Deliberating upon the proliferation of unmanned aerial systems and loitering munitions and their implications for international peace and security.",
+    topic: "Deliberating upon the proliferation of unmanned aerial systems and loitering munitions and their implications for international peace and security",
   },
   {
     name: "United Nations General Assembly",
     abbr: "UNGA",
-    topic: "Balancing mandate and agenda prioritization against the logistical and budgetary constraints in the United Nations.",
+    topic: "Balancing mandate and agenda prioritization against the logistical and budgetary constraints in the United Nations",
   },
   {
     name: "Economic and Social Council",
     abbr: "ECOSOC",
-    topic: "Reforming Bilateral Investment Treaties (BITs) to promote sustainable development and equitable foreign investment.",
+    topic: "Reforming Bilateral Investment Treaties (BITs) to promote sustainable development and equitable foreign investment",
   },
   {
     name: "United Nations Human Rights Council",
     abbr: "UNHRC",
-    topic: "Deliberating upon the human rights violations caused by various economic systems.",
+    topic: "Deliberating upon the human rights violations caused by various economic systems",
   },
   {
     name: "All India Political Parties Meet",
     abbr: "AIPPM",
-    topic: "Discussion on the constitutional validity of anti conversion laws in India.",
+    topic: "Discussion on the constitutional validity of anti conversion laws in India",
   },
   {
     name: "Fédération Internationale de l'Automobile",
     abbr: "FIA",
-    topic: "Balancing driver rights, ethical responsibilities, and freedom of expression within motorsport governance.",
+    topic: "Balancing driver rights, ethical responsibilities, and freedom of expression within motorsport governance",
   },
   {
     name: "International Press",
     abbr: "IP",
-    topic: "Roleplay and reporting as Journalists and Photographers covering the proceedings of all committees.",
+    topic: "Roleplay and reporting as Journalists and Photographers covering the proceedings of all committees",
   },
 ];
 
@@ -136,7 +136,7 @@ const CommitteesPage = () => {
               <TypewriterText text="Committees" delay={0.2} />
             </h1>
             <p className="font-body text-xs md:text-sm text-muted-foreground max-w-lg mx-auto leading-relaxed px-4">
-              <TypewriterText text="Choose your arena. Each committee offers a unique challenge." delay={0.6} />
+              <TypewriterText text="Choose your arena, where each committee offers a unique challenge" delay={0.6} />
             </p>
           </div>
 

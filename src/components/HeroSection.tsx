@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   const containerRef = useRef<HTMLElement>(null);
@@ -57,7 +58,7 @@ const HeroSection = () => {
           >
             <div className="w-8 h-px bg-primary" />
             <span className="font-body text-xs uppercase tracking-[0.25em] text-primary font-bold">
-              EDITION I | 2026
+              first edition
             </span>
             <div className="w-8 h-px bg-primary" />
           </motion.div>
@@ -68,7 +69,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="font-display font-extrabold text-[5.5rem] sm:text-[7.5rem] md:text-[8.5rem] lg:text-[10rem] fluid-text tracking-tight text-center"
+              className="font-display font-extrabold text-[5.5rem] sm:text-[7.5rem] md:text-[8.5rem] lg:text-[10rem] beige-fluid-text text-glow tracking-tight text-center"
             >
               WSMUN
             </motion.h1>
@@ -76,7 +77,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="font-display font-extrabold text-[5.5rem] sm:text-[7.5rem] md:text-[8.5rem] lg:text-[10rem] fluid-text tracking-tight -mt-2 sm:-mt-8 md:-mt-10 text-center"
+              className="font-display font-extrabold text-[5.5rem] sm:text-[7.5rem] md:text-[8.5rem] lg:text-[10rem] beige-fluid-text text-glow tracking-tight -mt-2 sm:-mt-8 md:-mt-10 text-center"
             >
               2026
             </motion.h1>
@@ -99,7 +100,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.7 }}
             className="font-body text-muted-foreground text-xs sm:text-base max-w-xl leading-relaxed mb-10 text-foreground/80 text-center mx-auto"
           >
-            Where diplomacy, debate and deliberation shape the leaders of tomorrow.
+            Where diplomacy, debate and deliberation shape the leaders of tomorrow
           </motion.p>
 
           {/* Detailed Info Columns Grid */}
@@ -135,7 +136,7 @@ const HeroSection = () => {
                 COMMITTEES
               </p>
               <p className="font-body text-xs sm:text-base font-bold text-foreground">
-                7 Chambers
+                7 Committees
               </p>
             </div>
           </motion.div>
@@ -153,12 +154,12 @@ const HeroSection = () => {
             >
               Register Now
             </a>
-            <a
-              href="#about"
+            <Link
+              to="/committees"
               className="border border-primary/50 text-primary hover:bg-primary hover:text-background font-body font-bold text-[11px] uppercase tracking-[0.25em] py-4 px-10 transition-all duration-300 w-full sm:w-auto text-center"
             >
               Explore Committees
-            </a>
+            </Link>
           </motion.div>
         </div>
 

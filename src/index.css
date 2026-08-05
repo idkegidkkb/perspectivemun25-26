@@ -97,6 +97,8 @@
     background-position: center;
   }
 
+
+
   .fluid-text {
     background: linear-gradient(90deg,
         hsl(350 85% 55%),
@@ -104,6 +106,20 @@
         hsl(340 80% 55%),
         hsl(350 85% 55%),
         hsl(38 90% 60%));
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fluid-flow 6s ease-in-out infinite;
+  }
+
+  .beige-fluid-text {
+    background: linear-gradient(90deg,
+        hsl(35 45% 85%),
+        hsl(38 65% 75%),
+        hsl(30 40% 90%),
+        hsl(35 45% 85%),
+        hsl(38 65% 75%));
     background-size: 300% 100%;
     -webkit-background-clip: text;
     background-clip: text;

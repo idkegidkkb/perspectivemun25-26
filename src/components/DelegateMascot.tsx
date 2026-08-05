@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import { X } from "lucide-react";
 
 const motionsList = [
-    { text: "Motion to view the committees.", link: "/committees", btnText: "Seconded. View Committees" },
-    { text: "Motion to view the about section.", link: "/about", btnText: "Seconded. About Us" },
-    { text: "Motion to view the FAQs.", link: "/faqs", btnText: "Seconded. Read FAQs" },
-    { text: "Motion to register for WSMUN '26.", link: "/#register", btnText: "Seconded. Register Now" },
+    { text: "Motion to view the committees", link: "/committees", btnText: "Seconded. View Committees" },
+    { text: "Motion to view the about section", link: "/about", btnText: "Seconded. About Us" },
+    { text: "Motion to view the FAQs", link: "/faqs", btnText: "Seconded. Read FAQs" },
+    { text: "Motion to register for WSMUN '26", link: "/#register", btnText: "Seconded. Register Now" },
 ];
 
 const DelegateMascot = () => {
