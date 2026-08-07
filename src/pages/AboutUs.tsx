@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import TopNav from "@/components/TopNav";
+import { Link } from "react-router-dom";
 
 const AboutUsPage = () => {
 
@@ -25,7 +26,7 @@ const AboutUsPage = () => {
                             About Us
                         </h1>
                         <div className="h-[2px] w-24 bg-primary rounded-full mb-8"></div>
-                        
+
                         <p className="font-body text-sm sm:text-base text-foreground/80 leading-relaxed max-w-3xl">
                             Welcome to World Summit Model United Nations 2026 (WSMUN '26), where global thinking meets localized action. We are a premier Model United Nations conference dedicated to breeding the next generation of diplomats, policymakers, and global leaders through rigorous debate and collaborative problem-solving.
                         </p>
@@ -105,10 +106,24 @@ const AboutUsPage = () => {
                         </div>
 
                         {/* Executive Board Modular View */}
-                        <div className="relative z-10 mt-12 p-6 md:p-8 rounded-2xl border border-primary/10 bg-background/40">
-                            <p className="font-body text-sm sm:text-base text-center text-foreground/80">
-                                The executive board will be unveiled soon
+                        <div className="relative z-10 mt-12 p-8 md:p-10 rounded-2xl border border-primary/20 bg-background/40 flex flex-col items-center justify-center text-center backdrop-blur-sm overflow-hidden group hover:border-primary/45 transition-colors duration-500">
+                            <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-primary/30 group-hover:border-primary/60 transition-colors" />
+                            <div className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-primary/30 group-hover:border-primary/60 transition-colors" />
+                            <div className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-primary/30 group-hover:border-primary/60 transition-colors" />
+                            <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-primary/30 group-hover:border-primary/60 transition-colors" />
+                            
+                            <h3 className="font-display font-bold text-xl md:text-2xl text-primary tracking-wide mb-3 uppercase">
+                                The Executive Board has been Unveiled
+                            </h3>
+                            <p className="font-body text-xs sm:text-sm text-foreground/75 max-w-lg mb-6 leading-relaxed">
+                                Meet the accomplished Chairs, Directors, and Rapporteurs leading our committees for WSMUN '26.
                             </p>
+                            <Link 
+                                to="/executive-board" 
+                                className="px-6 py-3 bg-primary/10 hover:bg-primary text-primary hover:text-background border border-primary/30 hover:border-primary font-body font-bold text-xs uppercase tracking-widest rounded transition-all duration-300 shadow-[0_0_15px_rgba(240,220,180,0.05)] hover:shadow-[0_0_20px_rgba(240,220,180,0.2)]"
+                            >
+                                Explore Executive Board
+                            </Link>
                         </div>
                     </motion.div>
                 </div>

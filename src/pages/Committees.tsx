@@ -6,32 +6,32 @@ const committees = [
   {
     name: "United Nations Security Council",
     abbr: "UNSC",
-    topic: "Deliberating upon the proliferation of unmanned aerial systems and loitering munitions and their implications for international peace and security",
+    topic: "Deliberating Upon the Proliferation of Unmanned Aerial Systems and Loitering Munitions and Their Implications for International Peace and Security.",
   },
   {
     name: "United Nations General Assembly",
     abbr: "UNGA",
-    topic: "Balancing mandate and agenda prioritization against the logistical and budgetary constraints in the United Nations",
+    topic: "Balancing Mandate and Agenda Prioritization Against the Logistical and Budgetary Constraints in the UN.",
   },
   {
     name: "Economic and Social Council",
     abbr: "ECOSOC",
-    topic: "Reforming Bilateral Investment Treaties (BITs) to promote sustainable development and equitable foreign investment",
+    topic: "Deliberating Upon the Reform of Bilateral Investment Treaties (BITs) to Promote Sustainable Development and Equitable Foreign Investment.",
   },
   {
     name: "United Nations Human Rights Council",
     abbr: "UNHRC",
-    topic: "Deliberating upon the human rights violations caused by various economic systems",
+    topic: "Deliberating Upon the Human Rights Violations Caused by Various Economic Systems.",
   },
   {
     name: "All India Political Parties Meet",
     abbr: "AIPPM",
-    topic: "Discussion on the constitutional validity of anti conversion laws in India",
+    topic: "Discussion and deliberation on the constitutional validity of anti conversion laws in india",
   },
   {
     name: "Fédération Internationale de l'Automobile",
     abbr: "FIA",
-    topic: "Balancing driver rights, ethical responsibilities, and freedom of expression within motorsport governance",
+    topic: "Addressing the Balance Between Driver Rights, Ethical Responsibilities, and Freedom of Expression Within Motorsport Governance.",
   },
   {
     name: "International Press",
