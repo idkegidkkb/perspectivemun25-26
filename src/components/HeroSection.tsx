@@ -49,6 +49,20 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto w-full flex flex-col items-center justify-center relative z-10">
         {/* Centered Content */}
         <div className="flex flex-col items-center text-center w-full max-w-4xl">
+          {/* Logo */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            className="mb-6 flex justify-center"
+          >
+            <img 
+              src="/photos/World_Summit_Logo-removebg-preview.png" 
+              alt="WSMUN Logo" 
+              className="w-28 h-28 sm:w-36 sm:h-36 object-contain filter drop-shadow-[0_0_25px_rgba(240,220,180,0.15)] hover:scale-105 transition-transform duration-500" 
+            />
+          </motion.div>
+
           {/* Edition Tag */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}

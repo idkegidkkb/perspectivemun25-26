@@ -44,13 +44,13 @@ const ebMembers: EBMember[] = [
     name: "Aditya Dutta",
     role: "Chair",
     committee: "ECOSOC",
-    image: "",
+    image: "/photos/Aditya Dutta.jpeg",
   },
   {
     name: "Aarav Sharma",
     role: "Vice Chair",
     committee: "ECOSOC",
-    image: "",
+    image: "/photos/Aarav Sharma.jpeg",
   },
   // UNHRC
   {

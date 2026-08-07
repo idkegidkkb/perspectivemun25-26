@@ -34,7 +34,8 @@ const TopNav = () => {
     >
       <div className="max-w-[95%] mx-auto flex items-center justify-between px-4 py-2">
         <Link to="/" className="font-display font-bold text-lg tracking-[0.15em] uppercase text-foreground hover:text-primary transition-colors flex items-center gap-2">
-          WSMUN <span className="text-primary font-body text-xs tracking-wider">2026</span>
+          <img src="/photos/World_Summit_Logo-removebg-preview.png" alt="WSMUN Logo" className="h-8 w-auto filter brightness-100" />
+          <span>WSMUN</span> <span className="text-primary font-body text-xs tracking-wider">2026</span>
         </Link>
 
         {/* Desktop nav */}
