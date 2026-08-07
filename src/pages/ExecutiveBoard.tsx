@@ -8,6 +8,7 @@ interface EBMember {
   role: string;
   committee: string;
   image: string;
+  objectPosition?: string;
 }
 
 const ebMembers: EBMember[] = [
@@ -36,6 +37,7 @@ const ebMembers: EBMember[] = [
     role: "Vice Chair",
     committee: "UNGA",
     image: "/photos/Sanvi Saluja.jpeg",
+    objectPosition: "object-center",
   },
   // ECOSOC
   {
@@ -201,7 +203,7 @@ const ExecutiveBoardPage = () => {
                             <img
                               src={member.image}
                               alt={member.name}
-                              className="object-cover object-top w-full h-full filter brightness-[0.85] group-hover:scale-105 group-hover:brightness-100 transition-all duration-700"
+                              className={`object-cover w-full h-full filter brightness-[0.85] group-hover:scale-105 group-hover:brightness-100 transition-all duration-700 ${member.objectPosition || "object-top"}`}
                               onError={(e) => {
                                 // fallback if image fails to load
                                 e.currentTarget.style.display = "none";
