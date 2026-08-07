@@ -55,19 +55,19 @@ const ebMembers: EBMember[] = [
     name: "Prakket Dholekar",
     role: "Chair",
     committee: "UNHRC",
-    image: "",
+    image: "/photos/Prakket Dholekar.JPEG",
   },
   {
     name: "Ahad Khan",
     role: "Vice Chair",
     committee: "UNHRC",
-    image: "",
+    image: "/photos/Ahad Khan.jpeg",
   },
   {
     name: "Sukriti Sahay",
     role: "Rapporteur",
     committee: "UNHRC",
-    image: "",
+    image: "/photos/Sukriti Sahay.jpeg",
   },
   // AIPPM
   {
@@ -201,7 +201,7 @@ const ExecutiveBoardPage = () => {
                             <img
                               src={member.image}
                               alt={member.name}
-                              className="object-cover w-full h-full filter brightness-[0.85] group-hover:scale-105 group-hover:brightness-100 transition-all duration-700"
+                              className="object-cover object-top w-full h-full filter brightness-[0.85] group-hover:scale-105 group-hover:brightness-100 transition-all duration-700"
                               onError={(e) => {
                                 // fallback if image fails to load
                                 e.currentTarget.style.display = "none";
