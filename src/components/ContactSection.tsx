@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, MapPin, Instagram, Linkedin } from "lucide-react";
+import { Mail, MapPin, Instagram } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -27,9 +27,6 @@ const ContactSection = () => {
             <div className="flex flex-col gap-3">
               <a href="#" className="font-body text-sm text-foreground hover:text-primary transition-colors flex items-center gap-2">
                 <Instagram className="w-4 h-4" /> Instagram
-              </a>
-              <a href="#" className="font-body text-sm text-foreground hover:text-primary transition-colors flex items-center gap-2">
-                <Linkedin className="w-4 h-4" /> LinkedIn
               </a>
             </div>
           </motion.div>
