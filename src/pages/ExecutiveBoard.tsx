@@ -15,17 +15,18 @@ interface EBMember {
 const ebMembers: EBMember[] = [
   // UNSC
   {
-    name: "NOT CONFIRMED",
+    name: "Iklavya Dev",
     role: "Chairperson",
     committee: "UNSC",
-    image: "",
+    image: "/photos/Iklavya Dev.jpeg",
+    message: "Iklavya Dev is a student of Multimedia Communication with a specialisation in Journalism. He has organised, chaired and delegated in the Mumbai, Lucknow, Pune, CSN and Delhi circuits, and aspires to inculcate a sense of critical and analytical thinking in the delegates.",
   },
   {
     name: "Kshitij Jadhav",
     role: "Vice Chairperson",
     committee: "UNSC",
-    image: "",
-    message: "To the delegates of the UNSC, prepare for a simulation where critical thinking and tactical compromise are your greatest allies. Loitering munitions and UAS proliferation require pragmatic solutions for global security.",
+    image: "/photos/Kshitij Jadhav.jpeg",
+    message: "Hey everyone! I'm Kshitij Jadhav, and I'll be serving as the Vice Chair of the United Nations Security Council. For me, MUN is more than just speeches and debates... it's about learning, collaboration, and challenging yourself to think like a true diplomat. As your Vice Chair, my goal is to ensure that every delegate has a fair, engaging, and enriching committee experience where ideas are respected and meaningful discussions always thrive. Whether you're attending your first MUN or you're an experienced delegate, I hope this committee pushes you to grow, think critically, become confident and discover a new YOU while enjoy every moment of the conference. Best wishes, See y'all at the conference!",
   },
   // UNGA
   {

@@ -1,29 +1,88 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
 import TopNav from "@/components/TopNav";
-import { Users2, Contact } from "lucide-react";
+import { Users2, Contact, User, X } from "lucide-react";
 
-const ocTeam = [
+interface OCMember {
+  name: string;
+  role: string;
+  dept: string;
+  image?: string;
+  bio?: string;
+  message?: string;
+}
+
+const ocTeam: OCMember[] = [
   {
-    role: "Secretary-General",
+    role: "Co-Secretary General",
     name: "Raunak Jha",
     dept: "Executive Secretariat",
-    bio: "Head representative, directing summit activities, coordinating academic content, and overseeing external affairs"
+    bio: "Head representative directing WSMUN'26 operations, overseeing academic content, and directing secretariat efforts.",
+    message: "Welcome to WSMUN '26! Our secretariat team has worked tirelessly to build an academically rigorous and operationally flawless conference. We expect delegates to embrace diplomacy and push their critical thinking boundaries. Let's make this weekend highly productive."
   },
   {
     role: "Co-Secretary General",
     name: "Sachet Agarwal",
     dept: "Executive Secretariat",
-    bio: "Coordinates delegation invites, manages financial operations, and assists in key secretariat decisions"
+    bio: "Manages delegation relationships, finance allocations, and supports core secretariat strategic choices.",
+    message: "Greetings delegates! Our secretariat is focused on creating an inclusive, intellectually stimulating platform for seasoned delegates and first-timers alike. We hope WSMUN'26 serves as a catalyst for your growth."
   },
   {
     role: "Deputy Secretary General",
     name: "Ethan Kokate",
     dept: "Executive Secretariat",
-    bio: "Manages organizing committees, logistics pipelines, and oversees communication pipelines"
+    bio: "Directs operational workflows, logistical pipelines, and internal department communication channels.",
+    message: "Greetings delegates! Operations, logistics, and communication pipelines have been optimized to ensure your delegate experience is seamless. Let us know if you need any operational assistance throughout the conference."
+  },
+  {
+    role: "OC Head",
+    name: "Maitrayee Dighe",
+    dept: "Operations Control",
+    bio: "Directs all organizing committee branches to ensure unified coordination across operations and logistics.",
+    message: "As the OC Head, I welcome you to WSMUN 2026. Behind every great debate is a dedicated organizing committee, and our team is fully prepared to deliver a premium, unforgettable summit experience."
+  },
+  {
+    role: "Marketing Head",
+    name: "Arjun Kirsur",
+    dept: "Marketing & Communications",
+    bio: "Manages external communication, outreach pipelines, and strategic brand positioning for WSMUN'26.",
+    message: "Welcome to WSMUN'26! Our marketing team has worked hard to connect delegates across circuits and build a vibrant community of future leaders. We hope you enjoy the conference networking and discussions."
+  },
+  {
+    role: "Media Head",
+    name: "Navya Shah",
+    dept: "Media & Press",
+    bio: "Directs photographic coverage, press content publication, and audio-visual recordings during WSMUN'26.",
+    message: "Hello everyone! The Media team will be covering the committees, debates, crises, and press conferences. We look forward to capturing your most memorable diplomatic moments."
+  },
+  {
+    role: "Logistics Head",
+    name: "Yashvee Pancholi",
+    dept: "Logistics & Operations",
+    bio: "Coordinates session equipment, materials distribution, and venue preparation schedules.",
+    message: "Welcome! Our logistics crew has ensured that the venue, resources, and session timelines run on schedule. Let's have an operationally smooth debate!"
+  },
+  {
+    role: "Management Head",
+    name: "Yuvraj Sharma",
+    dept: "Delegate Management",
+    bio: "Directs registration desks, delegation entry processes, and hospitality assistance.",
+    message: "Dear delegates, the delegate management desk is here to support you from portfolio allocation to registration queries. We are committed to making your WSMUN journey seamless."
+  },
+  {
+    role: "Social Media and Design Head",
+    name: "Nayan Vij",
+    dept: "Design & Branding",
+    bio: "Directs graphical resources, social announcements, and the UI/UX branding standards.",
+    message: "Welcome! The visual design, social announcements, and digital branding of WSMUN'26 are crafted to reflect the premium standard of our conference. Have a great session!"
   }
 ];
 
 const OrganisingCommitteePage = () => {
+  const [selectedMember, setSelectedMember] = useState<OCMember | null>(null);
+
+  const defaultMessage = "Welcome to WSMUN 2026! As a member of the Organising Committee, I am dedicated to ensuring a seamless, highly engaging, and memorable experience for all our delegates and guests. Let's work together to make this edition a grand success.";
+
   return (
     <>
       <TopNav />
@@ -47,7 +106,7 @@ const OrganisingCommitteePage = () => {
             </h1>
             <div className="h-[2px] w-24 bg-primary rounded-full mb-8"></div>
             <p className="font-body text-sm sm:text-base text-foreground/80 leading-relaxed max-w-3xl">
-              The behind-the-scenes organizers managing operations, registrations, logistics, finance, and marketing for WSMUN '26
+              The behind-the-scenes organizers managing operations, registrations, logistics, finance, and marketing for WSMUN '26.
             </p>
           </motion.div>
 
@@ -60,22 +119,40 @@ const OrganisingCommitteePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: i * 0.08 }}
-                className="glass-panel p-6 sm:p-8 rounded-xl border border-white/5 bg-card/65 flex flex-col justify-between h-full hover:border-primary/40 transition-colors"
+                onClick={() => setSelectedMember(member)}
+                className="glass-panel p-6 sm:p-8 rounded-xl border border-white/5 bg-card/65 flex flex-col justify-between h-full hover:border-primary/40 transition-all duration-300 hover:scale-[1.02] cursor-pointer group relative"
               >
                 <div>
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
-                      <Contact className="w-5 h-5" />
+                  {/* Fallback Visual Banner for card */}
+                  <div className="h-44 w-full overflow-hidden relative bg-black/30 rounded-lg flex-shrink-0 mb-6 flex items-center justify-center border border-white/5">
+                    {member.image ? (
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="object-cover w-full h-full filter brightness-[0.85] group-hover:scale-105 transition-all duration-700 object-top"
+                      />
+                    ) : (
+                      // Cybernetic Details fallback
+                      <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-card/90 to-primary/5 relative p-4">
+                        <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
+                          <div className="w-24 h-24 rounded-full border border-dashed animate-[spin_50s_linear_infinite] border-primary" />
+                        </div>
+                        <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary/80 group-hover:bg-primary/20 group-hover:text-primary transition-all duration-300">
+                          <Contact className="w-5 h-5" />
+                        </div>
+                      </div>
+                    )}
+                    <div className="absolute top-3 right-3">
+                      <span className="font-body text-[8px] uppercase tracking-widest text-primary border border-primary/30 px-2 py-0.5 rounded bg-background/80 backdrop-blur-sm font-bold">
+                        {member.dept}
+                      </span>
                     </div>
-                    <span className="font-body text-[9px] uppercase tracking-widest text-primary border border-primary/30 px-2 py-0.5 rounded">
-                      {member.dept}
-                    </span>
                   </div>
                   
                   <span className="font-body text-[10px] font-bold text-primary uppercase tracking-[0.2em] block mb-1">
                     {member.role}
                   </span>
-                  <h3 className="font-display font-bold text-2xl text-foreground uppercase tracking-wide mb-4">
+                  <h3 className="font-display font-bold text-2xl text-foreground uppercase tracking-wide mb-4 group-hover:text-glow transition-all duration-300">
                     {member.name}
                   </h3>
                   <p className="font-body text-xs text-muted-foreground leading-relaxed text-foreground/75">
@@ -85,13 +162,111 @@ const OrganisingCommitteePage = () => {
 
                 <div className="mt-8 border-t border-white/5 pt-4 flex items-center gap-2 text-[9px] font-body uppercase tracking-wider text-muted-foreground">
                   <Users2 className="w-3.5 h-3.5" />
-                  <span>WSMUN '26 Secretariat</span>
+                  <span>WSMUN '26 Organising Committee</span>
                 </div>
               </motion.div>
             ))}
           </div>
         </div>
       </main>
+
+      {/* OC Modal Lightbox Overlay */}
+      <AnimatePresence>
+        {selectedMember && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setSelectedMember(null)}
+              className="fixed inset-0 bg-background/90 backdrop-blur-md cursor-pointer"
+            />
+
+            {/* Modal Container */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: 30 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.9, y: 30 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+              className="relative w-full max-w-4xl glass-panel rounded-3xl border border-primary/20 shadow-2xl bg-card/95 backdrop-blur-xl overflow-hidden z-10 flex flex-col md:flex-row items-stretch"
+            >
+              {/* Close Icon */}
+              <button
+                onClick={() => setSelectedMember(null)}
+                className="absolute top-4 right-4 text-muted-foreground hover:text-primary hover:scale-110 transition-all duration-300 cursor-pointer z-20 p-2 rounded-full border border-white/5 hover:border-primary/20 bg-background/50"
+              >
+                <X className="w-5 h-5" />
+              </button>
+
+              {/* Photo Area (Left side) */}
+              <div className="w-full md:w-5/12 h-64 md:h-auto min-h-[300px] relative bg-black/25 flex-shrink-0">
+                {selectedMember.image ? (
+                  <img
+                    src={selectedMember.image}
+                    alt={selectedMember.name}
+                    className="object-cover w-full h-full object-top"
+                  />
+                ) : (
+                  // HUD fallback for modal
+                  <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-card to-primary/10 relative p-6">
+                    <div className="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none">
+                      <div className="w-48 h-48 rounded-full border border-dashed animate-[spin_50s_linear_infinite] border-primary" />
+                    </div>
+                    <div className="w-20 h-20 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-4">
+                      <Contact className="w-9 h-9" />
+                    </div>
+                  </div>
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent md:bg-gradient-to-r md:from-transparent md:via-transparent md:to-card/90 pointer-events-none" />
+              </div>
+
+              {/* Details & Message Area (Right side) */}
+              <div className="w-full md:w-7/12 p-8 sm:p-10 flex flex-col justify-between relative">
+                <div className="absolute top-0 right-12 w-px h-6 bg-primary/20" />
+                <div className="absolute top-12 right-0 h-px w-6 bg-primary/20" />
+                <div className="absolute bottom-0 left-12 w-px h-6 bg-primary/20" />
+
+                <div>
+                  {/* Department Tag */}
+                  <span className="font-body text-[9px] uppercase tracking-widest px-3 py-1 rounded-full border border-primary/30 text-primary bg-primary/5 inline-block font-bold mb-4">
+                    {selectedMember.dept}
+                  </span>
+
+                  {/* Role Title */}
+                  <span className="font-body text-[10px] font-bold uppercase tracking-[0.25em] block text-primary mb-1">
+                    {selectedMember.role}
+                  </span>
+
+                  {/* Name */}
+                  <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-foreground uppercase tracking-wide mb-6 text-glow leading-none">
+                    {selectedMember.name}
+                  </h2>
+
+                  <div className="h-px w-24 bg-primary/30 mb-8" />
+
+                  {/* Message Title */}
+                  <p className="font-body text-[9px] uppercase tracking-[0.25em] text-muted-foreground font-bold mb-3">
+                    A Message from the Organiser:
+                  </p>
+
+                  {/* Welcome Message */}
+                  <p className="font-body text-xs sm:text-sm text-foreground/85 leading-relaxed italic bg-primary/5 p-4 border-l-2 border-primary/50 rounded-r-lg max-h-[220px] overflow-y-auto">
+                    "{selectedMember.message || defaultMessage}"
+                  </p>
+                </div>
+
+                <div className="mt-8 border-t border-white/5 pt-4 flex items-center justify-between text-[9px] font-body uppercase tracking-widest text-muted-foreground">
+                  <span className="flex items-center gap-2">
+                    <Users2 className="w-3.5 h-3.5" />
+                    <span>WSMUN '26 Organising Committee</span>
+                  </span>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </>
   );
 };
