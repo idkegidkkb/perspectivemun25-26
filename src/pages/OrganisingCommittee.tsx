@@ -24,15 +24,17 @@ const ocTeam: OCMember[] = [
     role: "Co-Secretary General",
     name: "Sachet Agarwal",
     dept: "Executive Secretariat",
+    image: "/photos/Sachet.jpeg",
     bio: "Manages delegation relationships, finance allocations, and supports core secretariat strategic choices.",
-    message: "Greetings delegates! Our secretariat is focused on creating an inclusive, intellectually stimulating platform for seasoned delegates and first-timers alike. We hope WSMUN'26 serves as a catalyst for your growth."
+    message: "Sachet is a 15 year old science student who has been involved in Model United Nations for over three years. What keeps him coming back to MUN is the experience itself. Every committee brings something different, whether it is a completely unexpected argument, a heated debate or the challenge of convincing a room full of people who see things differently. He enjoys the competition, the pressure and the constant need to think on his feet. More than anything, MUN gives him a chance to step into different perspectives and experience how ideas can change the course of a discussion. As the Co Secretary General of World Summit Model United Nations 2026, Sachet wants to build WSMUN around the people who make the conference what it is. He believes WSMUN should be the people’s conference, built by the people and for the people. Every delegate, Executive Board member, International Press member and member of the Secretariat should feel that they have a place in shaping the conference. His aim is to create an environment where people can compete, connect, express themselves and walk away knowing they were not simply attendees at WSMUN, but a part of it."
   },
   {
     role: "Deputy Secretary General",
     name: "Ethan Kokate",
     dept: "Executive Secretariat",
+    image: "/photos/Ethan.jpeg",
     bio: "Directs operational workflows, logistical pipelines, and internal department communication channels.",
-    message: "Greetings delegates! Operations, logistics, and communication pipelines have been optimized to ensure your delegate experience is seamless. Let us know if you need any operational assistance throughout the conference."
+    message: "Ethan is a 15-year-old economics student. He has been doing MUNs for over 2 years acting as the Deputy Secretary General for World Summit Model United Nations 2026, a conference which he hopes everyone can enjoy, appreciate, and have fun in furthermore he aspires to become an international lawyer. His main interests are within political science, political theory, and international law. He does MUNs because he loves the thrill of the game. As an aspiring international lawyer he has a passion for debate and finding solutions to real issues. Acting as Deputy Secretary General for World Summit World, United Nations 2026 is truly a dream come true because he believes that each conference should be made by the people, for the people, and promises to uphold the highest values of integrity and make this a better conference for all."
   },
   {
     role: "OC Head",
@@ -66,8 +68,9 @@ const ocTeam: OCMember[] = [
     role: "Management Head",
     name: "Yuvraj Sharma",
     dept: "Delegate Management",
+    image: "/photos/Yuvraj.jpeg",
     bio: "Directs registration desks, delegation entry processes, and hospitality assistance.",
-    message: "Dear delegates, the delegate management desk is here to support you from portfolio allocation to registration queries. We are committed to making your WSMUN journey seamless."
+    message: "Yuvraj is a 15-year-old student who has always been interested in politics, geopolitics, economics and pretty much anything that has to do with how the world works. He has been doing MUNs for over 2 years, acting as the Management head of the Wsmun he looks forward to enjoy all the planning, the work and the results. From preparing for a conference at the last minute to sitting through hours of debate, he enjoys the chaos that comes with it. He has a particular interest in political science and international affairs and loves a good debate, especially when there are two completely different sides to an issue. For him, MUNs aren't really just about the awards but its about experience and opportunity to meet great minds and learn more. As per him the arguments, the people, the random conversations between committees and the feeling of everything finally coming together that makes them worth it."
   },
   {
     role: "Social Media and Design Head",
