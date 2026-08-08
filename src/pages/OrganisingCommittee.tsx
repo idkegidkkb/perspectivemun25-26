@@ -54,15 +54,17 @@ const ocTeam: OCMember[] = [
     role: "Media Head",
     name: "Navya Shah",
     dept: "Media & Press",
+    image: "/photos/Navya.jpeg",
     bio: "Directs photographic coverage, press content publication, and audio-visual recordings during WSMUN'26.",
-    message: "Hello everyone! The Media team will be covering the committees, debates, crises, and press conferences. We look forward to capturing your most memorable diplomatic moments."
+    message: "Navya Shah is 15-year-old science major. She has a passion for media design and anything creative. Her post as the WSMUN head of media taps into this passion, allowing her to make WSMUN a better and more inspiring experience. She uses this platform to captivate her designs into not only creative expression but also to captivate the minds and the hearts of everyone looking to join world summit."
   },
   {
     role: "Logistics Head",
     name: "Yashvee Pancholi",
     dept: "Logistics & Operations",
+    image: "/photos/yashvee.jpeg",
     bio: "Coordinates session equipment, materials distribution, and venue preparation schedules.",
-    message: "Welcome! Our logistics crew has ensured that the venue, resources, and session timelines run on schedule. Let's have an operationally smooth debate!"
+    message: "Yashvee Pancholi is a 14 year old mass media student. She is acting as the logistics head for the world summit mun 2026, a conference which she hopes can intrigue the people participating in current affairs and increase their political knowledge with a little twist. As an aspiring investigative journalist, one of her main required skills happen to be logistical and delegating skills. She uses the given opportunity to get to exercise and further develop her skills."
   },
   {
     role: "Management Head",
