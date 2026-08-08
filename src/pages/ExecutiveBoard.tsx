@@ -220,7 +220,7 @@ const ExecutiveBoardPage = () => {
                       }`}
                     >
                       {/* Photo/Visual Area */}
-                      <div className="h-72 w-full overflow-hidden relative bg-black/20 flex-shrink-0">
+                      <div className="h-80 w-full overflow-hidden relative bg-black/20 flex-shrink-0">
                         {member.image ? (
                           <>
                             <img

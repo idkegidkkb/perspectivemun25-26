@@ -123,49 +123,55 @@ const OrganisingCommitteePage = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: i * 0.08 }}
                 onClick={() => setSelectedMember(member)}
-                className="glass-panel p-7 sm:p-9 rounded-xl border border-white/5 bg-card/65 flex flex-col justify-between h-full hover:border-primary/40 transition-all duration-300 hover:scale-[1.02] cursor-pointer group relative"
+                className="glass-panel rounded-2xl border border-white/5 bg-card/65 flex flex-col justify-between h-full hover:border-primary/40 transition-all duration-300 hover:scale-[1.02] cursor-pointer group relative overflow-hidden"
               >
-                <div>
-                  {/* Fallback Visual Banner for card */}
-                  <div className="h-48 w-full overflow-hidden relative bg-black/30 rounded-lg flex-shrink-0 mb-6 flex items-center justify-center border border-white/5">
-                    {member.image ? (
-                      <img
-                        src={member.image}
-                        alt={member.name}
-                        className="object-cover w-full h-full filter brightness-[0.85] group-hover:scale-105 transition-all duration-700 object-top"
-                      />
-                    ) : (
-                      // Cybernetic Details fallback
-                      <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-card/90 to-primary/5 relative p-4">
-                        <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
-                          <div className="w-24 h-24 rounded-full border border-dashed animate-[spin_50s_linear_infinite] border-primary" />
-                        </div>
-                        <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary/80 group-hover:bg-primary/20 group-hover:text-primary transition-all duration-300">
-                          <Contact className="w-5 h-5" />
-                        </div>
+                {/* Visual Banner (Fills Top & Left/Right) */}
+                <div className="h-64 w-full overflow-hidden relative bg-black/30 flex-shrink-0 flex items-center justify-center">
+                  {member.image ? (
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="object-cover w-full h-full filter brightness-[0.85] group-hover:scale-105 transition-all duration-700 object-top"
+                    />
+                  ) : (
+                    // Cybernetic Details fallback
+                    <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-card/90 to-primary/5 relative p-4">
+                      <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
+                        <div className="w-24 h-24 rounded-full border border-dashed animate-[spin_50s_linear_infinite] border-primary" />
                       </div>
-                    )}
-                    <div className="absolute top-3 right-3">
-                      <span className="font-body text-[8px] uppercase tracking-widest text-primary border border-primary/30 px-2 py-0.5 rounded bg-background/80 backdrop-blur-sm font-bold">
-                        {member.dept}
-                      </span>
+                      <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary/80 group-hover:bg-primary/20 group-hover:text-primary transition-all duration-300">
+                        <Contact className="w-5 h-5" />
+                      </div>
                     </div>
+                  )}
+                  <div className="absolute top-4 left-4 z-10">
+                    <span className="font-body text-[8px] uppercase tracking-widest text-primary border border-primary/30 px-2.5 py-0.5 rounded bg-background/80 backdrop-blur-sm font-bold">
+                      {member.dept}
+                    </span>
                   </div>
                   
-                  <span className="font-body text-[10px] font-bold text-primary uppercase tracking-[0.2em] block mb-1">
-                    {member.role}
-                  </span>
-                  <h3 className="font-display font-bold text-2xl text-foreground uppercase tracking-wide mb-4 group-hover:text-glow transition-all duration-300">
-                    {member.name}
-                  </h3>
-                  <p className="font-body text-xs text-muted-foreground leading-relaxed text-foreground/75">
-                    {member.bio}
-                  </p>
+                  {/* Overlay Gradient to fade image into text info */}
+                  <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-card/90 via-card/30 to-transparent pointer-events-none" />
                 </div>
 
-                <div className="mt-8 border-t border-white/5 pt-4 flex items-center gap-2 text-[9px] font-body uppercase tracking-wider text-muted-foreground">
-                  <Users2 className="w-3.5 h-3.5" />
-                  <span>WSMUN '26 Organising Committee</span>
+                {/* Text Info Container with Padding */}
+                <div className="p-6 sm:p-8 flex-grow flex flex-col justify-between">
+                  <div>
+                    <span className="font-body text-[10px] font-bold text-primary uppercase tracking-[0.2em] block mb-1">
+                      {member.role}
+                    </span>
+                    <h3 className="font-display font-bold text-2xl text-foreground uppercase tracking-wide mb-4 group-hover:text-glow transition-all duration-300">
+                      {member.name}
+                    </h3>
+                    <p className="font-body text-xs text-muted-foreground leading-relaxed text-foreground/75">
+                      {member.bio}
+                    </p>
+                  </div>
+
+                  <div className="mt-8 border-t border-white/5 pt-4 flex items-center gap-2 text-[9px] font-body uppercase tracking-wider text-muted-foreground">
+                    <Users2 className="w-3.5 h-3.5" />
+                    <span>WSMUN '26 Organising Committee</span>
+                  </div>
                 </div>
               </motion.div>
             ))}
