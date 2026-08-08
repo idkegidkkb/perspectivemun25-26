@@ -123,11 +123,11 @@ const OrganisingCommitteePage = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: i * 0.08 }}
                 onClick={() => setSelectedMember(member)}
-                className="glass-panel p-6 sm:p-8 rounded-xl border border-white/5 bg-card/65 flex flex-col justify-between h-full hover:border-primary/40 transition-all duration-300 hover:scale-[1.02] cursor-pointer group relative"
+                className="glass-panel p-7 sm:p-9 rounded-xl border border-white/5 bg-card/65 flex flex-col justify-between h-full hover:border-primary/40 transition-all duration-300 hover:scale-[1.02] cursor-pointer group relative"
               >
                 <div>
                   {/* Fallback Visual Banner for card */}
-                  <div className="h-44 w-full overflow-hidden relative bg-black/30 rounded-lg flex-shrink-0 mb-6 flex items-center justify-center border border-white/5">
+                  <div className="h-48 w-full overflow-hidden relative bg-black/30 rounded-lg flex-shrink-0 mb-6 flex items-center justify-center border border-white/5">
                     {member.image ? (
                       <img
                         src={member.image}
