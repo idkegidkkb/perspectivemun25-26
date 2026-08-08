@@ -41,25 +41,25 @@ const CountdownTimer = () => {
   }, []);
 
   return (
-    <div className="flex gap-2 items-baseline">
+    <div className="flex gap-4 sm:gap-8 items-baseline justify-center">
       <div className="text-center">
-        <span className="font-display font-extrabold text-2xl sm:text-3xl text-primary text-glow block tracking-tight">{timeLeft.days}</span>
-        <span className="text-[7px] tracking-widest text-muted-foreground uppercase font-bold">Days</span>
+        <span className="font-display font-extrabold text-4xl sm:text-6xl md:text-7xl text-primary text-glow block tracking-tight leading-none">{timeLeft.days}</span>
+        <span className="text-[9px] sm:text-xs tracking-[0.2em] text-muted-foreground uppercase font-bold mt-2 block">Days</span>
       </div>
-      <span className="text-primary/50 text-base font-bold animate-pulse">:</span>
+      <span className="text-primary/50 text-2xl sm:text-4xl font-bold animate-pulse leading-none">:</span>
       <div className="text-center">
-        <span className="font-display font-extrabold text-2xl sm:text-3xl text-primary text-glow block tracking-tight">{timeLeft.hours}</span>
-        <span className="text-[7px] tracking-widest text-muted-foreground uppercase font-bold">Hrs</span>
+        <span className="font-display font-extrabold text-4xl sm:text-6xl md:text-7xl text-primary text-glow block tracking-tight leading-none">{timeLeft.hours}</span>
+        <span className="text-[9px] sm:text-xs tracking-[0.2em] text-muted-foreground uppercase font-bold mt-2 block">Hrs</span>
       </div>
-      <span className="text-primary/50 text-base font-bold animate-pulse">:</span>
+      <span className="text-primary/50 text-2xl sm:text-4xl font-bold animate-pulse leading-none">:</span>
       <div className="text-center">
-        <span className="font-display font-extrabold text-2xl sm:text-3xl text-primary text-glow block tracking-tight">{timeLeft.minutes}</span>
-        <span className="text-[7px] tracking-widest text-muted-foreground uppercase font-bold">Min</span>
+        <span className="font-display font-extrabold text-4xl sm:text-6xl md:text-7xl text-primary text-glow block tracking-tight leading-none">{timeLeft.minutes}</span>
+        <span className="text-[9px] sm:text-xs tracking-[0.2em] text-muted-foreground uppercase font-bold mt-2 block">Min</span>
       </div>
-      <span className="text-primary/50 text-base font-bold animate-pulse">:</span>
+      <span className="text-primary/50 text-2xl sm:text-4xl font-bold animate-pulse leading-none">:</span>
       <div className="text-center">
-        <span className="font-display font-extrabold text-2xl sm:text-3xl text-primary text-glow block tracking-tight">{timeLeft.seconds}</span>
-        <span className="text-[7px] tracking-widest text-muted-foreground uppercase font-bold">Sec</span>
+        <span className="font-display font-extrabold text-4xl sm:text-6xl md:text-7xl text-primary text-glow block tracking-tight leading-none">{timeLeft.seconds}</span>
+        <span className="text-[9px] sm:text-xs tracking-[0.2em] text-muted-foreground uppercase font-bold mt-2 block">Sec</span>
       </div>
     </div>
   );
@@ -128,14 +128,37 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20 relative z-10">
+        {/* Countdown Timer (On Top & Bigger) */}
+        <div className="w-full mb-6 relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            whileHover={{ y: -4 }}
+            className="glass-panel p-8 sm:p-12 text-center rounded-2xl border border-white/5 relative group overflow-hidden max-w-4xl mx-auto shadow-2xl"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="flex flex-col items-center justify-center gap-4 mb-4">
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 border border-primary/20 text-primary">
+                <Timer className="w-6 h-6 text-primary/80 group-hover:text-primary transition-colors duration-300" strokeWidth={1.5} />
+              </div>
+              <CountdownTimer />
+            </div>
+            <p className="font-body text-xs sm:text-sm uppercase tracking-[0.2em] text-primary font-bold">
+              Countdown to WSMUN'26
+            </p>
+          </motion.div>
+        </div>
+
+        {/* The other two boxes below */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto relative z-10">
           {/* Card 1: Committees */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             whileHover={{ y: -6 }}
             className="glass-panel p-8 text-left rounded-xl border border-white/5 relative group overflow-hidden"
           >
@@ -151,26 +174,7 @@ const AboutSection = () => {
             </p>
           </motion.div>
 
-          {/* Card 2: Countdown Timer */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.15 }}
-            whileHover={{ y: -6 }}
-            className="glass-panel p-8 text-left rounded-xl border border-white/5 relative group overflow-hidden"
-          >
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            <div className="flex items-center justify-between mb-4">
-              <CountdownTimer />
-              <Timer className="w-8 h-8 text-primary/40 group-hover:text-primary transition-colors duration-300" strokeWidth={1.5} />
-            </div>
-            <p className="font-body text-xs uppercase tracking-widest text-muted-foreground font-bold group-hover:text-foreground transition-colors">
-              Countdown to WSMUN'26
-            </p>
-          </motion.div>
-
-          {/* Card 3: Days of Debate */}
+          {/* Card 2: Days of Debate */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
