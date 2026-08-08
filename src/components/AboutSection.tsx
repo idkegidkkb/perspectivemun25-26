@@ -1,5 +1,69 @@
 import { motion } from "framer-motion";
-import { Users, CalendarDays, Landmark } from "lucide-react";
+import { CalendarDays, Landmark, Timer } from "lucide-react";
+import { useState, useEffect } from "react";
+
+const CountdownTimer = () => {
+  const [timeLeft, setTimeLeft] = useState({
+    days: "00",
+    hours: "00",
+    minutes: "00",
+    seconds: "00",
+  });
+
+  useEffect(() => {
+    const targetDate = new Date("2026-09-19T09:00:00").getTime();
+
+    const updateTimer = () => {
+      const now = new Date().getTime();
+      const difference = targetDate - now;
+
+      if (difference <= 0) {
+        setTimeLeft({ days: "00", hours: "00", minutes: "00", seconds: "00" });
+        return;
+      }
+
+      const d = Math.floor(difference / (1000 * 60 * 60 * 24));
+      const h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      const s = Math.floor((difference % (1000 * 60)) / 1000);
+
+      setTimeLeft({
+        days: d.toString().padStart(2, "0"),
+        hours: h.toString().padStart(2, "0"),
+        minutes: m.toString().padStart(2, "0"),
+        seconds: s.toString().padStart(2, "0"),
+      });
+    };
+
+    updateTimer();
+    const interval = setInterval(updateTimer, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="flex gap-2 items-baseline">
+      <div className="text-center">
+        <span className="font-display font-extrabold text-2xl sm:text-3xl text-primary text-glow block tracking-tight">{timeLeft.days}</span>
+        <span className="text-[7px] tracking-widest text-muted-foreground uppercase font-bold">Days</span>
+      </div>
+      <span className="text-primary/50 text-base font-bold animate-pulse">:</span>
+      <div className="text-center">
+        <span className="font-display font-extrabold text-2xl sm:text-3xl text-primary text-glow block tracking-tight">{timeLeft.hours}</span>
+        <span className="text-[7px] tracking-widest text-muted-foreground uppercase font-bold">Hrs</span>
+      </div>
+      <span className="text-primary/50 text-base font-bold animate-pulse">:</span>
+      <div className="text-center">
+        <span className="font-display font-extrabold text-2xl sm:text-3xl text-primary text-glow block tracking-tight">{timeLeft.minutes}</span>
+        <span className="text-[7px] tracking-widest text-muted-foreground uppercase font-bold">Min</span>
+      </div>
+      <span className="text-primary/50 text-base font-bold animate-pulse">:</span>
+      <div className="text-center">
+        <span className="font-display font-extrabold text-2xl sm:text-3xl text-primary text-glow block tracking-tight">{timeLeft.seconds}</span>
+        <span className="text-[7px] tracking-widest text-muted-foreground uppercase font-bold">Sec</span>
+      </div>
+    </div>
+  );
+};
 
 const AboutSection = () => {
   return (
@@ -66,32 +130,66 @@ const AboutSection = () => {
 
         {/* Stats Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20 relative z-10">
-          {[
-          { number: "07", label: "Committees", icon: Landmark },
-            { number: "150+", label: "Delegates Expected", icon: Users },
-            { number: "02", label: "Days of Debate", icon: CalendarDays },
-          ].map((stat, i) => (
-            <motion.div
-              key={stat.label}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.15 }}
-              whileHover={{ y: -6 }}
-              className="glass-panel p-8 text-left rounded-xl border border-white/5 relative group overflow-hidden"
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="flex items-center justify-between mb-4">
-                <p className="font-display font-extrabold text-4xl sm:text-5xl text-primary text-glow">
-                  {stat.number}
-                </p>
-                <stat.icon className="w-8 h-8 text-primary/40 group-hover:text-primary transition-colors duration-300" strokeWidth={1.5} />
-              </div>
-              <p className="font-body text-xs uppercase tracking-widest text-muted-foreground font-bold group-hover:text-foreground transition-colors">
-                {stat.label}
+          {/* Card 1: Committees */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0 }}
+            whileHover={{ y: -6 }}
+            className="glass-panel p-8 text-left rounded-xl border border-white/5 relative group overflow-hidden"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="flex items-center justify-between mb-4">
+              <p className="font-display font-extrabold text-4xl sm:text-5xl text-primary text-glow">
+                07
               </p>
-            </motion.div>
-          ))}
+              <Landmark className="w-8 h-8 text-primary/40 group-hover:text-primary transition-colors duration-300" strokeWidth={1.5} />
+            </div>
+            <p className="font-body text-xs uppercase tracking-widest text-muted-foreground font-bold group-hover:text-foreground transition-colors">
+              Committees
+            </p>
+          </motion.div>
+
+          {/* Card 2: Countdown Timer */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+            whileHover={{ y: -6 }}
+            className="glass-panel p-8 text-left rounded-xl border border-white/5 relative group overflow-hidden"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="flex items-center justify-between mb-4">
+              <CountdownTimer />
+              <Timer className="w-8 h-8 text-primary/40 group-hover:text-primary transition-colors duration-300" strokeWidth={1.5} />
+            </div>
+            <p className="font-body text-xs uppercase tracking-widest text-muted-foreground font-bold group-hover:text-foreground transition-colors">
+              Countdown to WSMUN'26
+            </p>
+          </motion.div>
+
+          {/* Card 3: Days of Debate */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            whileHover={{ y: -6 }}
+            className="glass-panel p-8 text-left rounded-xl border border-white/5 relative group overflow-hidden"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="flex items-center justify-between mb-4">
+              <p className="font-display font-extrabold text-4xl sm:text-5xl text-primary text-glow">
+                02
+              </p>
+              <CalendarDays className="w-8 h-8 text-primary/40 group-hover:text-primary transition-colors duration-300" strokeWidth={1.5} />
+            </div>
+            <p className="font-body text-xs uppercase tracking-widest text-muted-foreground font-bold group-hover:text-foreground transition-colors">
+              Days of Debate
+            </p>
+          </motion.div>
         </div>
       </section>
     </>

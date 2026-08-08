@@ -59,7 +59,7 @@ const HeroSection = () => {
             <img 
               src="/photos/World_Summit_Logo-removebg-preview.png" 
               alt="WSMUN Logo" 
-              className="w-28 h-28 sm:w-36 sm:h-36 object-contain filter drop-shadow-[0_0_25px_rgba(240,220,180,0.15)] hover:scale-105 transition-transform duration-500" 
+              className="w-28 h-28 sm:w-36 sm:h-36 object-contain filter drop-shadow-[0_0_25px_rgba(240,220,180,0.15)] opacity-[0.65] hover:opacity-100 hover:scale-105 transition-all duration-500" 
             />
           </motion.div>
 
@@ -130,7 +130,7 @@ const HeroSection = () => {
                 DATES
               </p>
               <p className="font-body text-xs sm:text-base font-bold text-foreground">
-                5 - 6 September
+                19 - 20 September
               </p>
             </div>
 

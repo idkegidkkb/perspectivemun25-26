@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import TopNav from "@/components/TopNav";
-import { Crown, Shield, FileText, User, Users2 } from "lucide-react";
+import { Crown, Shield, FileText, User, Users2, X } from "lucide-react";
 
 interface EBMember {
   name: string;
@@ -9,67 +9,76 @@ interface EBMember {
   committee: string;
   image: string;
   objectPosition?: string;
+  message?: string;
 }
 
 const ebMembers: EBMember[] = [
   // UNSC
   {
     name: "NOT CONFIRMED",
-    role: "Chair",
+    role: "Chairperson",
     committee: "UNSC",
     image: "",
   },
   {
     name: "Kshitij Jadhav",
-    role: "Vice Chair",
+    role: "Vice Chairperson",
     committee: "UNSC",
     image: "",
+    message: "To the delegates of the UNSC, prepare for a simulation where critical thinking and tactical compromise are your greatest allies. Loitering munitions and UAS proliferation require pragmatic solutions for global security.",
   },
   // UNGA
   {
     name: "Yog Ashok Rai",
-    role: "Chair",
+    role: "Chairperson",
     committee: "UNGA",
     image: "/photos/YogRai.PNG",
+    message: "It is my privilege to welcome you to the United Nations General Assembly. At WSMUN '26, our goal is to challenge your perspectives, broaden your horizons, and foster a deep appreciation for the complex art of international relations. I expect rigorous debate and pragmatic resolutions.",
   },
   {
     name: "Saanvi Saluja",
-    role: "Vice Chair",
+    role: "Vice Chairperson",
     committee: "UNGA",
     image: "/photos/Sanvi Saluja.jpeg",
     objectPosition: "object-center",
+    message: "Welcome UNGA delegates! Balancing mandate prioritization against budgetary realities is one of the most critical structural challenges the UN faces today. I look forward to seeing your collaborative problem-solving skills in action.",
   },
   // ECOSOC
   {
     name: "Aditya Dutta",
-    role: "Chair",
+    role: "Chairperson",
     committee: "ECOSOC",
     image: "/photos/Aditya Dutta.jpeg",
+    message: "Welcome to ECOSOC. Deliberating upon the reform of Bilateral Investment Treaties is crucial to fostering sustainable development and equitable foreign investments. I expect delegates to research thoroughly and negotiate with diplomatic poise.",
   },
   {
     name: "Aarav Sharma",
-    role: "Vice Chair",
+    role: "Vice Chairperson",
     committee: "ECOSOC",
     image: "/photos/Aarav Sharma.jpeg",
+    message: "Greetings ECOSOC delegates! Creating systems that balance national economic sovereignty with global investment demands requires a refined understanding of international law. I look forward to guiding your deliberations.",
   },
   // UNHRC
   {
     name: "Prakket Dholekar",
-    role: "Chair",
+    role: "Chairperson",
     committee: "UNHRC",
     image: "/photos/Prakket Dholekar.JPEG",
+    message: "To the delegates of the UNHRC: human rights violations are often deeply structural, tied to various economic systems. We must analyze these intersections objectively and propose systems that safeguard human dignity globally.",
   },
   {
     name: "Ahad Khan",
-    role: "Vice Chair",
+    role: "Vice Chairperson",
     committee: "UNHRC",
     image: "/photos/Ahad Khan.jpeg",
+    message: "Welcome to UNHRC! The debate on economic systems and their impacts on human rights is both historically rich and modernly urgent. Prepare for an intense, rewarding experience.",
   },
   {
     name: "Sukriti Sahay",
     role: "Rapporteur",
     committee: "UNHRC",
     image: "/photos/Sukriti Sahay.jpeg",
+    message: "Greetings delegates of UNHRC. As your Rapporteur, I will be carefully documenting the proceedings, working papers, and resolutions. Let us work together to make this committee highly productive.",
   },
   // AIPPM
   {
@@ -77,12 +86,14 @@ const ebMembers: EBMember[] = [
     role: "Co-Chairperson",
     committee: "AIPPM",
     image: "",
+    message: "Welcome to the All India Political Parties Meet. Deliberating on the validity of anti-conversion laws in India is a highly nuanced constitutional and social discussion. I expect delegates to respect diverse political views while maintaining high standards of debate.",
   },
   {
     name: "Tapasya Dumbre",
     role: "Co-Chairperson",
     committee: "AIPPM",
     image: "",
+    message: "Greetings delegates. The AIPPM represents the democratic voice of our nation. Discussing constitutional validity requires sharp legal logic, political foresight, and persuasive rhetoric. I look forward to a vibrant meeting.",
   },
   // FIA
   {
@@ -90,18 +101,21 @@ const ebMembers: EBMember[] = [
     role: "Chairperson",
     committee: "FIA",
     image: "/photos/Mrugaja Prabhu.jpeg",
+    message: "Welcome to motorsport governance at WSMUN '26. The intersection of ethics, technology, and driver freedom presents a modern challenge that requires strategic compromise. Let us steer motorsport governance into a new era with vision and integrity.",
   },
   {
     name: "Valen Kumar",
     role: "Vice Chairperson",
     committee: "FIA",
     image: "/photos/Valen Kumar.jpeg",
+    message: "To the FIA delegates: motorsport governance is as much about racing as it is about ethical responsibilities and political neutrality. I look forward to hearing your speeches on driver expression and motor governing guidelines.",
   },
   {
     name: "Saatvik Joshi",
     role: "Co-Vice Chairperson",
     committee: "FIA",
     image: "/photos/Saatvik Joshi.jpeg",
+    message: "Greetings delegates! The FIA is a unique committee with a rapid-fire crisis potential. Research motorsport guidelines and drivers' charters carefully. Let's make this an unforgettable session.",
   },
   // IP
   {
@@ -109,6 +123,7 @@ const ebMembers: EBMember[] = [
     role: "Chairperson",
     committee: "IP",
     image: "/photos/Shriya Rajan.jpeg",
+    message: "To the journalists, reporters, and photographers of the International Press: the truth is your arena. Your coverage, commentary, and visual storytelling will shape how this summit is remembered. Report with integrity, capture the essence of debate, and hold our committees to account.",
   },
 ];
 
@@ -116,8 +131,11 @@ const committeesList = ["UNSC", "UNGA", "ECOSOC", "UNHRC", "AIPPM", "FIA", "IP"]
 
 const ExecutiveBoardPage = () => {
   const [activeFilter, setActiveFilter] = useState("UNSC");
+  const [selectedMember, setSelectedMember] = useState<EBMember | null>(null);
 
   const filteredMembers = ebMembers.filter((m) => m.committee === activeFilter);
+
+  const defaultMessage = "Dear Delegates, it is my distinct honor to welcome you to WSMUN 2026. Debate is not just about winning arguments; it is about finding collaborative paths to global peace and progress. I look forward to witnessing your negotiation skills, academic research, and diplomatic solutions in our committee sessions. Prepare thoroughly, represent your nations with pride, and let us shape the language of diplomacy together.";
 
   return (
     <>
@@ -194,8 +212,12 @@ const ExecutiveBoardPage = () => {
                     transition={{ duration: 0.5, delay: i * 0.05 }}
                     className="flex h-full"
                   >
-                    <div className={`glass-panel w-full rounded-2xl border border-white/5 overflow-hidden flex flex-col justify-between hover:border-primary/45 transition-all duration-500 hover:shadow-[0_0_25px_rgba(240,220,180,0.08)] group relative ${isNotConfirmed ? 'border-destructive/30 hover:border-destructive/50' : ''}`}>
-                      
+                    <div 
+                      onClick={() => !isNotConfirmed && setSelectedMember(member)}
+                      className={`glass-panel w-full rounded-2xl border border-white/5 overflow-hidden flex flex-col justify-between hover:border-primary/45 transition-all duration-500 hover:shadow-[0_0_25px_rgba(240,220,180,0.08)] group relative ${
+                        isNotConfirmed ? 'border-destructive/30 hover:border-destructive/50' : 'cursor-pointer'
+                      }`}
+                    >
                       {/* Photo/Visual Area */}
                       <div className="h-72 w-full overflow-hidden relative bg-black/20 flex-shrink-0">
                         {member.image ? (
@@ -203,7 +225,9 @@ const ExecutiveBoardPage = () => {
                             <img
                               src={member.image}
                               alt={member.name}
-                              className={`object-cover w-full h-full filter brightness-[0.85] group-hover:scale-105 group-hover:brightness-100 transition-all duration-700 ${member.objectPosition || "object-top"}`}
+                              className={`object-cover w-full h-full filter brightness-[0.85] group-hover:scale-105 group-hover:brightness-100 transition-all duration-700 ${
+                                member.objectPosition || "object-top"
+                              } ${member.image.includes("YogRai") ? "bg-white" : ""}`}
                               onError={(e) => {
                                 // fallback if image fails to load
                                 e.currentTarget.style.display = "none";
@@ -286,6 +310,106 @@ const ExecutiveBoardPage = () => {
           </motion.div>
         </div>
       </main>
+
+      {/* Details Lightbox Modal */}
+      <AnimatePresence>
+        {selectedMember && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setSelectedMember(null)}
+              className="fixed inset-0 bg-background/90 backdrop-blur-md cursor-pointer"
+            />
+
+            {/* Modal Box */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: 30 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.9, y: 30 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+              className="relative w-full max-w-4xl glass-panel rounded-3xl border border-primary/20 shadow-2xl bg-card/95 backdrop-blur-xl overflow-hidden z-10 flex flex-col md:flex-row items-stretch"
+            >
+              {/* Close Button */}
+              <button
+                onClick={() => setSelectedMember(null)}
+                className="absolute top-4 right-4 text-muted-foreground hover:text-primary hover:scale-110 transition-all duration-300 cursor-pointer z-20 p-2 rounded-full border border-white/5 hover:border-primary/20 bg-background/50"
+              >
+                <X className="w-5 h-5" />
+              </button>
+
+              {/* Photo Area (Left side) */}
+              <div className="w-full md:w-5/12 h-80 md:h-auto min-h-[350px] relative bg-black/25 flex-shrink-0">
+                {selectedMember.image ? (
+                  <img
+                    src={selectedMember.image}
+                    alt={selectedMember.name}
+                    className={`object-cover w-full h-full ${selectedMember.objectPosition || "object-top"} ${selectedMember.image.includes("YogRai") ? "bg-white" : ""}`}
+                  />
+                ) : (
+                  // HUD fallback for modal
+                  <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-card to-primary/10 relative p-6">
+                    <div className="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none">
+                      <div className="w-48 h-48 rounded-full border border-dashed animate-[spin_50s_linear_infinite] border-primary" />
+                    </div>
+                    <div className="w-24 h-24 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-4">
+                      {selectedMember.role.toLowerCase().includes("chair") ? <Crown className="w-10 h-10" /> : <Shield className="w-10 h-10" />}
+                    </div>
+                  </div>
+                )}
+                {/* Inner shadows/accents */}
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent md:bg-gradient-to-r md:from-transparent md:via-transparent md:to-card/90 pointer-events-none" />
+              </div>
+
+              {/* Message / Details Area (Right side) */}
+              <div className="w-full md:w-7/12 p-8 sm:p-10 flex flex-col justify-between relative">
+                {/* Technical lines accent */}
+                <div className="absolute top-0 right-12 w-px h-6 bg-primary/20" />
+                <div className="absolute top-12 right-0 h-px w-6 bg-primary/20" />
+                <div className="absolute bottom-0 left-12 w-px h-6 bg-primary/20" />
+
+                <div>
+                  {/* Committee Tag */}
+                  <span className="font-body text-[9px] uppercase tracking-widest px-3 py-1 rounded-full border border-primary/30 text-primary bg-primary/5 inline-block font-bold mb-4">
+                    {selectedMember.committee === "IP" ? "International Press" : selectedMember.committee}
+                  </span>
+
+                  {/* Role Title */}
+                  <span className="font-body text-[10px] font-bold uppercase tracking-[0.25em] block text-primary mb-1">
+                    {selectedMember.role}
+                  </span>
+
+                  {/* Name */}
+                  <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-foreground uppercase tracking-wide mb-6 text-glow leading-none">
+                    {selectedMember.name}
+                  </h2>
+
+                  <div className="h-px w-24 bg-primary/30 mb-8" />
+
+                  {/* Message Title */}
+                  <p className="font-body text-[9px] uppercase tracking-[0.25em] text-muted-foreground font-bold mb-3">
+                    A Message to the Delegates:
+                  </p>
+
+                  {/* Welcome Message */}
+                  <p className="font-body text-xs sm:text-sm text-foreground/85 leading-relaxed italic bg-primary/5 p-4 border-l-2 border-primary/50 rounded-r-lg max-h-[220px] overflow-y-auto">
+                    "{selectedMember.message || defaultMessage}"
+                  </p>
+                </div>
+
+                <div className="mt-8 border-t border-white/5 pt-4 flex items-center justify-between text-[9px] font-body uppercase tracking-widest text-muted-foreground">
+                  <span className="flex items-center gap-2">
+                    <Users2 className="w-3.5 h-3.5" />
+                    <span>WSMUN '26 Executive Board</span>
+                  </span>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </>
   );
 };

@@ -63,7 +63,7 @@ const ContactSection = () => {
           <div className="flex items-center gap-2">
             <span className="w-8 h-px bg-primary/50 hidden md:block" />
             <p className="font-body text-xs text-muted-foreground uppercase tracking-widest">
-              Of the people, for the people.
+              by the people, of the people, for the people.
             </p>
           </div>
         </div>
