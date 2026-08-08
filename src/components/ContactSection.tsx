@@ -25,8 +25,13 @@ const ContactSection = () => {
               <Instagram className="w-4 h-4 text-primary" /> Follow Us
             </p>
             <div className="flex flex-col gap-3">
-              <a href="#" className="font-body text-sm text-foreground hover:text-primary transition-colors flex items-center gap-2">
-                <Instagram className="w-4 h-4" /> Instagram
+              <a 
+                href="https://www.instagram.com/worldsummit_mun" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="font-body text-sm text-foreground hover:text-primary transition-colors flex items-center gap-2"
+              >
+                <Instagram className="w-4 h-4 text-primary/80" /> @worldsummit_mun
               </a>
             </div>
           </motion.div>
@@ -60,11 +65,22 @@ const ContactSection = () => {
           <p className="font-display font-bold text-xs uppercase tracking-[0.3em] text-primary text-glow">
             WSMUN '26 © 2026
           </p>
-          <div className="flex items-center gap-2">
-            <span className="w-8 h-px bg-primary/50 hidden md:block" />
-            <p className="font-body text-xs text-muted-foreground uppercase tracking-widest">
-              by the people, of the people, for the people.
-            </p>
+          <div className="flex items-center gap-6">
+            <div className="flex items-center gap-2">
+              <span className="w-8 h-px bg-primary/50 hidden md:block" />
+              <p className="font-body text-xs text-muted-foreground uppercase tracking-widest">
+                by the people, of the people, for the people.
+              </p>
+            </div>
+            <a 
+              href="https://www.instagram.com/worldsummit_mun" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
+              aria-label="Instagram"
+            >
+              <Instagram className="w-4 h-4" />
+            </a>
           </div>
         </div>
       </footer>

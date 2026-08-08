@@ -129,25 +129,25 @@ const AboutSection = () => {
         </div>
 
         {/* Countdown Timer (On Top & Bigger) */}
-        <div className="w-full mb-6 relative z-10">
+        <div className="w-full mb-8 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
             whileHover={{ y: -4 }}
-            className="glass-panel p-8 sm:p-12 text-center rounded-2xl border border-white/5 relative group overflow-hidden max-w-4xl mx-auto shadow-2xl"
+            className="glass-panel p-8 sm:p-10 text-center rounded-2xl border border-white/5 relative group overflow-hidden max-w-3xl mx-auto shadow-2xl"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            <div className="flex flex-col items-center justify-center gap-4 mb-4">
+            <div className="flex flex-col items-center justify-center gap-6">
               <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 border border-primary/20 text-primary">
                 <Timer className="w-6 h-6 text-primary/80 group-hover:text-primary transition-colors duration-300" strokeWidth={1.5} />
               </div>
               <CountdownTimer />
+              <p className="font-body text-xs sm:text-sm uppercase tracking-[0.2em] text-primary font-bold">
+                Countdown to WSMUN'26
+              </p>
             </div>
-            <p className="font-body text-xs sm:text-sm uppercase tracking-[0.2em] text-primary font-bold">
-              Countdown to WSMUN'26
-            </p>
           </motion.div>
         </div>
 
