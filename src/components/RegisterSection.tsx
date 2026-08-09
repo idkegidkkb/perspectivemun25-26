@@ -28,37 +28,75 @@ const RegisterSection = () => {
             discourse and lead the diplomatic stage.
           </motion.p>
 
-           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-            {[
-              { title: "Delegate Registration", desc: "Individual delegates looking to represent a country in committee.", link: "https://forms.gle/U3yoFhgPWzsRH8PN6", target: "_blank", rel: "noopener noreferrer" },
-              { title: "Delegation Registration", desc: "Register your school or university delegation as a group.", link: "https://forms.gle/Qsbvag8NhLv41X9e7", target: "_blank", rel: "noopener noreferrer" },
-            ].map((item, i) => (
-              <div key={item.title} className="glow-border rounded-xl">
-                <motion.a
-                  href={item.link}
-                  target={item.target}
-                  rel={item.rel}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: i * 0.15 }}
-                  className="glass-panel p-8 md:p-10 group hover:bg-primary/5 transition-all duration-500 block h-full rounded-xl relative overflow-hidden"
-                >
-                  <div className="absolute top-0 left-0 w-2 h-0 bg-primary group-hover:h-full transition-all duration-500 ease-out" />
-                  <p className="font-display font-bold text-lg uppercase tracking-wider text-primary mb-4 group-hover:text-glow transition-all">
-                    {item.title}
-                  </p>
-                  <p className="font-body text-sm text-muted-foreground leading-relaxed mb-8 group-hover:text-foreground/80 transition-colors">
-                    {item.desc}
-                  </p>
-                  <div className="flex items-center gap-2 font-body text-xs text-primary uppercase tracking-widest mt-auto">
-                    <span className="group-hover:tracking-[0.2em] transition-all duration-300">Apply</span>
-                    <ArrowRight className="w-4 h-4 transform group-hover:translate-x-2 transition-transform duration-300" />
-                  </div>
-                </motion.a>
-              </div>
-            ))}
-          </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+             {[
+               { 
+                 title: "Delegate Registration", 
+                 desc: "Individual delegates looking to represent a country in committee.", 
+                 link: "https://forms.gle/U3yoFhgPWzsRH8PN6", 
+                 target: "_blank", 
+                 rel: "noopener noreferrer", 
+                 action: "Apply",
+                 isLink: true 
+               },
+               { 
+                 title: "Delegation Registration", 
+                 desc: (
+                   <span>
+                     Please contact <strong className="text-primary font-bold">Ethan (+91 91361 23809)</strong> for delegation registration.
+                   </span>
+                 ), 
+                 link: "", 
+                 target: undefined, 
+                 rel: undefined, 
+                 action: "",
+                 isLink: false 
+               },
+             ].map((item, i) => (
+               <div key={item.title} className="glow-border rounded-xl">
+                 {item.isLink ? (
+                   <motion.a
+                     href={item.link}
+                     target={item.target}
+                     rel={item.rel}
+                     initial={{ opacity: 0, y: 30 }}
+                     whileInView={{ opacity: 1, y: 0 }}
+                     viewport={{ once: true }}
+                     transition={{ duration: 0.6, delay: i * 0.15 }}
+                     className="glass-panel p-8 md:p-10 group hover:bg-primary/5 transition-all duration-500 block h-full rounded-xl relative overflow-hidden text-left"
+                   >
+                     <div className="absolute top-0 left-0 w-2 h-0 bg-primary group-hover:h-full transition-all duration-500 ease-out" />
+                     <p className="font-display font-bold text-lg uppercase tracking-wider text-primary mb-4 group-hover:text-glow transition-all">
+                       {item.title}
+                     </p>
+                     <p className="font-body text-sm text-muted-foreground leading-relaxed mb-8 group-hover:text-foreground/80 transition-colors">
+                       {item.desc}
+                     </p>
+                     <div className="flex items-center gap-2 font-body text-xs text-primary uppercase tracking-widest mt-auto">
+                       <span className="group-hover:tracking-[0.2em] transition-all duration-300">{item.action}</span>
+                       <ArrowRight className="w-4 h-4 transform group-hover:translate-x-2 transition-transform duration-300" />
+                     </div>
+                   </motion.a>
+                 ) : (
+                   <motion.div
+                     initial={{ opacity: 0, y: 30 }}
+                     whileInView={{ opacity: 1, y: 0 }}
+                     viewport={{ once: true }}
+                     transition={{ duration: 0.6, delay: i * 0.15 }}
+                     className="glass-panel p-8 md:p-10 block h-full rounded-xl relative overflow-hidden text-left"
+                   >
+                     <div className="absolute top-0 left-0 w-2 h-full bg-primary" />
+                     <p className="font-display font-bold text-lg uppercase tracking-wider text-primary mb-4 text-glow">
+                       {item.title}
+                     </p>
+                     <p className="font-body text-sm text-muted-foreground leading-relaxed">
+                       {item.desc}
+                     </p>
+                   </motion.div>
+                 )}
+               </div>
+             ))}
+           </div>
         </div>
       </section>
     </>

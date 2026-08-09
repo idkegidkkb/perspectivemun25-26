@@ -141,14 +141,9 @@ const RegistrationsPage = () => {
                 >
                   Register as Individual
                 </a>
-                <a
-                  href="https://forms.gle/Qsbvag8NhLv41X9e7"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full border border-primary/50 text-primary font-body font-bold text-[10px] uppercase tracking-[0.25em] py-3.5 rounded hover:bg-primary hover:text-background transition-all duration-300 block text-center"
-                >
-                  Register as Delegation
-                </a>
+                <p className="font-body text-xs text-foreground/90 text-center py-2">
+                  Please contact <strong className="text-primary font-bold">Ethan (+91 91361 23809)</strong> for delegation registration.
+                </p>
               </div>
 
               {/* Cash Prizes Section */}

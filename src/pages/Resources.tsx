@@ -148,40 +148,23 @@ const ResourcesPage = () => {
             </h2>
           </div>
 
-          {/* Background Guides Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {committees.map((com, i) => (
-              <motion.div
-                key={com.abbr}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: i * 0.08 }}
-                className="glass-panel p-6 rounded-xl border border-white/5 flex flex-col justify-between h-full hover:border-primary/40 transition-colors duration-300"
-              >
-                <div>
-                  <div className="flex items-baseline justify-between mb-4">
-                    <span className="font-display font-extrabold text-3xl text-primary text-glow">{com.abbr}</span>
-                    <span className="font-body text-[9px] uppercase tracking-widest text-muted-foreground font-bold">Study Guide</span>
-                  </div>
-                  <h3 className="font-display font-bold text-xl text-foreground uppercase tracking-wide mb-2">
-                    {com.name}
-                  </h3>
-                  <p className="font-body text-xs text-muted-foreground leading-relaxed mb-6 line-clamp-3 hover:line-clamp-none transition-all duration-300 cursor-help">
-                    <strong>Agenda:</strong> {com.agenda}
-                  </p>
-                </div>
-                
-                <button
-                  onClick={() => handleDownloadGuide(com.abbr)}
-                  className="w-full bg-primary/5 hover:bg-primary border border-primary/30 hover:border-primary text-primary hover:text-background font-body font-bold text-[10px] uppercase tracking-widest py-3 rounded flex items-center justify-center gap-2 transition-all duration-300 mt-auto"
-                >
-                  <Download className="w-3.5 h-3.5" />
-                  <span>Download Guide</span>
-                </button>
-              </motion.div>
-            ))}
-          </div>
+          {/* Study Guides Dropping Soon Message */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="glass-panel p-12 rounded-xl border border-primary/20 text-center relative overflow-hidden flex flex-col items-center justify-center max-w-3xl mx-auto my-12"
+          >
+            <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 blur-[50px] rounded-full pointer-events-none" />
+            <AlertCircle className="w-12 h-12 text-primary text-glow mb-6 animate-pulse" />
+            <h3 className="font-display font-extrabold text-3xl sm:text-4xl text-foreground uppercase tracking-widest mb-4">
+              Study Guides Dropping Soon
+            </h3>
+            <p className="font-body text-sm text-muted-foreground max-w-md leading-relaxed">
+              Background guides are currently being finalized by the Executive Board and will be released for all committees on <span className="text-primary font-bold">August 20th, 2026</span>.
+            </p>
+          </motion.div>
 
           {/* Guidelines disclaimer */}
           <div className="flex gap-3 bg-primary/5 border border-primary/20 p-5 rounded mt-12 text-xs text-primary/95 leading-relaxed font-body">
