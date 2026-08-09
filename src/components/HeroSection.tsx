@@ -130,7 +130,7 @@ const HeroSection = () => {
                 DATES
               </p>
               <p className="font-body text-xs sm:text-base font-bold text-foreground">
-                19 - 20 September
+                19th September and 20th September
               </p>
             </div>
 
