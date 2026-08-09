@@ -86,10 +86,10 @@ const ResourcesPage = () => {
           </motion.div>
 
           {/* General Reference Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+          <div className="max-w-2xl mx-auto mb-16">
             <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className="glass-panel p-6 rounded-xl border border-white/5 flex gap-4 items-center"
             >
@@ -106,32 +106,6 @@ const ResourcesPage = () => {
               </div>
               <button
                 onClick={() => handleDownloadGeneral("Rules of Procedure")}
-                className="p-3 bg-white/5 hover:bg-primary/20 hover:text-primary rounded transition-all duration-300"
-                title="Download PDF"
-              >
-                <Download className="w-4 h-4" />
-              </button>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="glass-panel p-6 rounded-xl border border-white/5 flex gap-4 items-center"
-            >
-              <div className="p-4 rounded bg-primary/10 text-primary">
-                <Bookmark className="w-6 h-6" />
-              </div>
-              <div className="flex-grow">
-                <h3 className="font-body font-bold text-sm text-foreground uppercase tracking-wider">
-                  Position Paper Guide
-                </h3>
-                <p className="font-body text-xs text-muted-foreground mt-1">
-                  Instructions on format, citation requirements, and layout guidelines
-                </p>
-              </div>
-              <button
-                onClick={() => handleDownloadGeneral("Position Paper Guide")}
                 className="p-3 bg-white/5 hover:bg-primary/20 hover:text-primary rounded transition-all duration-300"
                 title="Download PDF"
               >
@@ -166,13 +140,6 @@ const ResourcesPage = () => {
             </p>
           </motion.div>
 
-          {/* Guidelines disclaimer */}
-          <div className="flex gap-3 bg-primary/5 border border-primary/20 p-5 rounded mt-12 text-xs text-primary/95 leading-relaxed font-body">
-            <AlertCircle className="w-4 h-4 shrink-0 text-primary mt-0.5" />
-            <p>
-              Submission of Position Papers is mandatory for award eligibility. Position papers must be emailed directly to your respective committee heads before <strong>August 30th, 2026</strong>. Late entries will be penalized.
-            </p>
-          </div>
         </div>
       </main>
     </>
