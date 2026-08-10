@@ -47,8 +47,9 @@ const ocTeam: OCMember[] = [
     role: "Marketing Head",
     name: "Arjun Kirsur",
     dept: "Marketing & Communications",
+    image: "/photos/Arjun.jpeg",
     bio: "Manages external communication, outreach pipelines, and strategic brand positioning for WSMUN'26.",
-    message: "Welcome to WSMUN'26! Our marketing team has worked hard to connect delegates across circuits and build a vibrant community of future leaders. We hope you enjoy the conference networking and discussions."
+    message: "Arjun Kirsur is a 15-year-old student currently serving as the Marketing Head for World Summit Model United Nations 2026. He has been participating in Model UN for more than two years, and he aims to become an international humanitarian lawyer. Debating and deliberating about world affairs are his greatest passion, and he has incorporated it into making WSMUN ‘26 a conference that people would love to be a part of. Being an international humanitarian lawyer is Arjun’s career aspiration, and he is a passionate debater interested in current world events. Arjun takes pride in his role as the Marketing Head for World Summit Model United Nations 2026. He feels responsible for ensuring the conference connects with the target audience. In addition, Arjun wants to make sure that WSMUN ‘26 is a remarkable event that creates a long overdue impression on its delegates."
   },
   {
     role: "Media Head",
@@ -78,8 +79,9 @@ const ocTeam: OCMember[] = [
     role: "Social Media and Design Head",
     name: "Nayan Vij",
     dept: "Design & Branding",
+    image: "/photos/Nayan.jpeg",
     bio: "Directs graphical resources, social announcements, and the UI/UX branding standards.",
-    message: "Welcome! The visual design, social announcements, and digital branding of WSMUN'26 are crafted to reflect the premium standard of our conference. Have a great session!"
+    message: "Nayan is a 15 year-old student. He's been doing MUNs for a little over a year. He's always had a knack for graphic design and shown great enthusiasm in depicting simple ideas through a more creative and abstract lens while maintaining aesthetic detail."
   }
 ];
 

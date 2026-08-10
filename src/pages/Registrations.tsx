@@ -126,10 +126,6 @@ const RegistrationsPage = () => {
                 </div>
               </div>
 
-              {/* Referrals Notice */}
-              <div className="bg-primary/5 border border-primary/20 p-3.5 rounded text-[10px] text-foreground/90 leading-relaxed font-body mb-6">
-                💡 <span className="font-bold text-primary">Referrals:</span> Make sure to use <span className="font-bold text-primary">Arjun</span> or <span className="font-bold text-primary">Nayan</span> in the referrals section of the form
-              </div>
 
               {/* CTA Buttons */}
               <div className="space-y-3 mb-6">

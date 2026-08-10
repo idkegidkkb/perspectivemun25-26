@@ -34,7 +34,7 @@ const ebMembers: EBMember[] = [
     role: "Chairperson",
     committee: "UNGA",
     image: "/photos/YogRai.PNG",
-    message: "It is my privilege to welcome you to the United Nations General Assembly. At WSMUN '26, our goal is to challenge your perspectives, broaden your horizons, and foster a deep appreciation for the complex art of international relations. I expect rigorous debate and pragmatic resolutions.",
+    message: "A finance student whose fascination with dialogue, diplomacy, and public speaking naturally led him into the world of Model United Nations. Specialising in UN committees, Yog remains deeply interested in global affairs, strategic discourse, public policy, and international relations, alongside his core passion for finance and economics. A firm believer in the principle of agreeing to disagree, he views MUNs as one of the finest platforms for fostering meaningful discourse amidst differing perspectives which is an ethos he hopes to cultivate within every committee he is a part of.",
   },
   {
     name: "Saanvi Saluja",
@@ -42,7 +42,7 @@ const ebMembers: EBMember[] = [
     committee: "UNGA",
     image: "/photos/Sanvi Saluja.jpeg",
     objectPosition: "object-center",
-    message: "Welcome UNGA delegates! Balancing mandate prioritization against budgetary realities is one of the most critical structural challenges the UN faces today. I look forward to seeing your collaborative problem-solving skills in action.",
+    message: "Saanvi Saluja is an 12th grade humanities student at Smt. Sulochanadevi Singhania School, with a keen interest in public speaking, Journalism and debate. She is a believer of practicality and is always ready to be of help. Her consistency, professionalism and communication skills make her efficient in everything she does.",
   },
   // ECOSOC
   {
@@ -57,7 +57,7 @@ const ebMembers: EBMember[] = [
     role: "Vice Chairperson",
     committee: "ECOSOC",
     image: "/photos/Aarav Sharma.jpeg",
-    message: "Greetings ECOSOC delegates! Creating systems that balance national economic sovereignty with global investment demands requires a refined understanding of international law. I look forward to guiding your deliberations.",
+    message: "I exhibit remarkable maturity as I navigate the world of MUNs. Renowned for my leadership, eloquence, and fairness, I excel in fostering collaboration and guiding discussions, making me an invaluable asset to any Model United Nations conference. I believe in philosophy. \"Success isn't accomplished alone but Success is that what you inspire your peers to do\"—this quote by Nelson Mandela has helped me to be a better individual of myself.",
   },
   // UNHRC
   {
@@ -65,29 +65,29 @@ const ebMembers: EBMember[] = [
     role: "Chairperson",
     committee: "UNHRC",
     image: "/photos/Prakket Dholekar.JPEG",
-    message: "To the delegates of the UNHRC: human rights violations are often deeply structural, tied to various economic systems. We must analyze these intersections objectively and propose systems that safeguard human dignity globally.",
+    message: "Meet Prakket Dholekar, a second-year college student whose ambition, charisma, and determination make him a natural leader. With seven years of competitive debating experience, he has cultivated a strong foundation in diplomacy, public speaking, and critical thinking, particularly in the fields of international politics and fiction. Whether analysing complex global issues or engaging in thought-provoking discussions, Prakket approaches every challenge with curiosity, confidence, and a desire to constantly learn and grow. A strategist at heart, he possesses the rare ability to balance meticulous preparation with quick thinking, allowing him to thrive in high-pressure environments while maintaining his composure. Beyond debating, Prakket is a state-level basketball and handball player whose competitive spirit extends far beyond the court. Years of training and competition have instilled in him discipline, resilience, teamwork, and an unwavering commitment to excellence. These experiences have shaped not only his athletic abilities but also his leadership style, teaching him the importance of perseverance, accountability, and trust. Whether leading a team, supporting his peers, or taking on new responsibilities, he brings the same energy, dedication, and determination that have defined his sporting journey. Away from academics and athletics, Prakket is a passionate Formula 1 enthusiast, a loyal Ferrari supporter, and an avid sim racer who appreciates the precision and strategy that motorsport demands. At the same time, his love for novels, storytelling, and discovering niche R&B artists reveals a thoughtful and reflective side that values creativity and depth. Driven, dependable, and endlessly passionate about the things he loves, Prakket leaves a lasting impression wherever he goes.",
   },
   {
     name: "Ahad Khan",
     role: "Vice Chairperson",
     committee: "UNHRC",
     image: "/photos/Ahad Khan.jpeg",
-    message: "Welcome to UNHRC! The debate on economic systems and their impacts on human rights is both historically rich and modernly urgent. Prepare for an intense, rewarding experience.",
+    message: "As a 10th-grade Cambridge science student with 1.5 years of MUN experience, I approach committee leadership with a legal orientation centered on human rights and the AI sector, favoring robust frameworks over passive-aggressive solutions. Guided by the maxim that \"we are what we repeatedly do; excellence, then, is not an act, but a habit,\" I bring analytical precision and resilience—qualities sharpened just as much by supporting Arsenal on the football pitch as in debate. I enter this upcoming session with high expectations for a dynamic, intellectually rigorous conference experience.",
   },
   {
     name: "Sukriti Sahay",
     role: "Rapporteur",
     committee: "UNHRC",
     image: "/photos/Sukriti Sahay.jpeg",
-    message: "Greetings delegates of UNHRC. As your Rapporteur, I will be carefully documenting the proceedings, working papers, and resolutions. Let us work together to make this committee highly productive.",
+    message: "Sukriti Sahay is a Grade 10 student and an aspiring lawyer with an unhealthy attachment to courtroom dramas, Greek tragedies, and song lyrics that somehow fit every situation. She's rarely one to back down from a debate and firmly believes there's no problem that can't be solved with a well-structured argument, or a dramatic quote. When she's not buried under schoolwork or MUN research, she's probably rewatching a film, romanticizing rainy weather, or adding yet another song to an already overflowing playlist. A theatre enthusiast at heart, she firmly believes the big screen is where stories are meant to be experienced. She's endlessly fascinated by history, mythology, literature, and anything that makes her overthink life a little more than necessary. You'll often catch her quoting lyrics mid-conversation, and she fully intends to keep doing so for the rest of her life. While she may not be the funniest person in every room, she's almost certainly the loudest. Her curiosity, enthusiasm, and inability to stay quiet when she has something to say help her thrive in the spaces she surrounds herself with. Equal parts competitive and sentimental, she loves a good challenge, thrives under pressure (or at least pretends to), and brings curiosity, conviction, and just the right amount of dramatic flair wherever she goes.",
   },
   // AIPPM
   {
     name: "Anuj Shenoy",
     role: "Co-Chairperson",
     committee: "AIPPM",
-    image: "",
-    message: "Welcome to the All India Political Parties Meet. Deliberating on the validity of anti-conversion laws in India is a highly nuanced constitutional and social discussion. I expect delegates to respect diverse political views while maintaining high standards of debate.",
+    image: "/photos/Anuj.jpeg",
+    message: "Anuj is a passionate future law student who has gained valuable experience through Model United Nations and National Youth Parliaments, showcasing strong skills in debate, diplomacy, and public speaking. With participation across numerous conferences and youth parliaments, he has earned multiple awards and recognitions at various MUNs, NYPs, and debating platforms for his parliamentary performance, leadership, and analytical skills. He also possesses extensive Executive Board experience, having served across multiple conferences, including experience of the Lok Sabha Committee at IIT Bombay's Techfest World MUN, Rajya Sabha at Goa NYP and many other conferences. These experiences have strengthened his ability to lead discussions, manage committees, and encourage productive debate in high-pressure environments. Apart from academics and debating, Anuj is an ex-National Taekwondo athlete, holding four international medals along with multiple national honors, reflecting discipline, perseverance, and dedication beyond the conference room. Anuj believes in leading by example, “Be the change you wish to see in this world.” He looks forward to contributing to rational, respectful, and solution-oriented discussions in every committee he is a part of.",
   },
   {
     name: "Tapasya Dumbre",
@@ -109,7 +109,7 @@ const ebMembers: EBMember[] = [
     role: "Vice Chairperson",
     committee: "FIA",
     image: "/photos/Valen Kumar.jpeg",
-    message: "To the FIA delegates: motorsport governance is as much about racing as it is about ethical responsibilities and political neutrality. I look forward to hearing your speeches on driver expression and motor governing guidelines.",
+    message: "Hi! I’m Valen Kumar, a Grade X student who somehow turned “just trying MUN once” into one of my favourite hobbies. Over the years, conferences have taught me much more than diplomacy—they’ve taught me confidence, teamwork, adaptability, and how to think on my feet. Every committee is different, and that’s exactly what keeps me coming back. Besides researching countries and preparing for conferences, I like to pass time by playing music, painting, and exploring anything related to history, law, and foreign relations. I have strong communication skills, deep analytical thinking, and cooperative diplomacy. These qualities, alongside my determination and self-assurance, help propel me through the various MUNs I have done over these years. For me, MUN has never just been about awards or recognition. It’s about the people you meet, the perspectives you discover, and the conversations that stay with you long after the conference ends. I’m excited to be a part of another incredible experience and can’t wait to see what this conference has in store.",
   },
   {
     name: "Saatvik Joshi",
@@ -124,7 +124,7 @@ const ebMembers: EBMember[] = [
     role: "Chairperson",
     committee: "IP",
     image: "/photos/Shriya Rajan.jpeg",
-    message: "To the journalists, reporters, and photographers of the International Press: the truth is your arena. Your coverage, commentary, and visual storytelling will shape how this summit is remembered. Report with integrity, capture the essence of debate, and hold our committees to account.",
+    message: "Introducing Shriya Rajan, Chair of the International Press Committee: bold, unapologetically sassy, and a natural multitasker. She aims to bring fire to the committee and lead with precision, passion, and persistence. With a natural prowess for written expression and a profound respect for the art of questioning, she approaches journalism as both a responsibility and a craft to be refined with intention, integrity and authenticity. The International Press Committee is the narrative and investigative backbone of every conference. It brings a dynamic energy to every room, serving as a space that nurtures curiosity, analysis, and critical thinking. Under her leadership, the International Press Committee will not just merely report the conference, but also weave perspectives with impact and ensure every story is powerful, purposeful and impossible to ignore.",
   },
 ];
 

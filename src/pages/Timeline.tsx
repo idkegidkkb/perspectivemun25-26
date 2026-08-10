@@ -29,13 +29,13 @@ const timelineEvents = [
     },
     {
         title: "Conference Day 1",
-        date: "5th September 2026",
+        date: "19th September 2026",
         description: "Opening ceremony followed by high-level committee sessions at Churchgate",
         completed: false,
     },
     {
         title: "Conference Day 2",
-        date: "6th September 2026",
+        date: "20th September 2026",
         description: "Intense debates, voting, and the final Awards & Closing Ceremony",
         completed: false,
     }
