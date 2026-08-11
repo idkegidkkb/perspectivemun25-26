@@ -118,7 +118,7 @@ const AboutSection = () => {
             >
               <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10 opacity-45" />
               <img
-                src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=800&q=80"
+                src="/photos/pexels-jan-van-der-wolf-11680885-14501973.jpg"
                 alt="Conference delegates debating"
                 className="w-full h-full object-cover filter grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition-all duration-700"
                 loading="lazy"
