@@ -7,36 +7,50 @@ const committees = [
     name: "United Nations Security Council",
     abbr: "UNSC",
     topic: "Deliberating upon the adequacy of existing non-proliferation architecture for biowarfare threats arising from emerging technologies.",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/e/ee/UN_emblem_blue.svg",
+    eb: "Chair: Iklavya Dev • Vice Chair: Kshitij Jadhav",
   },
   {
     name: "United Nations General Assembly",
     abbr: "UNGA",
     topic: "Balancing Mandate and Agenda Prioritization Against the Logistical and Budgetary Constraints in the UN.",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/e/ee/UN_emblem_blue.svg",
+    eb: "Chair: Yog Ashok Rai • Vice Chair: Saanvi Saluja",
   },
   {
     name: "Economic and Social Council",
     abbr: "ECOSOC",
     topic: "Deliberating Upon the Reform of Bilateral Investment Treaties (BITs) to Promote Sustainable Development and Equitable Foreign Investment.",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/e/ee/UN_emblem_blue.svg",
+    eb: "Chair: Aditya Dutta • Vice Chair: Aarav Sharma",
   },
   {
     name: "United Nations Human Rights Council",
     abbr: "UNHRC",
     topic: "Deliberating Upon the Human Rights Violations Caused by Various Economic Systems.",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/e/ee/UN_emblem_blue.svg",
+    eb: "Chair: Prakket Dholekar • Vice Chair: Ahad Khan • Rapporteur: Sukriti Sahay",
   },
   {
     name: "All India Political Parties Meet",
     abbr: "AIPPM",
     topic: "Discussion and deliberation on the constitutional validity of anti conversion laws in india",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/3/30/Ashoka_Chakra.svg",
+    eb: "Co-Chair: Anuj Shenoy • Co-Chair: Tapasya Dumbre",
   },
   {
     name: "Fédération Internationale de l'Automobile",
     abbr: "FIA",
     topic: "Addressing the Balance Between Driver Rights, Ethical Responsibilities, and Freedom of Expression Within Motorsport Governance.",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/f2/Formula_One_logo.svg",
+    eb: "Chair: Mrugaja Prabhu • Vice Chair: Valen Kumar • Co-Vice Chair: Saatvik Joshi",
   },
   {
     name: "International Press",
     abbr: "IP",
     topic: "Roleplay and reporting as Journalists and Photographers covering the proceedings of all committees",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/a/aa/Newspaper_icon.svg",
+    eb: "Chairperson: Ms. Shriya Rajan",
   },
 ];
 
@@ -184,11 +198,18 @@ const CommitteesPage = () => {
                           const diff = i - activeIndex;
                           changeCommittee(diff);
                         }}
-                        className={`relative flex flex-col items-center justify-center w-[48px] h-[48px] md:w-[96px] md:h-[96px] rounded-full glass-panel cursor-pointer group transition-all duration-500 border-2 ${activeIndex === i ? 'border-primary shadow-[0_0_30px_hsl(var(--blueprint-cyan)/0.6)] scale-110 z-20' : 'border-white/10 hover:border-primary/50 opacity-60 hover:opacity-100 z-10'}`}
+                        className={`relative flex flex-col items-center justify-center w-[48px] h-[48px] md:w-[96px] md:h-[96px] rounded-full glass-panel cursor-pointer group transition-all duration-500 border-2 overflow-hidden ${activeIndex === i ? 'border-primary shadow-[0_0_30px_hsl(var(--blueprint-cyan)/0.6)] scale-110 z-20' : 'border-white/10 hover:border-primary/50 opacity-60 hover:opacity-100 z-10'}`}
                         whileHover={{ scale: activeIndex === i ? 1.1 : 1.05 }}
                         whileTap={{ scale: 0.95 }}
                       >
-                        <span className={`font-display font-bold text-[8px] md:text-sm tracking-wider transition-all duration-300 ${activeIndex === i ? 'text-primary text-glow' : 'text-muted-foreground group-hover:text-primary group-hover:text-glow'}`}>
+                        {/* Background watermark logo */}
+                        <img 
+                          src={c.logo} 
+                          alt="" 
+                          className={`absolute inset-0 w-full h-full object-contain p-2 md:p-4 opacity-[0.15] group-hover:opacity-[0.25] transition-all duration-500 ${activeIndex === i ? 'opacity-[0.35] brightness-125' : 'filter grayscale'}`}
+                        />
+                        
+                        <span className={`font-display font-bold text-[8px] md:text-sm tracking-wider transition-all duration-300 relative z-10 ${activeIndex === i ? 'text-primary text-glow' : 'text-muted-foreground group-hover:text-primary group-hover:text-glow'}`}>
                           {c.abbr}
                         </span>
                       </motion.button>
@@ -198,8 +219,8 @@ const CommitteesPage = () => {
               })}
             </motion.div>
 
-            {/* Center Active Details - Scaled Down intentionally to guarantee a gap */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-30 w-[62%] max-w-[145px] md:w-[85%] md:max-w-[320px]">
+            {/* Center Active Details */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-30 w-[70%] max-w-[170px] md:w-[85%] md:max-w-[340px]">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={activeIndex}
@@ -207,19 +228,33 @@ const CommitteesPage = () => {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.8 }}
                   transition={{ duration: 0.4 }}
-                  className="glass-panel p-2.5 md:p-6 rounded-2xl text-center border border-primary/30 shadow-2xl bg-background/95 backdrop-blur-md pointer-events-auto flex flex-col justify-center items-center aspect-auto py-4 md:py-6"
+                  className="glass-panel p-2 md:p-6 rounded-2xl text-center border border-primary/30 shadow-2xl bg-background/95 backdrop-blur-md pointer-events-auto flex flex-col justify-center items-center aspect-auto py-4 md:py-6"
                 >
-                  <h2 className="font-display font-bold text-[10px] sm:text-base md:text-lg text-foreground mb-1.5 md:mb-2 text-glow leading-snug">
+                  {/* Committee Logo */}
+                  <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-white/5 border border-primary/20 flex items-center justify-center mb-3 p-1.5 md:p-2 bg-gradient-to-br from-card to-primary/5 shrink-0">
+                    <img 
+                      src={committees[activeIndex].logo} 
+                      alt={`${committees[activeIndex].abbr} Logo`}
+                      className="w-full h-full object-contain filter drop-shadow-[0_0_10px_rgba(240,220,180,0.25)]" 
+                    />
+                  </div>
+
+                  <h2 className="font-display font-bold text-[9px] sm:text-base md:text-lg text-foreground mb-1.5 md:mb-2 text-glow leading-snug">
                     {committees[activeIndex].name}
                   </h2>
-
-
 
                   <div className="h-px w-full max-w-[200px] mb-2 md:mb-3 bg-primary/20" />
 
                   <p className="font-body text-[8px] md:text-[10px] uppercase tracking-widest text-primary mb-1 md:mb-2">Agenda</p>
-                  <p className="font-body text-[9px] sm:text-xs md:text-sm text-foreground/90 leading-relaxed min-h-[48px] md:min-h-[80px]">
+                  <p className="font-body text-[8px] sm:text-xs md:text-sm text-foreground/90 leading-relaxed min-h-[48px] md:min-h-[80px]">
                     <TypewriterText text={committees[activeIndex].topic} delay={0.2} />
+                  </p>
+
+                  <div className="h-px w-full max-w-[200px] my-1.5 md:my-3 bg-primary/20" />
+
+                  <p className="font-body text-[8px] md:text-[10px] uppercase tracking-widest text-primary mb-0.5 md:mb-1">Executive Board</p>
+                  <p className="font-body text-[8px] sm:text-[10px] md:text-xs text-foreground/80 font-medium leading-normal">
+                    {committees[activeIndex].eb}
                   </p>
                 </motion.div>
               </AnimatePresence>
