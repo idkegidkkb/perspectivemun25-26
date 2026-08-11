@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import TopNav from "@/components/TopNav";
-import { FileText, Download, AlertCircle, Bookmark, ExternalLink } from "lucide-react";
+import { AlertCircle, Bookmark, ExternalLink } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const committees = [
@@ -51,12 +51,7 @@ const ResourcesPage = () => {
     });
   };
 
-  const handleDownloadGeneral = (doc: string) => {
-    toast({
-      title: doc,
-      description: "Downloading document template. You will be redirected to the guide file.",
-    });
-  };
+
 
   return (
     <>
@@ -81,45 +76,17 @@ const ResourcesPage = () => {
             </h1>
             <div className="h-[2px] w-24 bg-primary rounded-full mb-8"></div>
             <p className="font-body text-sm sm:text-base text-foreground/80 leading-relaxed max-w-3xl">
-              Equip yourself for success at WSMUN '26. Download the general Rules of Procedure (ROP) or access the committee-specific background guides curated by our Executive Board.
+              Equip yourself for success at WSMUN. Access the portfolio matrix or the committee-specific background guides curated by our Executive Board.
             </p>
           </motion.div>
 
           {/* General Reference Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-16">
-            {/* ROP Card */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="glass-panel p-6 rounded-xl border border-white/5 flex gap-4 items-center"
-            >
-              <div className="p-4 rounded bg-primary/10 text-primary">
-                <FileText className="w-6 h-6" />
-              </div>
-              <div className="flex-grow">
-                <h3 className="font-body font-bold text-sm text-foreground uppercase tracking-wider">
-                  Rules of Procedure (ROP)
-                </h3>
-                <p className="font-body text-xs text-muted-foreground mt-1">
-                  General handbook on debate rules, speaking points, and resolution drafting
-                </p>
-              </div>
-              <button
-                onClick={() => handleDownloadGeneral("Rules of Procedure")}
-                className="p-3 bg-white/5 hover:bg-primary/20 hover:text-primary rounded transition-all duration-300 cursor-pointer"
-                title="Download PDF"
-              >
-                <Download className="w-4 h-4" />
-              </button>
-            </motion.div>
-
+          <div className="max-w-2xl mx-auto mb-16">
             {/* Portfolio Matrix Card */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
               className="glass-panel p-6 rounded-xl border border-white/5 flex gap-4 items-center"
             >
               <div className="p-4 rounded bg-primary/10 text-primary">
