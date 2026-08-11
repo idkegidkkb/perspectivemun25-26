@@ -93,7 +93,7 @@ const ebMembers: EBMember[] = [
     name: "Tapasya Dumbre",
     role: "Co-Chairperson",
     committee: "AIPPM",
-    image: "",
+    image: "/photos/pexels-jan-van-der-wolf-11680885-14501973.jpg",
     message: "Greetings delegates. The AIPPM represents the democratic voice of our nation. Discussing constitutional validity requires sharp legal logic, political foresight, and persuasive rhetoric. I look forward to a vibrant meeting.",
   },
   // FIA
