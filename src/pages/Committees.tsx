@@ -6,7 +6,7 @@ const committees = [
   {
     name: "United Nations Security Council",
     abbr: "UNSC",
-    topic: "Deliberating Upon the Proliferation of Unmanned Aerial Systems and Loitering Munitions and Their Implications for International Peace and Security.",
+    topic: "Deliberating upon the adequacy of existing non-proliferation architecture for biowarfare threats arising from emerging technologies.",
   },
   {
     name: "United Nations General Assembly",

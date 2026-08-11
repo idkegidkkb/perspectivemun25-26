@@ -7,32 +7,32 @@ const committees = [
   {
     abbr: "UNSC",
     name: "United Nations Security Council",
-    agenda: "proliferation of unmanned aerial systems and loitering munitions and their implications for international peace and security",
+    agenda: "Deliberating upon the adequacy of existing non-proliferation architecture for biowarfare threats arising from emerging technologies",
   },
   {
     abbr: "UNGA",
     name: "United Nations General Assembly",
-    agenda: "Balancing mandate and agenda prioritization against logistical and budgetary constraints in the United Nations",
+    agenda: "Balancing Mandate and Agenda Prioritization Against the Logistical and Budgetary Constraints in the UN",
   },
   {
     abbr: "ECOSOC",
     name: "Economic and Social Council",
-    agenda: "Reforming Bilateral Investment Treaties (BITs) to promote sustainable development and equitable foreign investment",
+    agenda: "Deliberating Upon the Reform of Bilateral Investment Treaties (BITs) to Promote Sustainable Development and Equitable Foreign Investment",
   },
   {
     abbr: "UNHRC",
     name: "United Nations Human Rights Council",
-    agenda: "Deliberating upon the human rights violations caused by various economic systems",
+    agenda: "Deliberating Upon the Human Rights Violations Caused by Various Economic Systems",
   },
   {
     abbr: "AIPPM",
     name: "All India Political Parties Meet",
-    agenda: "Discussion on the constitutional validity of anti conversion laws in India",
+    agenda: "Discussion and deliberation on the constitutional validity of anti conversion laws in india",
   },
   {
     abbr: "FIA",
     name: "Fédération Internationale de l'Automobile",
-    agenda: "Balancing driver rights, ethical responsibilities, and freedom of expression within motorsport governance",
+    agenda: "Addressing the Balance Between Driver Rights, Ethical Responsibilities, and Freedom of Expression Within Motorsport Governance",
   },
   {
     abbr: "IP",
