@@ -67,12 +67,12 @@ const CommitteesPage = () => {
 
       // Calculate a safe padding for the center box + node size + gap
       // Maximum radius allowed by screen height constraints
-      const maxRadiusByHeight = Math.max(115, (h - 220) / 2);
+      const maxRadiusByHeight = Math.max(120, (h - 180) / 2);
 
       let newRadius;
-      if (w < 768) newRadius = Math.min((w - 90) / 2, 175); // Constrain radius on mobile
-      else if (w < 1024) newRadius = 240;
-      else newRadius = 320;
+      if (w < 768) newRadius = Math.min((w - 60) / 2, 210); // Push the balls further out on mobile
+      else if (w < 1024) newRadius = 280; // Push further out on tablet
+      else newRadius = 360; // Push further out on desktop
 
       setRadius(Math.min(newRadius, maxRadiusByHeight));
     };
@@ -220,7 +220,7 @@ const CommitteesPage = () => {
             </motion.div>
 
             {/* Center Active Details */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-30 w-[70%] max-w-[170px] md:w-[85%] md:max-w-[340px]">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-30 w-[64%] max-w-[160px] md:w-[80%] md:max-w-[320px]">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={activeIndex}
@@ -228,7 +228,7 @@ const CommitteesPage = () => {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.8 }}
                   transition={{ duration: 0.4 }}
-                  className="glass-panel p-2 md:p-6 rounded-2xl text-center border border-primary/30 shadow-2xl bg-background/95 backdrop-blur-md pointer-events-auto flex flex-col justify-center items-center aspect-auto py-4 md:py-6"
+                  className="glass-panel p-3 md:p-6 rounded-2xl text-center border border-primary/30 shadow-2xl bg-background/95 backdrop-blur-md pointer-events-auto flex flex-col justify-center items-center aspect-auto py-3 md:py-6"
                 >
                   {/* Committee Logo */}
                   <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-white/5 border border-primary/20 flex items-center justify-center mb-3 p-1.5 md:p-2 bg-gradient-to-br from-card to-primary/5 shrink-0">
