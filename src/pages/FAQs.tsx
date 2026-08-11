@@ -4,24 +4,84 @@ import TopNav from "@/components/TopNav";
 
 const faqs = [
   {
-    q: "What is Model United Nations?",
-    a: "Model United Nations (MUN) is an educational simulation where students role-play as delegates of the United Nations, debating real-world issues and drafting resolutions",
+    q: "What is WSMUN?",
+    a: "World Summit Model United Nations is a Model United Nations conference designed to promote diplomacy, substantive debate, negotiation, research, public speaking and critical thinking.",
   },
   {
-    q: "Who can participate in WSMUN '26?",
-    a: "Students from high school and university are welcome to participate. No prior MUN experience is required — we have committees for all experience levels.",
+    q: "Who can participate in WSMUN?",
+    a: "School and college students who meet the registration requirements may participate, subject to confirmation by the Organising Committee.",
   },
   {
-    q: "What is the registration fee?",
-    a: "Registration details and fees will be announced shortly. Follow our social channels for the latest updates.",
+    q: "Do I need previous MUN experience?",
+    a: "No. Both first-time and experienced delegates are welcome to participate.",
   },
   {
-    q: "What should I prepare before the conference?",
-    a: "Once registered, you will receive your country and committee allocation along with a background guide. We recommend researching your country's stance on the agenda topic.",
+    q: "Can I choose my committee and portfolio?",
+    a: "Yes. Delegates may submit their preferences, although allotments depend on availability, experience, suitability, committee balance and other relevant factors.",
+  },
+  {
+    q: "Can I change my allotted portfolio?",
+    a: "You may request a change, but all changes are subject to availability and approval by the Secretariat.",
+  },
+  {
+    q: "Can I exchange portfolios with another delegate?",
+    a: "Yes, but prior approval from the Secretariat is compulsory. Delegates cannot privately exchange portfolios without informing the Secretariat.",
+  },
+  {
+    q: "Can someone replace me if I cannot attend?",
+    a: "Yes. A substitution can be requested before the announced substitution deadline and must be approved by the Organising Committee.",
+  },
+  {
+    q: "What should I carry to the conference?",
+    a: "Delegates should carry their conference credentials and a valid school, college, institutional or government-issued ID.",
   },
   {
     q: "What is the dress code?",
-    a: "Western formals are the standard dress code for all committee sessions. Delegates are expected to dress professionally throughout the conference.",
+    a: "For regular committees, the dress code is Western Formals on both days. For AIPPM, the dress code is Indian Traditionals on both days.",
+  },
+  {
+    q: "What is Prom Night?",
+    a: "Prom Night is an official WSMUN social event. Conference rules regarding conduct, safety, harassment, respect and property continue to apply throughout the event.",
+  },
+  {
+    q: "Are smoking, vaping or alcohol permitted?",
+    a: "No. Alcohol, narcotics, intoxicating substances, cigarettes and vaping products are strictly prohibited during official WSMUN activities.",
+  },
+  {
+    q: "What should I do if I face harassment or feel unsafe?",
+    a: "You may approach the Internal Committee, Secretariat, Executive Board, Secretary-General, Director-General or Deputy Secretary-General. Complaints may be kept confidential or anonymous where reasonably possible.",
+  },
+  {
+    q: "Are registration fees refundable?",
+    a: "Registration fees are generally non-refundable. Refunds are issued only if WSMUN is cancelled or postponed indefinitely.",
+  },
+  {
+    q: "Can WSMUN change my committee or portfolio after allotment?",
+    a: "Yes. The Secretariat may alter, reassign or withdraw an allotment where necessary for academic, administrative, disciplinary, logistical or operational reasons.",
+  },
+  {
+    q: "What conduct is prohibited at WSMUN?",
+    a: "Harassment, sexual misconduct, bullying, intimidation, stalking, discrimination, coercion, retaliation and any behaviour threatening another participant's dignity, safety or comfort are strictly prohibited.",
+  },
+  {
+    q: "What happens if I damage conference or venue property?",
+    a: "Participants responsible for damage may be required to pay repair or replacement costs or applicable fines and may also face disciplinary action.",
+  },
+  {
+    q: "What happens if I lose my phone, wallet or other belongings?",
+    a: "Participants are responsible for their own belongings. WSMUN, the Organising Committee and the venue are not responsible for loss, theft or damage to personal property.",
+  },
+  {
+    q: "Do WSMUN rules apply during Prom Night?",
+    a: "Yes. Prom Night and all other official social and cultural events remain subject to WSMUN's rules on conduct, harassment, safety, respect and property.",
+  },
+  {
+    q: "When will WSMUN issue a refund?",
+    a: "Refunds will only be issued if WSMUN is cancelled or postponed indefinitely. Registered participants will be contacted directly regarding the refund procedure.",
+  },
+  {
+    q: "Does WSMUN provide accommodation or transportation?",
+    a: "No. WSMUN does not provide accommodation or transportation. Participants are responsible for arranging their own travel, local transportation and accommodation, if required.",
   },
 ];
 

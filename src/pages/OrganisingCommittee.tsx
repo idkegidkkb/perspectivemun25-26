@@ -17,6 +17,7 @@ const ocTeam: OCMember[] = [
     role: "Co-Secretary General",
     name: "Raunak Jha",
     dept: "Executive Secretariat",
+    image: "/photos/Raunak.jpeg",
     bio: "Head representative directing WSMUN'26 operations, overseeing academic content, and directing secretariat efforts.",
     message: "Welcome to WSMUN '26! Our secretariat team has worked tirelessly to build an academically rigorous and operationally flawless conference. We expect delegates to embrace diplomacy and push their critical thinking boundaries. Let's make this weekend highly productive."
   },
@@ -40,8 +41,9 @@ const ocTeam: OCMember[] = [
     role: "OC Head",
     name: "Maitrayee Dighe",
     dept: "Operations Control",
+    image: "/photos/Maiytree.jpeg",
     bio: "Directs all organizing committee branches to ensure unified coordination across operations and logistics.",
-    message: "As the OC Head, I welcome you to WSMUN 2026. Behind every great debate is a dedicated organizing committee, and our team is fully prepared to deliver a premium, unforgettable summit experience."
+    message: "Maitrayee is a second-year Engineering student at Thakur Shyamnarayan College of Engineering and Technology, with a keen interest in leadership, public speaking, and organising impactful events. She currently serves as the Organizing Committee Head for World Summit Model United Nations. She aspires to build a career in technology, with her main interests lying in IT and Artificial Intelligence. She is drawn to MUNs for the opportunity they provide to engage with diverse perspectives, exchange ideas, and work collaboratively towards a common goal. As someone who thrives on responsibility and challenges, she has a strong passion for communication, teamwork, and problem-solving. Serving as Organizing Committee Head for World Summit Model United Nations is an honour and a responsibility she holds in high regard. As Organizing Committee Head, she brings curiosity, initiative, and determination to every challenge, with the belief that the strongest conferences are built through the collective effort, vision, and commitment of the people behind them."
   },
   {
     role: "Marketing Head",

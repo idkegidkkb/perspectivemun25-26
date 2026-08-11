@@ -50,7 +50,7 @@ const ebMembers: EBMember[] = [
     role: "Chairperson",
     committee: "ECOSOC",
     image: "/photos/Aditya Dutta.jpeg",
-    message: "Welcome to ECOSOC. Deliberating upon the reform of Bilateral Investment Treaties is crucial to fostering sustainable development and equitable foreign investments. I expect delegates to research thoroughly and negotiate with diplomatic poise.",
+    message: "Aditya Dutta is a 15-year-old student at Cambridge with four years of experience in Model United Nations. Passionate about international relations, diplomacy, and public speaking, he has participated in numerous conferences and enjoys engaging in meaningful debates.",
   },
   {
     name: "Aarav Sharma",
@@ -102,7 +102,7 @@ const ebMembers: EBMember[] = [
     role: "Chairperson",
     committee: "FIA",
     image: "/photos/Mrugaja Prabhu.jpeg",
-    message: "Welcome to motorsport governance at WSMUN '26. The intersection of ethics, technology, and driver freedom presents a modern challenge that requires strategic compromise. Let us steer motorsport governance into a new era with vision and integrity.",
+    message: "Mrugaja is a dedicated student and Model United Nations participant, having held positions for both Delegate and Chair. They enjoy the MUN committee and the excitement that comes with conferences. In their free time, they participate in Formula 1 and debating, and they are especially interested in committees that involve both, such as the FIA. As a Chair, they look to provide a stimulating environment for delegates to have fun in and improve their debating skills. In their free time, you might find them watching racing or debating events, sometimes doing both at once.",
   },
   {
     name: "Valen Kumar",
