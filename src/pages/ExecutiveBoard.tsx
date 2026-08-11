@@ -93,10 +93,9 @@ const ebMembers: EBMember[] = [
     name: "Tapasya Dumbre",
     role: "Co-Chairperson",
     committee: "AIPPM",
-    image: "",
-    message: "Greetings delegates. The AIPPM represents the democratic voice of our nation. Discussing constitutional validity requires sharp legal logic, political foresight, and persuasive rhetoric. I look forward to a vibrant meeting.",
+    image: "/photos/Tapsya.jpeg",
+    message: "\"When you want something, all the universe conspires in helping you to achieve it\" – The Alchemist\n\nTapasya Dumbre is a Grade 11 student at Ryan International School who's been in the Mumbai MUN circuit for about 2 years now. She's passionate about MUN’s and it shows in how she carries herself in committee. She also enjoys drumming and has been training for tennis on the side. She's excited to be chairing AIPPM at WSMUN this time around, looking forward to a good floor and some solid debate.",
   },
-  // FIA
   {
     name: "Mrugaja Prabhu",
     role: "Chairperson",

@@ -19,7 +19,7 @@ const ocTeam: OCMember[] = [
     dept: "Executive Secretariat",
     image: "/photos/Raunak.jpeg",
     bio: "Head representative directing WSMUN'26 operations, overseeing academic content, and directing secretariat efforts.",
-    message: "Welcome to WSMUN '26! Our secretariat team has worked tirelessly to build an academically rigorous and operationally flawless conference. We expect delegates to embrace diplomacy and push their critical thinking boundaries. Let's make this weekend highly productive."
+    message: "Raunak is a student passionate about law, business, sports, and Model United Nations. Having been involved in MUNs for several years, he currently serves as the Secretary-General of World Summit Model United Nations 2026 (WSMUN'26). For him, MUN is a platform to debate ideas, understand different perspectives, engage with global issues, and develop confidence, diplomacy, and leadership.\n\nAs Secretary-General, Raunak hopes to make WSMUN'26 an engaging, challenging, and memorable experience for every delegate. He believes a great conference should extend beyond committee rooms, giving delegates opportunities to learn, connect, make friends, and enjoy themselves. WSMUN'26 will also feature a Prom, allowing delegates to step away from formal debate and celebrate the conference together.\n\nBeyond MUN, Raunak aspires to pursue a future in law and business while becoming a dedicated athlete. He is driven by competition, discipline, creativity, and the constant desire to improve himself in everything he undertakes."
   },
   {
     role: "Co-Secretary General",
