@@ -47,7 +47,7 @@ const ResourcesPage = () => {
   const handleDownloadGuide = (abbr: string) => {
     toast({
       title: `${abbr} Background Guide`,
-      description: "Background guides are currently being finalized by the Executive Board and will be available for download on August 20th, 2026.",
+      description: "Background guides are currently being finalized by the Executive Board and will be available for download on August 25th, 2026.",
     });
   };
 
@@ -134,7 +134,7 @@ const ResourcesPage = () => {
               Study Guides Dropping Soon
             </h3>
             <p className="font-body text-sm text-muted-foreground max-w-md leading-relaxed">
-              Background guides are currently being finalized by the Executive Board and will be released for all committees on <span className="text-primary font-bold">August 20th, 2026</span>.
+              Background guides are currently being finalized by the Executive Board and will be released for all committees on <span className="text-primary font-bold">August 25th, 2026</span>.
             </p>
           </motion.div>
 
