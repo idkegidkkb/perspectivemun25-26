@@ -140,7 +140,7 @@ const HeroSection = () => {
                 VENUE
               </p>
               <p className="font-body text-xs sm:text-base font-bold text-foreground">
-                Church Gate
+                Churchgate
               </p>
             </div>
 

@@ -6,7 +6,7 @@ const timelineEvents = [
     {
         title: "Venue Announcement",
         date: "July 2026",
-        description: "Church Gate is officially announced as the venue for WSMUN '26",
+        description: "Churchgate is officially announced as the venue for WSMUN '26",
         completed: true,
     },
     {
@@ -30,7 +30,7 @@ const timelineEvents = [
     {
         title: "Conference Day 1",
         date: "19th September 2026",
-        description: "Opening ceremony followed by high-level committee sessions at Church Gate",
+        description: "Opening ceremony followed by high-level committee sessions at Churchgate",
         completed: false,
     },
     {
