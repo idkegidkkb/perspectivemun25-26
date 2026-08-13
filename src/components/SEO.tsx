@@ -41,7 +41,7 @@ const SEO = ({ title, description, keywords }: SEOProps) => {
       canonicalLink.setAttribute("rel", "canonical");
       document.head.appendChild(canonicalLink);
     }
-    canonicalLink.setAttribute("href", `https://wsmun26.org${location.pathname}`);
+    canonicalLink.setAttribute("href", `https://worldsummitmun.com${location.pathname}`);
 
     // Update Open Graph Title & Description
     let ogTitle = document.querySelector("meta[property='og:title']");
@@ -66,11 +66,11 @@ const SEO = ({ title, description, keywords }: SEOProps) => {
     
     let ogUrl = document.querySelector("meta[property='og:url']");
     if (ogUrl) {
-      ogUrl.setAttribute("content", `https://wsmun26.org${location.pathname}`);
+      ogUrl.setAttribute("content", `https://worldsummitmun.com${location.pathname}`);
     } else {
       ogUrl = document.createElement("meta");
       ogUrl.setAttribute("property", "og:url");
-      ogUrl.setAttribute("content", `https://wsmun26.org${location.pathname}`);
+      ogUrl.setAttribute("content", `https://worldsummitmun.com${location.pathname}`);
       document.head.appendChild(ogUrl);
     }
   }, [title, description, keywords, location]);

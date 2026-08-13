@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, MapPin, Instagram } from "lucide-react";
+import { MapPin, Instagram } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -16,12 +16,6 @@ const ContactSection = () => {
               Contact
             </h2>
             <p className="font-body text-xs uppercase tracking-widest text-muted-foreground mb-4 flex items-center gap-2">
-              <Mail className="w-4 h-4 text-primary" /> General Inquiries
-            </p>
-            <a href="mailto:contact@wsmun26.org" className="font-body text-sm text-foreground hover:text-primary transition-colors text-glow">
-              contact@wsmun26.org
-            </a>
-            <p className="font-body text-xs uppercase tracking-widest text-muted-foreground mb-4 mt-12 flex items-center gap-2">
               <Instagram className="w-4 h-4 text-primary" /> Follow Us
             </p>
             <div className="flex flex-col gap-3">
