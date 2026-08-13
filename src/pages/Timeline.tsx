@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import TopNav from "@/components/TopNav";
 import { CheckCircle2, Circle } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const timelineEvents = [
     {
@@ -44,6 +45,10 @@ const timelineEvents = [
 const TimelinePage = () => {
     return (
         <>
+            <SEO 
+                title="Conference Timeline & Schedule | World Summit MUN 2026" 
+                description="View the official conference schedule, important dates, and milestones for WSMUN '26 in Churchgate, Mumbai (September 19-20, 2026)." 
+            />
             <TopNav />
             <main className="pt-24 pb-24 px-6 min-h-screen">
                 <div className="max-w-4xl mx-auto">

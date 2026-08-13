@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import TopNav from "@/components/TopNav";
 import { AlertCircle, Bookmark, ExternalLink } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import SEO from "@/components/SEO";
 
 const committees = [
   {
@@ -55,6 +56,10 @@ const ResourcesPage = () => {
 
   return (
     <>
+      <SEO 
+        title="MUN Resources & Study Guides | World Summit MUN 2026" 
+        description="Access official committee background guides, study materials, rules of procedure, and the portfolio matrices for WSMUN '26 in Mumbai." 
+      />
       <TopNav />
       <main className="pt-32 pb-24 px-6 sm:px-12 md:px-20 max-w-7xl mx-auto dots-bg min-h-screen">
         <div className="w-full">

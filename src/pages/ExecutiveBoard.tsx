@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import TopNav from "@/components/TopNav";
 import { Crown, Shield, FileText, User, Users2, X } from "lucide-react";
+import SEO from "@/components/SEO";
 
 interface EBMember {
   name: string;
@@ -115,7 +116,7 @@ const ebMembers: EBMember[] = [
     role: "Co-Vice Chairperson",
     committee: "FIA",
     image: "/photos/Saatvik Joshi.jpeg",
-    message: "Greetings delegates! The FIA is a unique committee with a rapid-fire crisis potential. Research motorsport guidelines and drivers' charters carefully. Let's make this an unforgettable session.",
+    message: "Saatvik is a 15 year old MUN enthusiast with an impressive passion for Model United Nations. Over the course of just 23 MUNs, he has achieved an outstanding milestone of winning 13 awards, showcasing his dedication, confidence, research skills, and ability to think on his feet. For Saatvik, MUN is more than just a competition—it is an exciting experience that challenges him to learn, speak, negotiate, and express his ideas effectively. He absolutely loves the game of MUN and is always thrilled to step into a new committee, take on a different portfolio, and face unexpected challenges. Whether it is delivering a powerful speech, defending his country's stance, negotiating with other delegates, or finding creative solutions during intense debates, Saatvik enjoys every moment of the experience.",
   },
   // IP
   {
@@ -139,6 +140,10 @@ const ExecutiveBoardPage = () => {
 
   return (
     <>
+      <SEO 
+        title="Executive Board & Chairs | World Summit MUN 2026" 
+        description="Meet the highly experienced, vetted, and accomplished chairs and directors guiding committee debates at WSMUN '26 in Churchgate, Mumbai." 
+      />
       <TopNav />
       <main className="pt-32 pb-24 px-6 sm:px-12 md:px-20 max-w-7xl mx-auto dots-bg min-h-screen">
         <div className="w-full">

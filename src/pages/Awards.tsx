@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import TopNav from "@/components/TopNav";
 import { Trophy, Medal, Star, Newspaper, Camera, Crown, Users, Info } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const prizes = [
   {
@@ -78,6 +79,10 @@ const prizes = [
 const AwardsPage = () => {
   return (
     <>
+      <SEO 
+        title="Awards & Cash Prizes | World Summit MUN 2026" 
+        description="WSMUN '26 values diplomatic excellence. View our cash prize pool exceeding ₹190,000, custom trophies, and certificates for outstanding delegates in Mumbai." 
+      />
       <TopNav />
       <main className="pt-32 pb-24 px-6 sm:px-12 md:px-20 max-w-7xl mx-auto dots-bg min-h-screen">
         <div className="w-full">

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import TopNav from "@/components/TopNav";
+import SEO from "@/components/SEO";
 
 const faqs = [
   {
@@ -108,6 +109,10 @@ const FAQsPage = () => {
 
   return (
     <>
+      <SEO 
+        title="Frequently Asked Questions | World Summit MUN 2026" 
+        description="Find answers to common questions about WSMUN '26 registrations, portfolios, rules of conduct, Prom Night, and conference logistics." 
+      />
       <TopNav />
       <main className="pt-24 pb-24 px-6">
         <div className="max-w-4xl mx-auto">

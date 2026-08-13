@@ -3,6 +3,7 @@ import { useState } from "react";
 import TopNav from "@/components/TopNav";
 import { ShieldAlert, Send, X } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import SEO from "@/components/SEO";
 
 const steps = [
   { num: "01", text: "Fill out the registration form with your details and three committee–portfolio preferences" },
@@ -50,6 +51,10 @@ const RegistrationsPage = () => {
 
   return (
     <>
+      <SEO 
+        title="Register for WSMUN 2026 | Mumbai Model UN Registration" 
+        description="Join the best Model United Nations conference in Mumbai. Find registration forms, fees, delegate packages, and portfolio matrices for WSMUN '26." 
+      />
       <TopNav />
       <main className="pt-32 pb-24 px-6 sm:px-12 md:px-20 max-w-7xl mx-auto dots-bg min-h-screen flex items-center">
         <div className="w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">

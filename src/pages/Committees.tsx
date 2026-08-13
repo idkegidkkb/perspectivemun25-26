@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
 import TopNav from "@/components/TopNav";
+import SEO from "@/components/SEO";
 
 const committees = [
   {
@@ -140,6 +141,10 @@ const CommitteesPage = () => {
 
   return (
     <>
+      <SEO 
+        title="MUN Committees & Agendas | World Summit MUN 2026" 
+        description="Explore the committees and agendas of WSMUN '26, including UNSC, UNGA, ECOSOC, UNHRC, AIPPM, FIA, and IP. View agendas, topics, and Executive Board chairs." 
+      />
       <TopNav />
       <main className="pt-24 pb-8 px-4 md:px-6 min-h-[100dvh] flex flex-col justify-start overflow-hidden">
         <div className="max-w-6xl w-full mx-auto flex flex-col items-center">
