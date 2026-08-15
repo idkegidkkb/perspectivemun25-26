@@ -31,7 +31,7 @@ const SEO = ({ title, description, keywords }: SEOProps) => {
       keywordsMeta.setAttribute("name", "keywords");
       document.head.appendChild(keywordsMeta);
     }
-    const baseKeywords = "MUN in Mumbai, Model United Nations Mumbai, World Summit MUN, WSMUN 2026, WSMUN, Mumbai MUN, Best MUN in Mumbai, College MUN Mumbai, School MUN Mumbai, Churchgate MUN, Model UN Mumbai";
+    const baseKeywords = "MUN, Model United Nations, Model UN, MUN in Mumbai, Model United Nations Mumbai, World Summit MUN, WSMUN 2026, WSMUN, Mumbai MUN, Best MUN in Mumbai, College MUN Mumbai, School MUN Mumbai, Churchgate MUN, Model UN Mumbai, WSMUN '26, WSMUN 26, best MUN in India, MUN conferences, MUNs in Mumbai, youth parliament, AIPPM Mumbai, UNSC MUN, student diplomacy, public speaking competition, debate competition, global youth summit, leadership conference";
     keywordsMeta.setAttribute("content", keywords ? `${keywords}, ${baseKeywords}` : baseKeywords);
 
     // Update Canonical URL
