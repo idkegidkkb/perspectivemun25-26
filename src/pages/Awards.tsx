@@ -80,8 +80,8 @@ const AwardsPage = () => {
   return (
     <>
       <SEO 
-        title="Awards & Cash Prizes | World Summit MUN 2026" 
-        description="WSMUN '26 values diplomatic excellence. View our cash prize pool exceeding ₹190,000, custom trophies, and certificates for outstanding delegates in Mumbai." 
+        title="Cash Prizes & Awards | Most Rewarding MUN in Mumbai" 
+        description="Explore the cash prize pool exceeding ₹190,000 and prestigious awards for outstanding delegates and school/college delegations at the WSMUN 2026 conference." 
       />
       <TopNav />
       <main className="pt-32 pb-24 px-6 sm:px-12 md:px-20 max-w-7xl mx-auto dots-bg min-h-screen">

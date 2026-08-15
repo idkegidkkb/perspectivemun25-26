@@ -46,8 +46,8 @@ const TimelinePage = () => {
     return (
         <>
             <SEO 
-                title="Conference Timeline & Schedule | World Summit MUN 2026" 
-                description="View the official conference schedule, important dates, and milestones for WSMUN '26 in Churchgate, Mumbai (September 19-20, 2026)." 
+                title="Conference Timeline & Schedule | WSMUN 2026 Key Dates" 
+                description="View the official conference schedule, registrations timeline, background guides release dates, and event milestones for WSMUN 2026 in Mumbai." 
             />
             <TopNav />
             <main className="pt-24 pb-24 px-6 min-h-screen">

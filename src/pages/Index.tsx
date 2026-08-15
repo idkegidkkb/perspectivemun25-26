@@ -10,8 +10,8 @@ const Index = () => {
   return (
     <>
       <SEO 
-        title="Home | One of the Best MUNs in Mumbai" 
-        description="World Summit Model United Nations 2026 (WSMUN'26) is the premier MUN conference in Churchgate, Mumbai. Experience the best student-led diplomacy, public speaking, and youth leadership summit in Mumbai. Register now!" 
+        title="One of the Best Model United Nations (MUN) in Mumbai" 
+        description="Join World Summit Model United Nations (WSMUN 2026), one of the best MUNs and premier Model United Nations conferences in Churchgate, Mumbai. Discover upcoming MUNs in Maharashtra and India, featuring UNSC, UNGA, AIPPM, ECOSOC, UNHRC, and FIA. Register now!" 
       />
       <TopNav />
       <main>

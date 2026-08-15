@@ -52,8 +52,8 @@ const RegistrationsPage = () => {
   return (
     <>
       <SEO 
-        title="Register for WSMUN 2026 | Mumbai Model UN Registration" 
-        description="Join the best Model United Nations conference in Mumbai. Find registration forms, fees, delegate packages, and portfolio matrices for WSMUN '26." 
+        title="Model UN Registration & Fees | Join WSMUN 2026" 
+        description="Register for WSMUN 2026. Submit applications for individual delegates, school/college delegations, or International Press for the premier Mumbai MUN." 
       />
       <TopNav />
       <main className="pt-32 pb-24 px-6 sm:px-12 md:px-20 max-w-7xl mx-auto dots-bg min-h-screen flex items-center">

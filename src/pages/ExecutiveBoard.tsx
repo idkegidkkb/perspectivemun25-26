@@ -141,8 +141,8 @@ const ExecutiveBoardPage = () => {
   return (
     <>
       <SEO 
-        title="Executive Board & Chairs | World Summit MUN 2026" 
-        description="Meet the highly experienced, vetted, and accomplished chairs and directors guiding committee debates at WSMUN '26 in Churchgate, Mumbai." 
+        title="Executive Board & Committee Chairs | Experienced MUN Directors" 
+        description="Meet the highly experienced chairs and directors from the Mumbai MUN circuit guiding the WSMUN 2026 committees, ensuring high-quality academic debate." 
       />
       <TopNav />
       <main className="pt-32 pb-24 px-6 sm:px-12 md:px-20 max-w-7xl mx-auto dots-bg min-h-screen">

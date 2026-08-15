@@ -142,8 +142,8 @@ const CommitteesPage = () => {
   return (
     <>
       <SEO 
-        title="MUN Committees & Agendas | World Summit MUN 2026" 
-        description="Explore the committees and agendas of WSMUN '26, including UNSC, UNGA, ECOSOC, UNHRC, AIPPM, FIA, and IP. View agendas, topics, and Executive Board chairs." 
+        title="Model UN Committees & Agendas | UNSC, UNGA, AIPPM" 
+        description="Explore WSMUN 2026 committees: UNSC, UNGA, ECOSOC, UNHRC, AIPPM, FIA, and IP. Review agendas on biowarfare, UN reform, and Indian constitutional guarantees." 
       />
       <TopNav />
       <main className="pt-24 pb-8 px-4 md:px-6 min-h-[100dvh] flex flex-col justify-start overflow-hidden">

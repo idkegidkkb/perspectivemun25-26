@@ -96,8 +96,8 @@ const OrganisingCommitteePage = () => {
   return (
     <>
       <SEO 
-        title="Organising Committee & Secretariat | World Summit MUN 2026" 
-        description="Meet the core organizing committee managing registrations, logistics, finance, marketing, and delegate relations for WSMUN '26 in Churchgate, Mumbai." 
+        title="Organising Committee & Secretariat | WSMUN 2026 Team" 
+        description="Meet the Secretariat and Organising Committee members dedicated to hosting one of the premier Model United Nations (MUN) events in Churchgate, Mumbai." 
       />
       <TopNav />
       <main className="pt-32 pb-24 px-6 sm:px-12 md:px-20 max-w-7xl mx-auto dots-bg min-h-screen">

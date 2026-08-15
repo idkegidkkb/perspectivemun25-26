@@ -57,8 +57,8 @@ const ResourcesPage = () => {
   return (
     <>
       <SEO 
-        title="MUN Resources & Study Guides | World Summit MUN 2026" 
-        description="Access official committee background guides, study materials, rules of procedure, and the portfolio matrices for WSMUN '26 in Mumbai." 
+        title="Study Guides, Rules of Procedure & MUN Resources" 
+        description="Access official WSMUN 2026 committee study guides, portfolio matrix allotments, rules of procedure (ROP), and preparation resources for delegates." 
       />
       <TopNav />
       <main className="pt-32 pb-24 px-6 sm:px-12 md:px-20 max-w-7xl mx-auto dots-bg min-h-screen">

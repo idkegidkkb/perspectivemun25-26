@@ -5,6 +5,22 @@ import SEO from "@/components/SEO";
 
 const faqs = [
   {
+    q: "What are the upcoming MUNs in Mumbai in 2026?",
+    a: "World Summit Model United Nations (WSMUN 2026) is one of the premier upcoming MUN conferences in Mumbai, scheduled for September 19-20, 2026 in Churchgate, Mumbai. It is a must-attend event for students looking for high-quality debate and networking.",
+  },
+  {
+    q: "Which is the best MUN in India or Mumbai?",
+    a: "While there are several notable conferences, WSMUN 2026 stands out as one of the best MUNs in Mumbai and India, featuring highly experienced Executive Board chairs, cash prizes, and committees like UNSC, UNGA, ECOSOC, UNHRC, FIA, and AIPPM.",
+  },
+  {
+    q: "Are there any free MUNs or cash prizes at WSMUN?",
+    a: "WSMUN has a registration fee, but it offers a substantial cash prize pool across all committees to reward outstanding diplomatic performance, making it one of the most rewarding MUN conferences in the circuit.",
+  },
+  {
+    q: "Which is the most prestigious MUN in Mumbai?",
+    a: "WSMUN (World Summit Model United Nations) in Churchgate, Mumbai is widely regarded as one of the most prestigious student-led Model United Nations conferences, hosting delegates from top schools and colleges across India.",
+  },
+  {
     q: "What is WSMUN?",
     a: "World Summit Model United Nations is a Model United Nations conference designed to promote diplomacy, substantive debate, negotiation, research, public speaking and critical thinking.",
   },
@@ -110,8 +126,8 @@ const FAQsPage = () => {
   return (
     <>
       <SEO 
-        title="Frequently Asked Questions | World Summit MUN 2026" 
-        description="Find answers to common questions about WSMUN '26 registrations, portfolios, rules of conduct, Prom Night, and conference logistics." 
+        title="Model UN FAQs | Upcoming MUNs in Mumbai 2026 Questions" 
+        description="Get answers to frequently asked questions about WSMUN 2026 registration, portfolios, dress codes, cash prizes, and logistics for upcoming Mumbai MUNs." 
       />
       <TopNav />
       <main className="pt-24 pb-24 px-6">

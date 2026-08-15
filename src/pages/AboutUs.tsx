@@ -8,8 +8,8 @@ const AboutUsPage = () => {
     return (
         <>
             <SEO 
-                title="About Us | World Summit Model United Nations 2026" 
-                description="Learn about the vision, history, and mission of World Summit Model United Nations (WSMUN) 2026. Discover how we cultivate future leaders in Churchgate, Mumbai." 
+                title="About WSMUN | Premier Student Diplomacy & Leadership" 
+                description="Learn about the vision and mission of World Summit Model United Nations (WSMUN 2026). Discover how we cultivate future leaders at our premier conference in Churchgate, Mumbai." 
             />
             <TopNav />
             <main className="pt-32 pb-24 px-6 sm:px-12 md:px-20 max-w-7xl mx-auto dots-bg min-h-screen">
