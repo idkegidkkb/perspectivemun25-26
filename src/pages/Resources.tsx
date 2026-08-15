@@ -28,7 +28,7 @@ const committees = [
   {
     abbr: "AIPPM",
     name: "All India Political Parties Meet",
-    agenda: "Discussion and deliberation on the constitutional validity of anti conversion laws in india",
+    agenda: "Discussion on Constitutional Guarantees under Articles 14, 19, and 21, with Emphasis on Issues Pertaining to the Education Sector and the Rights of the Media and Youth to Free Speech.",
   },
   {
     abbr: "FIA",
