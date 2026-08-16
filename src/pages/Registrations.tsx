@@ -123,11 +123,11 @@ const RegistrationsPage = () => {
               <div className="space-y-2 mb-6">
                 <div className="flex justify-between items-baseline">
                   <span className="font-body text-xs font-semibold text-foreground">Individual Delegate</span>
-                  <span className="font-display font-extrabold text-3xl text-primary text-glow">₹2,000</span>
+                  <span className="font-display font-extrabold text-3xl text-primary text-glow">₹2,500</span>
                 </div>
                 <div className="flex justify-between items-baseline">
                   <span className="font-body text-xs font-semibold text-foreground">Delegation (Min 8 Delegates)</span>
-                  <span className="font-display font-extrabold text-3xl text-primary text-glow">₹1,750</span>
+                  <span className="font-display font-extrabold text-3xl text-primary text-glow">₹2,250</span>
                 </div>
               </div>
 
