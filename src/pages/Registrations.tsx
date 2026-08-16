@@ -117,7 +117,7 @@ const RegistrationsPage = () => {
               <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 blur-[40px] rounded-full pointer-events-none" />
               
               <span className="font-body text-[9px] uppercase tracking-widest text-primary font-bold block mb-2">
-                SPECIAL EARLY BIRD ROUND
+                FIRST ROUND
               </span>
               
               <div className="space-y-2 mb-6">
