@@ -23,7 +23,7 @@ const committees = [
     abbr: "ECOSOC",
     topic: "Deliberating Upon the Reform of Bilateral Investment Treaties (BITs) to Promote Sustainable Development and Equitable Foreign Investment.",
     logo: "/photos/un_emblem.svg",
-    eb: "Chair: Aditya Dutta • Vice Chair: Aarav Sharma",
+    eb: "Chair: Aditya Dutta • Vice Chair: Niel Shetty",
   },
   {
     name: "United Nations Human Rights Council",

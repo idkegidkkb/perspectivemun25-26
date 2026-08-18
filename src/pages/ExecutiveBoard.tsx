@@ -54,11 +54,11 @@ const ebMembers: EBMember[] = [
     message: "Aditya Dutta is a 15-year-old student at Cambridge with four years of experience in Model United Nations. Passionate about international relations, diplomacy, and public speaking, he has participated in numerous conferences and enjoys engaging in meaningful debates.",
   },
   {
-    name: "Aarav Sharma",
+    name: "Niel Shetty",
     role: "Vice Chairperson",
     committee: "ECOSOC",
-    image: "/photos/Aarav Sharma.jpeg",
-    message: "I exhibit remarkable maturity as I navigate the world of MUNs. Renowned for my leadership, eloquence, and fairness, I excel in fostering collaboration and guiding discussions, making me an invaluable asset to any Model United Nations conference. I believe in philosophy. \"Success isn't accomplished alone but Success is that what you inspire your peers to do\"—this quote by Nelson Mandela has helped me to be a better individual of myself.",
+    image: "/photos/Niel.jpeg",
+    message: "Hi, I’m Niel Shetty, a 15-year-old MUNer and debater who believes that debate is much more than rhetoric. My approach to debating is built around three things: logic, policy, and impact. I enjoy breaking down an issue, understanding the legal and political framework behind it, identifying where existing policies fail, and then proposing solutions that are actually practical.",
   },
   // UNHRC
   {

@@ -38,7 +38,7 @@ const faqs = [
   },
   {
     q: "What is the dress code?",
-    a: "For regular committees, the dress code is Western Formals on both days. For AIPPM, the dress code is Indian Traditionals on both days.",
+    a: "Day 1: Western Formals for all committees. Day 2: Western Formals for all committees except Indian committees (AIPPM), which will wear Indian Traditionals.",
   },
   {
     q: "What is Prom Night?",
