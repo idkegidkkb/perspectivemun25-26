@@ -11,7 +11,7 @@ const DressCodeSection = () => {
     icon: Briefcase,
     guidelines: [
       "Suits, blazers, or formal jackets paired with trousers, pantsuits, formal dresses, or knee-length skirts",
-      "Pressed full-sleeve dress shirts, professional blouses, or formal tops",
+      "Pressed dress shirts, professional blouses, or formal tops (sleeveless permitted)",
       "Formal neckties or bowties (highly recommended with suits)",
       "Polished leather shoes, oxfords, loafers, formal heels, wedges, or dressy flats",
     ],
@@ -282,7 +282,7 @@ const DressCodeSection = () => {
           <div>
             <h5 className="font-display text-sm font-bold uppercase tracking-wider text-foreground mb-1">Important Dress Code Policy</h5>
             <p className="font-body text-xs text-muted-foreground leading-relaxed">
-              Casual wear, athletic shoes, jeans, t-shirts, caps, and sleeveless clothing are strictly prohibited during all committee sessions. If you have questions about the suitability of your clothing, please reach out to the Organizing Committee.
+              Casual wear, athletic shoes, jeans, t-shirts, and caps are strictly prohibited during all committee sessions (sleeveless formal or traditional wear is permitted). If you have questions about the suitability of your clothing, please reach out to the Organizing Committee.
             </p>
           </div>
         </div>
