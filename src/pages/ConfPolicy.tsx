@@ -76,7 +76,7 @@ const policySections: PolicySection[] = [
       "Participants must not engage in harassment, sexual harassment, sexual misconduct, bullying, intimidation, stalking, discrimination, coercion, retaliation, or any other behaviour that threatens the dignity, safety, or comfort of another participant.",
       "Any complaint relating to harassment or misconduct may be reported to the Internal Committee (IC) constituted for WSMUN’26. The constitution, powers, procedures, and complaint mechanism of the IC shall be provided in the separate Internal Committee and Anti-Harassment Policy Document.",
       "A participant may also report any complaint or concern to any member of the Secretariat or Executive Board. The person receiving the complaint shall refer the matter to the Internal Committee or the appropriate senior members of the Secretariat for further action.",
-      "Every participant shall have the right to directly approach the Secretary-General or Director-General regarding any complaint, concern, grievance, or safety issue. Upon the request of the complainant, their identity and complaint may be kept confidential or anonymous, insofar as reasonably possible. Any public disclosure shall be made only with the complainant’s consent and subject to the privacy and safety of all persons concerned.",
+      "Every participant shall have the right to directly approach the Secretary-General regarding any complaint, concern, grievance, or safety issue. Upon the request of the complainant, their identity and complaint may be kept confidential or anonymous, insofar as reasonably possible. Any public disclosure shall be made only with the complainant’s consent and subject to the privacy and safety of all persons concerned.",
       "Retaliation, threats, humiliation, pressure, or adverse treatment against any person who makes a complaint, assists a complainant, provides information, or participates in an inquiry shall be strictly prohibited and may result in disciplinary action."
     ]
   },
@@ -105,7 +105,7 @@ const policySections: PolicySection[] = [
     title: "9. Portfolio Exchange Policy",
     icon: <RefreshCw className="w-5 h-5 text-primary" />,
     content: [
-      "Participants wishing to exchange or transfer their allotted portfolios must first contact the Secretary-General or Director-General and obtain prior approval from the Secretariat. Delegates must not exchange portfolios privately without informing the Secretariat.",
+      "Participants wishing to exchange or transfer their allotted portfolios must first contact the Secretary-General and obtain prior approval from the Secretariat. Delegates must not exchange portfolios privately without informing the Secretariat.",
       "Any request for a portfolio exchange must include the full name, telephone number, email address, institution, allotted committee, allotted portfolio, and registration details of both participants involved in the exchange. The exchange shall take effect only after both participants have confirmed their consent and written approval has been granted by the Secretariat.",
       "The Secretariat reserves the right to approve or reject any portfolio exchange depending upon committee requirements, eligibility, availability, and administrative considerations. A request for exchange shall not guarantee approval."
     ]
@@ -295,7 +295,7 @@ const ConfPolicyPage = () => {
                         Raunak Jha
                       </h4>
                       <p className="font-body text-xs text-primary font-medium mt-1">
-                        Secretary-General
+                        Co-Secretary-General
                       </p>
                       <p className="font-body text-[10px] text-muted-foreground uppercase tracking-widest mt-0.5">
                         WSMUN 2026 Secretariat
@@ -308,10 +308,10 @@ const ConfPolicyPage = () => {
                   <div className="space-y-6">
                     <div>
                       <h4 className="font-display font-bold text-sm uppercase tracking-wide text-foreground">
-                        Poyasi Purohit
+                        Sachet Agarwal
                       </h4>
                       <p className="font-body text-xs text-primary font-medium mt-1">
-                        Director-General
+                        Co-Secretary-General
                       </p>
                       <p className="font-body text-[10px] text-muted-foreground uppercase tracking-widest mt-0.5">
                         WSMUN 2026 Secretariat

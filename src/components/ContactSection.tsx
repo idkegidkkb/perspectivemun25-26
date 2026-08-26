@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { MapPin, Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ContactSection = () => {
   return (
@@ -56,9 +57,17 @@ const ContactSection = () => {
       <footer className="py-12 px-6 relative overflow-hidden">
         <div className="absolute inset-0 bg-primary/5 blur-3xl z-0" />
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 relative z-10 glass-panel p-6 rounded-2xl">
-          <p className="font-display font-bold text-xs uppercase tracking-[0.3em] text-primary text-glow">
-            WSMUN '26 © 2026
-          </p>
+          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+            <p className="font-display font-bold text-xs uppercase tracking-[0.3em] text-primary text-glow">
+              WSMUN '26 © 2026
+            </p>
+            <Link 
+              to="/confpolicy" 
+              className="font-body text-xs text-muted-foreground hover:text-primary uppercase tracking-widest transition-all duration-300 font-semibold"
+            >
+              Conference Policy
+            </Link>
+          </div>
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <span className="w-8 h-px bg-primary/50 hidden md:block" />
