@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import TopNav from "@/components/TopNav";
 import SEO from "@/components/SEO";
+import { Link } from "react-router-dom";
 
 const faqs = [
   {
@@ -125,7 +126,11 @@ const FAQsPage = () => {
             FAQs
           </motion.h1>
           <p className="font-body text-sm text-muted-foreground mb-16">
-            Everything you need to know before the conference
+            Everything you need to know before the conference. For detailed regulations, please read our{" "}
+            <Link to="/confpolicy" className="text-primary hover:text-primary-foreground underline transition-all duration-300 font-semibold">
+              Conference Policy
+            </Link>
+            .
           </p>
 
           <div>
