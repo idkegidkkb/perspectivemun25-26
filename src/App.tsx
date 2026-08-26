@@ -13,6 +13,7 @@ import AwardsPage from "./pages/Awards.tsx";
 import ResourcesPage from "./pages/Resources.tsx";
 import ExecutiveBoardPage from "./pages/ExecutiveBoard.tsx";
 import OrganisingCommitteePage from "./pages/OrganisingCommittee.tsx";
+import ConfPolicyPage from "./pages/ConfPolicy.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import DelegateMascot from "./components/DelegateMascot.tsx";
 
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/executive-board" element={<ExecutiveBoardPage />} />
           <Route path="/organising-committee" element={<OrganisingCommitteePage />} />
+          <Route path="/confpolicy" element={<ConfPolicyPage />} />
           <Route path="/faqs" element={<FAQsPage />} />
           <Route path="/about" element={<AboutUsPage />} />
           <Route path="/timeline" element={<TimelinePage />} />

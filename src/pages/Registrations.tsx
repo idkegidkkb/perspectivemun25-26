@@ -143,7 +143,7 @@ const RegistrationsPage = () => {
                   Register as Individual
                 </a>
                 <p className="font-body text-xs text-foreground/90 text-center py-2">
-                  Please contact <strong className="text-primary font-bold">Ethan (+91 91361 23809)</strong> for delegation registration.
+                  Please contact <strong className="text-primary font-bold">Sachet (+91 99876 89845)</strong> for delegation registration.
                 </p>
               </div>
 
@@ -174,10 +174,6 @@ const RegistrationsPage = () => {
                 <div className="flex justify-between">
                   <span>Sachet Agarwal (Co-SG):</span>
                   <a href="tel:+919987689845" className="text-foreground hover:text-primary transition-colors font-semibold">+91 99876 89845</a>
-                </div>
-                <div className="flex justify-between">
-                  <span>Ethan Kokate (Deputy SG):</span>
-                  <a href="tel:+919136123809" className="text-foreground hover:text-primary transition-colors font-semibold">+91 91361 23809</a>
                 </div>
               </div>
             </motion.div>

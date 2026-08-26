@@ -43,7 +43,7 @@ const RegisterSection = () => {
                  title: "Delegation Registration", 
                  desc: (
                    <span>
-                     Please contact <strong className="text-primary font-bold">Ethan (+91 91361 23809)</strong> for delegation registration.
+                     Please contact <strong className="text-primary font-bold">Sachet (+91 99876 89845)</strong> for delegation registration.
                    </span>
                  ), 
                  link: "", 
