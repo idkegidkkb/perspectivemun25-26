@@ -92,9 +92,20 @@ const ConfPolicyPage = () => {
               Conference Policy
             </h1>
             <div className="h-[2px] w-24 bg-primary rounded-full mb-8"></div>
-            <p className="font-body text-sm sm:text-base text-foreground/80 leading-relaxed max-w-3xl">
-              Please review WSMUN 2026 official regulations. These rules ensure a respectful, safe, and academically rigorous environment for all delegates, organizers, and advisors.
-            </p>
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+              <p className="font-body text-sm sm:text-base text-foreground/80 leading-relaxed max-w-2xl">
+                Please review WSMUN 2026 official regulations. These rules ensure a respectful, safe, and academically rigorous environment for all delegates, organizers, and advisors.
+              </p>
+              <a
+                href="/Confrence%20Policy%20WSMUN%2026%27.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3.5 bg-primary/10 hover:bg-primary text-primary hover:text-background border border-primary/30 hover:border-primary font-body font-bold text-xs uppercase tracking-widest rounded transition-all duration-300 flex items-center gap-2 whitespace-nowrap self-start md:self-center cursor-pointer shadow-[0_0_15px_rgba(240,220,180,0.05)] hover:shadow-[0_0_20px_rgba(240,220,180,0.2)]"
+              >
+                <FileText className="w-4 h-4" />
+                <span>View Official PDF</span>
+              </a>
+            </div>
           </motion.div>
 
           {/* Policy Sections Grid */}
