@@ -81,7 +81,7 @@ const AwardsPage = () => {
     <>
       <SEO 
         title="Cash Prizes & Awards | Most Rewarding MUN in Mumbai" 
-        description="Explore the cash prize pool exceeding ₹190,000 and prestigious awards for outstanding delegates and school/college delegations at the WSMUN 2026 conference." 
+        description="Explore the cash prize pool exceeding ₹140,000 and prestigious awards for outstanding delegates and school/college delegations at the WSMUN 2026 conference." 
       />
       <TopNav />
       <main className="pt-32 pb-24 px-6 sm:px-12 md:px-20 max-w-7xl mx-auto dots-bg min-h-screen">
@@ -104,7 +104,7 @@ const AwardsPage = () => {
             </h1>
             <div className="h-[2px] w-24 bg-primary rounded-full mb-8"></div>
             <p className="font-body text-sm sm:text-base text-foreground/80 leading-relaxed max-w-3xl">
-              WSMUN '26 values the rigorous academic preparation and diplomatic standard of delegates. We are pleased to announce a combined cash prize pool exceeding <span className="text-primary font-bold text-glow">₹190,000</span> alongside custom trophies and certificates.
+              WSMUN '26 values the rigorous academic preparation and diplomatic standard of delegates. We are pleased to announce a combined cash prize pool exceeding <span className="text-primary font-bold text-glow">₹140,000</span> alongside custom trophies and certificates.
             </p>
           </motion.div>
 
@@ -146,6 +146,30 @@ const AwardsPage = () => {
               </motion.div>
             ))}
           </div>
+
+          {/* Prize Eligibility Info Banner */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="glass-panel p-6 rounded-2xl border border-primary/20 bg-card/65 flex gap-4 items-start max-w-4xl mb-20"
+          >
+            <div className="p-3 rounded bg-primary/10 text-primary shrink-0">
+              <Info className="w-5 h-5" />
+            </div>
+            <div className="text-left font-body">
+              <h3 className="font-bold text-sm text-foreground uppercase tracking-wider mb-2">
+                Award Eligibility & Distribution
+              </h3>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                Along with the aforementioned prizes, trophies will also be awarded.
+              </p>
+              <p className="text-xs text-primary font-medium mt-1 leading-relaxed">
+                *Cash prizes are exclusively applicable to college committees and not for school committees, while trophies will be awarded across all committees.
+              </p>
+            </div>
+          </motion.div>
         </div>
       </main>
     </>

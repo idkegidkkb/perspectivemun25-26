@@ -10,13 +10,15 @@ const committees = [
     topic: "Deliberating upon the adequacy of existing non-proliferation architecture for biowarfare threats arising from emerging technologies.",
     logo: "/photos/un_emblem.svg",
     eb: "Chair: Iklavya Dev • Vice Chair: Kshitij Jadhav",
+    category: "College Committee",
   },
   {
     name: "United Nations General Assembly",
     abbr: "UNGA",
     topic: "Balancing Mandate and Agenda Prioritization Against the Logistical and Budgetary Constraints in the UN.",
     logo: "/photos/un_emblem.svg",
-    eb: "Chair: Yog Ashok Rai • Vice Chair: Saanvi Saluja",
+    eb: "Chair: Shristi Dubey • Vice Chair: Ira Shah",
+    category: "School Committee",
   },
   {
     name: "Economic and Social Council",
@@ -24,6 +26,7 @@ const committees = [
     topic: "Deliberating Upon the Reform of Bilateral Investment Treaties (BITs) to Promote Sustainable Development and Equitable Foreign Investment.",
     logo: "/photos/un_emblem.svg",
     eb: "Chair: Aditya Dutta • Vice Chair: Niel Shetty",
+    category: "College Committee",
   },
   {
     name: "United Nations Human Rights Council",
@@ -31,13 +34,15 @@ const committees = [
     topic: "Deliberating Upon the Human Rights Violations Caused by Various Economic Systems.",
     logo: "/photos/un_emblem.svg",
     eb: "Chair: Prakket Dholekar • Vice Chair: Ahad Khan • Rapporteur: Sukriti Sahay",
+    category: "College Committee",
   },
   {
     name: "All India Political Parties Meet",
     abbr: "AIPPM",
-    topic: "Discussion on Constitutional Guarantees under Articles 14, 19, and 21, with Emphasis on Issues Pertaining to the Education Sector and the Rights of the Media and Youth to Free Speech.",
+    topic: "Deliberation upon Strengthening India’s Food Security Infrastructure with emphasis on supply-chain resilience, food safety, and the implementation of FSSAI Reforms.",
     logo: "/photos/emblem_of_india.svg",
-    eb: "Co-Chair: Anuj Shenoy • Co-Chair: Tapasya Dumbre",
+    eb: "Chair: Aditya Tripathi • Vice Chair: Atharva Devadkar",
+    category: "College Committee",
   },
   {
     name: "Fédération Internationale de l'Automobile",
@@ -45,6 +50,7 @@ const committees = [
     topic: "Addressing the Balance Between Driver Rights, Ethical Responsibilities, and Freedom of Expression Within Motorsport Governance.",
     logo: "/photos/fia_logo.svg",
     eb: "Chair: Mrugaja Prabhu • Vice Chair: Valen Kumar • Co-Vice Chair: Saatvik Joshi",
+    category: "School Committee",
   },
   {
     name: "International Press",
@@ -52,6 +58,7 @@ const committees = [
     topic: "Roleplay and reporting as Journalists and Photographers covering the proceedings of all committees",
     logo: "/photos/camera_icon.svg",
     eb: "Chairperson: Ms. Shriya Rajan",
+    category: "Open / School & College",
   },
 ];
 
@@ -244,9 +251,15 @@ const CommitteesPage = () => {
                     />
                   </div>
 
-                  <h2 className="font-display font-bold text-[9px] sm:text-base md:text-lg text-foreground mb-1.5 md:mb-2 text-glow leading-snug">
+                  <h2 className="font-display font-bold text-[9px] sm:text-base md:text-lg text-foreground mb-1 md:mb-1.5 text-glow leading-snug">
                     {committees[activeIndex].name}
                   </h2>
+
+                  <div className="mb-2 shrink-0">
+                    <span className="font-body text-[7px] sm:text-[9px] uppercase tracking-widest px-2.5 py-0.5 rounded border border-primary/30 text-primary bg-primary/5 inline-block font-bold">
+                      {committees[activeIndex].category}
+                    </span>
+                  </div>
 
                   <div className="h-px w-full max-w-[200px] mb-2 md:mb-3 bg-primary/20" />
 

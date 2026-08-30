@@ -31,19 +31,18 @@ const ebMembers: EBMember[] = [
   },
   // UNGA
   {
-    name: "Yog Ashok Rai",
+    name: "Shristi Dubey",
     role: "Chairperson",
     committee: "UNGA",
-    image: "/photos/YogRai.PNG",
-    message: "A finance student whose fascination with dialogue, diplomacy, and public speaking naturally led him into the world of Model United Nations. Specialising in UN committees, Yog remains deeply interested in global affairs, strategic discourse, public policy, and international relations, alongside his core passion for finance and economics. A firm believer in the principle of agreeing to disagree, he views MUNs as one of the finest platforms for fostering meaningful discourse amidst differing perspectives which is an ethos he hopes to cultivate within every committee he is a part of.",
+    image: "/photos/shrishti.JPEG",
+    message: "Ms. Shristi Dubey, known for her exceptional oratory skills and extensive experience chairing committees across cities and countries. A former Secretary and President of the Rotaract Club of TCSC, she emphasizes holistic development and fosters debates centered on learning and collaboration rather than competition. A professional anchor and emcee, she has interviewed notable personalities including Indian boxer Mary Kom and cricketer Shardul Thakur. Shristi strongly advocates MUNs as platforms for enhancing oratory skills, geopolitical understanding, and diplomatic articulation, ensuring engaging, inclusive, and thought-provoking discussions where every perspective is valued.",
   },
   {
-    name: "Saanvi Saluja",
+    name: "Ira Shah",
     role: "Vice Chairperson",
     committee: "UNGA",
-    image: "/photos/Sanvi Saluja.jpeg",
-    objectPosition: "object-center",
-    message: "Saanvi Saluja is an 12th grade humanities student at Smt. Sulochanadevi Singhania School, with a keen interest in public speaking, Journalism and debate. She is a believer of practicality and is always ready to be of help. Her consistency, professionalism and communication skills make her efficient in everything she does.",
+    image: "/photos/ira.png",
+    message: "Ira Shah is an IBDP student who has done various MUNs in the Mumbai circuit. She’s an avid reader and holds a keen interest in political science and literature. She believes MUNs are one of the best places to foster critical thinking and an understanding of legality early on.",
   },
   // ECOSOC
   {
@@ -84,18 +83,18 @@ const ebMembers: EBMember[] = [
   },
   // AIPPM
   {
-    name: "Anuj Shenoy",
-    role: "Co-Chairperson",
+    name: "Aditya Tripathi",
+    role: "Chairperson",
     committee: "AIPPM",
-    image: "/photos/Anuj.jpeg",
-    message: "Anuj is a passionate future law student who has gained valuable experience through Model United Nations and National Youth Parliaments, showcasing strong skills in debate, diplomacy, and public speaking. With participation across numerous conferences and youth parliaments, he has earned multiple awards and recognitions at various MUNs, NYPs, and debating platforms for his parliamentary performance, leadership, and analytical skills. He also possesses extensive Executive Board experience, having served across multiple conferences, including experience of the Lok Sabha Committee at IIT Bombay's Techfest World MUN, Rajya Sabha at Goa NYP and many other conferences. These experiences have strengthened his ability to lead discussions, manage committees, and encourage productive debate in high-pressure environments. Apart from academics and debating, Anuj is an ex-National Taekwondo athlete, holding four international medals along with multiple national honors, reflecting discipline, perseverance, and dedication beyond the conference room. Anuj believes in leading by example, “Be the change you wish to see in this world.” He looks forward to contributing to rational, respectful, and solution-oriented discussions in every committee he is a part of.",
+    image: "/photos/adityatripathi.png",
+    message: "Aditya Tripathi, a dedicated law student pursuing BLS.LLB at the University of Mumbai and a CS Executive candidate, is well-known in the Mumbai and Pune MUN circuits especially for his achievements in the Indian committees. With expertise in legal research, drafting, and public speaking, he has a strong command over complex legal and policy discussions.",
   },
   {
-    name: "Tapasya Dumbre",
-    role: "Co-Chairperson",
+    name: "Atharva Devadkar",
+    role: "Vice Chairperson",
     committee: "AIPPM",
-    image: "/photos/Tapsya.jpeg",
-    message: "\"When you want something, all the universe conspires in helping you to achieve it\" – The Alchemist\n\nTapasya Dumbre is a Grade 11 student at Ryan International School who's been in the Mumbai MUN circuit for about 2 years now. She's passionate about MUN’s and it shows in how she carries herself in committee. She also enjoys drumming and has been training for tennis on the side. She's excited to be chairing AIPPM at WSMUN this time around, looking forward to a good floor and some solid debate.",
+    image: "",
+    message: "",
   },
   {
     name: "Mrugaja Prabhu",
@@ -393,15 +392,17 @@ const ExecutiveBoardPage = () => {
 
                   <div className="h-px w-24 bg-primary/30 mb-8" />
 
-                  {/* Message Title */}
-                  <p className="font-body text-[9px] uppercase tracking-[0.25em] text-muted-foreground font-bold mb-3">
-                    A Message to the Delegates:
-                  </p>
-
-                  {/* Welcome Message */}
-                  <p className="font-body text-xs sm:text-sm text-foreground/85 leading-relaxed italic bg-primary/5 p-4 border-l-2 border-primary/50 rounded-r-lg max-h-[220px] overflow-y-auto">
-                    "{selectedMember.message || defaultMessage}"
-                  </p>
+                  {/* Message Title and Welcome Message */}
+                  {selectedMember.message !== "" && (
+                    <>
+                      <p className="font-body text-[9px] uppercase tracking-[0.25em] text-muted-foreground font-bold mb-3">
+                        A Message to the Delegates:
+                      </p>
+                      <p className="font-body text-xs sm:text-sm text-foreground/85 leading-relaxed italic bg-primary/5 p-4 border-l-2 border-primary/50 rounded-r-lg max-h-[220px] overflow-y-auto">
+                        "{selectedMember.message || defaultMessage}"
+                      </p>
+                    </>
+                  )}
                 </div>
 
                 <div className="mt-8 border-t border-white/5 pt-4 flex items-center justify-between text-[9px] font-body uppercase tracking-widest text-muted-foreground">

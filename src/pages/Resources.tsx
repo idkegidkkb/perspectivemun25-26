@@ -28,7 +28,7 @@ const committees = [
   {
     abbr: "AIPPM",
     name: "All India Political Parties Meet",
-    agenda: "Discussion on Constitutional Guarantees under Articles 14, 19, and 21, with Emphasis on Issues Pertaining to the Education Sector and the Rights of the Media and Youth to Free Speech.",
+    agenda: "Deliberation upon Strengthening India’s Food Security Infrastructure with emphasis on supply-chain resilience, food safety, and the implementation of FSSAI Reforms.",
   },
   {
     abbr: "FIA",

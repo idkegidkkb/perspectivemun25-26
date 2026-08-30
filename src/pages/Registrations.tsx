@@ -16,6 +16,7 @@ const RegistrationsPage = () => {
   const { toast } = useToast();
   const [showModal, setShowModal] = useState(false);
   const [activeForm, setActiveForm] = useState<"delegate" | "delegation">("delegate");
+  const [showAnnouncement, setShowAnnouncement] = useState(true);
   
   // Delegate Form State
   const [delegateName, setDelegateName] = useState("");
@@ -150,7 +151,7 @@ const RegistrationsPage = () => {
               {/* Cash Prizes Section */}
               <div className="space-y-3 font-body text-[11px] border-t border-primary/10 pt-4 mb-6">
                 <span className="font-body text-[9px] uppercase tracking-widest text-primary font-bold block mb-1">
-                  CASH PRIZES (OVER ₹190,000 TOTAL VALUE)
+                  CASH PRIZES (OVER ₹140,000 TOTAL VALUE)
                 </span>
                 <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-foreground/90">
                   <div className="flex justify-between border-b border-primary/5 pb-1"><span className="text-muted-foreground">Best Delegate:</span> <span className="font-semibold">₹10,000</span></div>
@@ -160,6 +161,10 @@ const RegistrationsPage = () => {
                   <div className="flex justify-between border-b border-primary/5 pb-1"><span className="text-muted-foreground">Special Mention:</span> <span className="font-semibold">₹6,000</span></div>
                   <div className="flex justify-between border-b border-primary/5 pb-1"><span className="text-muted-foreground">Best IP:</span> <span className="font-semibold">₹7,000</span></div>
                 </div>
+                <p className="font-body text-[9px] text-muted-foreground/90 leading-relaxed mt-2 italic">
+                  Along with the aforementioned prizes, trophies will also be awarded.<br />
+                  <span className="text-primary font-medium">*Cash prizes are exclusively applicable to college committees and not for school committees, while trophies will be awarded across all committees.</span>
+                </p>
               </div>
 
               {/* Contact / Accommodation queries */}
@@ -363,6 +368,60 @@ const RegistrationsPage = () => {
                   <Send className="w-3.5 h-3.5" />
                 </button>
               </form>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+
+      {/* Round 1 Closing Announcement Modal */}
+      <AnimatePresence>
+        {showAnnouncement && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setShowAnnouncement(false)}
+              className="absolute inset-0 bg-background/85 backdrop-blur-md"
+            />
+
+            {/* Modal Body */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 15 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 15 }}
+              className="relative w-full max-w-md bg-card border border-primary/30 p-8 rounded-xl shadow-2xl z-10 text-center overflow-hidden"
+            >
+              {/* Top accent glow */}
+              <div className="absolute top-0 right-0 w-24 h-24 bg-primary/10 blur-[40px] rounded-full pointer-events-none" />
+              
+              {/* Close Button */}
+              <button
+                onClick={() => setShowAnnouncement(false)}
+                className="absolute top-4 right-4 text-muted-foreground hover:text-primary transition-colors p-1.5 bg-white/5 rounded-full"
+              >
+                <X className="w-4 h-4" />
+              </button>
+
+              <div className="w-16 h-16 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mx-auto mb-6">
+                <ShieldAlert className="w-8 h-8 text-glow animate-pulse" />
+              </div>
+
+              <h3 className="font-display font-extrabold text-3xl text-primary uppercase tracking-wide mb-4">
+                Round 1 Closing
+              </h3>
+              
+              <p className="font-body text-sm text-foreground/90 leading-relaxed mb-6">
+                Round 1 registrations closing soon! Book your seat before it's gone!
+              </p>
+
+              <button
+                onClick={() => setShowAnnouncement(false)}
+                className="w-full bg-primary border border-primary text-background font-body font-bold text-[10px] uppercase tracking-[0.25em] py-3.5 rounded hover:bg-transparent hover:text-primary transition-all duration-300 cursor-pointer"
+              >
+                Got It
+              </button>
             </motion.div>
           </div>
         )}
