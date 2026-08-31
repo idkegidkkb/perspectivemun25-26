@@ -93,8 +93,8 @@ const ebMembers: EBMember[] = [
     name: "Atharva Devadkar",
     role: "Vice Chairperson",
     committee: "AIPPM",
-    image: "",
-    message: "",
+    image: "/photos/atharva.jpeg",
+    message: "Atharva Devadkar is a passionate first year Political Science student at Amity University. Atharva brings with him experience across 30+ Model UN and his 6 years of experience in both Indian and UN committees and rich legal insights, sharp debates and strong political nuance in discussions. As a political science enthusiast his journey has been reflected through countless prestigious awards across both Bombay and Pune circuits. Guided by the Quote \"the first duty of a revolutionary is to be educated\" he is committed to meaningful change through the power of knowledge. Apart from his core interest in Constitutional Law, his insights about social structures and the changing world are sure to impress anyone. He hopes to build the next generation of curious students and share with everyone the same guidance that built his stature.",
   },
   {
     name: "Mrugaja Prabhu",
