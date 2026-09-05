@@ -118,17 +118,17 @@ const RegistrationsPage = () => {
               <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 blur-[40px] rounded-full pointer-events-none" />
               
               <span className="font-body text-[9px] uppercase tracking-widest text-primary font-bold block mb-2">
-                FIRST ROUND
+                ROUND 2
               </span>
               
               <div className="space-y-2 mb-6">
                 <div className="flex justify-between items-baseline">
                   <span className="font-body text-xs font-semibold text-foreground">Individual Delegate</span>
-                  <span className="font-display font-extrabold text-3xl text-primary text-glow">₹2,500</span>
+                  <span className="font-display font-extrabold text-3xl text-primary text-glow">₹2,750</span>
                 </div>
                 <div className="flex justify-between items-baseline">
                   <span className="font-body text-xs font-semibold text-foreground">Delegation (Min 8 Delegates)</span>
-                  <span className="font-display font-extrabold text-3xl text-primary text-glow">₹2,250</span>
+                  <span className="font-display font-extrabold text-3xl text-primary text-glow">₹2,500</span>
                 </div>
               </div>
 
@@ -373,7 +373,7 @@ const RegistrationsPage = () => {
         )}
       </AnimatePresence>
 
-      {/* Round 1 Closing Announcement Modal */}
+      {/* Round 2 Announcement Modal */}
       <AnimatePresence>
         {showAnnouncement && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
@@ -409,11 +409,11 @@ const RegistrationsPage = () => {
               </div>
 
               <h3 className="font-display font-extrabold text-3xl text-primary uppercase tracking-wide mb-4">
-                Round 1 Closing
+                Round 2 Open
               </h3>
               
               <p className="font-body text-sm text-foreground/90 leading-relaxed mb-6">
-                Round 1 registrations closing soon! Book your seat before it's gone!
+                Round 2 registrations are now live! Book your seat before it's gone!
               </p>
 
               <button
