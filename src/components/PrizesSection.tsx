@@ -43,26 +43,6 @@ const prizes = [
     badgeColor: "bg-primary/5 text-primary border-primary/20"
   },
   {
-    title: "Best Journalist",
-    amount: "₹7,000",
-    description: "Excellence in editorial reporting, speed, and analytical insight",
-    icon: Newspaper,
-    glow: "shadow-[0_0_30px_rgba(212,175,55,0.15)]",
-    border: "border-primary/10 hover:border-primary/70",
-    badge: "Press",
-    badgeColor: "bg-primary/5 text-primary border-primary/20"
-  },
-  {
-    title: "Best Photographer",
-    amount: "₹7,000",
-    description: "Capturing the intensity, drama, and essence of the summit visually",
-    icon: Camera,
-    glow: "shadow-[0_0_30px_rgba(212,175,55,0.15)]",
-    border: "border-primary/10 hover:border-primary/70",
-    badge: "Press",
-    badgeColor: "bg-primary/5 text-primary border-primary/20"
-  },
-  {
     title: "Special Mention",
     amount: "₹6,000",
     description: "Commending notable effort, research quality, and performance",
@@ -101,7 +81,7 @@ const PrizesSection = () => {
               </h2>
               <p className="font-body text-sm sm:text-base text-muted-foreground max-w-2xl leading-relaxed text-foreground/80">
                 With a total prize pool of over <span className="text-primary font-bold text-glow">₹140,000</span>, 
-                WSMUN'26 recognizes and rewards outstanding diplomatic aptitude and press excellence
+                WSMUN'26 recognizes and rewards outstanding diplomatic aptitude
               </p>
             </motion.div>
           </div>

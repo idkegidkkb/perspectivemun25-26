@@ -44,21 +44,6 @@ const ebMembers: EBMember[] = [
     image: "/photos/ira.png",
     message: "Ira Shah is an IBDP student who has done various MUNs in the Mumbai circuit. She’s an avid reader and holds a keen interest in political science and literature. She believes MUNs are one of the best places to foster critical thinking and an understanding of legality early on.",
   },
-  // ECOSOC
-  {
-    name: "Aditya Dutta",
-    role: "Chairperson",
-    committee: "ECOSOC",
-    image: "/photos/Aditya Dutta.jpeg",
-    message: "Aditya Dutta is a 15-year-old student at Cambridge with four years of experience in Model United Nations. Passionate about international relations, diplomacy, and public speaking, he has participated in numerous conferences and enjoys engaging in meaningful debates.",
-  },
-  {
-    name: "Niel Shetty",
-    role: "Vice Chairperson",
-    committee: "ECOSOC",
-    image: "/photos/Niel.jpeg",
-    message: "Hi, I’m Niel Shetty, a 15-year-old MUNer and debater who believes that debate is much more than rhetoric. My approach to debating is built around three things: logic, policy, and impact. I enjoy breaking down an issue, understanding the legal and political framework behind it, identifying where existing policies fail, and then proposing solutions that are actually practical.",
-  },
   // UNHRC
   {
     name: "Prakket Dholekar",
@@ -117,17 +102,9 @@ const ebMembers: EBMember[] = [
     image: "/photos/Saatvik Joshi.jpeg",
     message: "Saatvik is a 15 year old MUN enthusiast with an impressive passion for Model United Nations. Over the course of just 23 MUNs, he has achieved an outstanding milestone of winning 13 awards, showcasing his dedication, confidence, research skills, and ability to think on his feet. For Saatvik, MUN is more than just a competition—it is an exciting experience that challenges him to learn, speak, negotiate, and express his ideas effectively. He absolutely loves the game of MUN and is always thrilled to step into a new committee, take on a different portfolio, and face unexpected challenges. Whether it is delivering a powerful speech, defending his country's stance, negotiating with other delegates, or finding creative solutions during intense debates, Saatvik enjoys every moment of the experience.",
   },
-  // IP
-  {
-    name: "Ms. Shriya Rajan",
-    role: "Chairperson",
-    committee: "IP",
-    image: "/photos/Shriya Rajan.jpeg",
-    message: "Introducing Shriya Rajan, Chair of the International Press Committee: bold, unapologetically sassy, and a natural multitasker. She aims to bring fire to the committee and lead with precision, passion, and persistence. With a natural prowess for written expression and a profound respect for the art of questioning, she approaches journalism as both a responsibility and a craft to be refined with intention, integrity and authenticity. The International Press Committee is the narrative and investigative backbone of every conference. It brings a dynamic energy to every room, serving as a space that nurtures curiosity, analysis, and critical thinking. Under her leadership, the International Press Committee will not just merely report the conference, but also weave perspectives with impact and ensure every story is powerful, purposeful and impossible to ignore.",
-  },
 ];
 
-const committeesList = ["UNSC", "UNGA", "ECOSOC", "UNHRC", "AIPPM", "FIA", "IP"];
+const committeesList = ["UNSC", "UNGA", "UNHRC", "AIPPM", "FIA"];
 
 const ExecutiveBoardPage = () => {
   const [activeFilter, setActiveFilter] = useState("UNSC");

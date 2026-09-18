@@ -21,14 +21,6 @@ const committees = [
     category: "School Committee",
   },
   {
-    name: "Economic and Social Council",
-    abbr: "ECOSOC",
-    topic: "Deliberating Upon the Reform of Bilateral Investment Treaties (BITs) to Promote Sustainable Development and Equitable Foreign Investment.",
-    logo: "/photos/un_emblem.svg",
-    eb: "Chair: Aditya Dutta • Vice Chair: Niel Shetty",
-    category: "College Committee",
-  },
-  {
     name: "United Nations Human Rights Council",
     abbr: "UNHRC",
     topic: "Deliberating Upon the Human Rights Violations Caused by Various Economic Systems.",
@@ -51,14 +43,6 @@ const committees = [
     logo: "/photos/fia_logo.svg",
     eb: "Chair: Mrugaja Prabhu • Vice Chair: Valen Kumar • Co-Vice Chair: Saatvik Joshi",
     category: "School Committee",
-  },
-  {
-    name: "International Press",
-    abbr: "IP",
-    topic: "Roleplay and reporting as Journalists and Photographers covering the proceedings of all committees",
-    logo: "/photos/camera_icon.svg",
-    eb: "Chairperson: Ms. Shriya Rajan",
-    category: "Open / School & College",
   },
 ];
 
@@ -150,7 +134,7 @@ const CommitteesPage = () => {
     <>
       <SEO 
         title="Model UN Committees & Agendas | UNSC, UNGA, AIPPM" 
-        description="Explore WSMUN 2026 committees: UNSC, UNGA, ECOSOC, UNHRC, AIPPM, FIA, and IP. Review agendas on biowarfare, UN reform, and Indian constitutional guarantees." 
+        description="Explore WSMUN 2026 committees: UNSC, UNGA, UNHRC, AIPPM, and FIA. Review agendas on biowarfare, UN reform, and Indian constitutional guarantees." 
       />
       <TopNav />
       <main className="pt-24 pb-8 px-4 md:px-6 min-h-[100dvh] flex flex-col justify-start overflow-hidden">

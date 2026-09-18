@@ -12,7 +12,7 @@ const Index = () => {
     <>
       <SEO 
         title="One of the Best Model United Nations (MUN) in Mumbai" 
-        description="Join World Summit Model United Nations (WSMUN 2026), one of the best MUNs and premier Model United Nations conferences in Churchgate, Mumbai. Discover upcoming MUNs in Maharashtra and India, featuring UNSC, UNGA, AIPPM, ECOSOC, UNHRC, and FIA. Register now!" 
+        description="Join World Summit Model United Nations (WSMUN 2026), one of the best MUNs and premier Model United Nations conferences in Churchgate, Mumbai. Discover upcoming MUNs in Maharashtra and India, featuring UNSC, UNGA, AIPPM, UNHRC, and FIA. Register now!" 
       />
       <TopNav />
       <main>

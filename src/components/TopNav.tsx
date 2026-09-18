@@ -29,7 +29,7 @@ const TopNav = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-background/85 backdrop-blur-xl border-b border-primary/10 shadow-[0_4px_30px_rgba(0,0,0,0.3)] py-1" : "bg-transparent py-3"
+      className={`fixed top-9 sm:top-10 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-background/85 backdrop-blur-xl border-b border-primary/10 shadow-[0_4px_30px_rgba(0,0,0,0.3)] py-1" : "bg-transparent py-3"
         }`}
     >
       <div className="max-w-[95%] mx-auto flex items-center justify-between px-4 py-2">

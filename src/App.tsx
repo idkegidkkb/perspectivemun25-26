@@ -16,6 +16,7 @@ import OrganisingCommitteePage from "./pages/OrganisingCommittee.tsx";
 import ConfPolicyPage from "./pages/ConfPolicy.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import DelegateMascot from "./components/DelegateMascot.tsx";
+import CancellationNoticeModal from "./components/CancellationNoticeModal.tsx";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <CancellationNoticeModal />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/registrations" element={<RegistrationsPage />} />

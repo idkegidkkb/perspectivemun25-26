@@ -54,7 +54,7 @@ const RegistrationsPage = () => {
     <>
       <SEO 
         title="Model UN Registration & Fees | Join WSMUN 2026" 
-        description="Register for WSMUN 2026. Submit applications for individual delegates, school/college delegations, or International Press for the premier Mumbai MUN." 
+        description="Register for WSMUN 2026. Submit applications for individual delegates or school/college delegations for the premier Mumbai MUN." 
       />
       <TopNav />
       <main className="pt-32 pb-24 px-6 sm:px-12 md:px-20 max-w-7xl mx-auto dots-bg min-h-screen flex items-center">
@@ -159,7 +159,6 @@ const RegistrationsPage = () => {
                   <div className="flex justify-between border-b border-primary/5 pb-1"><span className="text-muted-foreground">High Comm.:</span> <span className="font-semibold">₹8,000</span></div>
                   <div className="flex justify-between border-b border-primary/5 pb-1"><span className="text-muted-foreground">Best of Best:</span> <span className="font-semibold">₹10,000</span></div>
                   <div className="flex justify-between border-b border-primary/5 pb-1"><span className="text-muted-foreground">Special Mention:</span> <span className="font-semibold">₹6,000</span></div>
-                  <div className="flex justify-between border-b border-primary/5 pb-1"><span className="text-muted-foreground">Best IP:</span> <span className="font-semibold">₹7,000</span></div>
                 </div>
                 <p className="font-body text-[9px] text-muted-foreground/90 leading-relaxed mt-2 italic">
                   Along with the aforementioned prizes, trophies will also be awarded.<br />

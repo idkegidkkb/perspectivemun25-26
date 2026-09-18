@@ -27,7 +27,7 @@ const prizes = [
   {
     title: "Best Delegate",
     amount: "₹10,000",
-    description: "Awarded to the top delegate in each of the 6 debate committees for mastery in negotiation",
+    description: "Awarded to the top delegate in each committee for mastery in negotiation",
     icon: Trophy,
     glow: "shadow-[0_0_30px_rgba(212,175,55,0.15)]",
     border: "border-primary/10 hover:border-primary/70",
@@ -42,26 +42,6 @@ const prizes = [
     glow: "shadow-[0_0_30px_rgba(212,175,55,0.15)]",
     border: "border-primary/10 hover:border-primary/70",
     badge: "Second Place",
-    badgeColor: "bg-primary/5 text-primary border-primary/20"
-  },
-  {
-    title: "Best Journalist",
-    amount: "₹7,000",
-    description: "Awarded to the representative of the International Press who writes the finest editorial reports",
-    icon: Newspaper,
-    glow: "shadow-[0_0_30px_rgba(212,175,55,0.15)]",
-    border: "border-primary/10 hover:border-primary/70",
-    badge: "Press Corps",
-    badgeColor: "bg-primary/5 text-primary border-primary/20"
-  },
-  {
-    title: "Best Photographer",
-    amount: "₹7,000",
-    description: "Awarded to the photojournalist who captures the most dramatic and narrative summit highlights",
-    icon: Camera,
-    glow: "shadow-[0_0_30px_rgba(212,175,55,0.15)]",
-    border: "border-primary/10 hover:border-primary/70",
-    badge: "Press Corps",
     badgeColor: "bg-primary/5 text-primary border-primary/20"
   },
   {

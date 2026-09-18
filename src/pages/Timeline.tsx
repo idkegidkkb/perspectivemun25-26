@@ -13,7 +13,7 @@ const timelineEvents = [
     {
         title: "Registration Opens",
         date: "August 2026",
-        description: "Delegate, Delegation, and International Press applications are officially open",
+        description: "Delegate and Delegation applications are officially open",
         completed: true,
     },
     {

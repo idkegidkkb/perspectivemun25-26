@@ -16,11 +16,6 @@ const committees = [
     agenda: "Balancing Mandate and Agenda Prioritization Against the Logistical and Budgetary Constraints in the UN",
   },
   {
-    abbr: "ECOSOC",
-    name: "Economic and Social Council",
-    agenda: "Deliberating Upon the Reform of Bilateral Investment Treaties (BITs) to Promote Sustainable Development and Equitable Foreign Investment",
-  },
-  {
     abbr: "UNHRC",
     name: "United Nations Human Rights Council",
     agenda: "Deliberating Upon the Human Rights Violations Caused by Various Economic Systems",
@@ -34,11 +29,6 @@ const committees = [
     abbr: "FIA",
     name: "Fédération Internationale de l'Automobile",
     agenda: "Addressing the Balance Between Driver Rights, Ethical Responsibilities, and Freedom of Expression Within Motorsport Governance",
-  },
-  {
-    abbr: "IP",
-    name: "International Press",
-    agenda: "Roleplay and reporting as Journalists and Photographers covering the proceedings of all committees",
   }
 ];
 

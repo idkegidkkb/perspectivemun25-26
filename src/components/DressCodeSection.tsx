@@ -202,7 +202,7 @@ const DressCodeSection = () => {
                     <div className="mb-6 bg-white/[0.03] border border-white/5 rounded-lg p-3">
                       <p className="font-body text-[8px] uppercase tracking-widest text-primary/70 mb-1 font-bold">Scope of Committees</p>
                       <p className="font-body text-xs text-foreground/90 font-bold uppercase tracking-wider">
-                        UNSC, UNGA, ECOSOC, UNHRC, FIA, IP
+                        UNSC, UNGA, UNHRC, FIA
                       </p>
                     </div>
 
